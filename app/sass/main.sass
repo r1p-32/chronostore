@@ -1,0 +1,1269 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "base"
+
+.container
+	position: relative
+
+.before
+	content: ''
+	display: block
+	width: 100%
+	height: 100%
+	position: absolute
+
+.clear-list
+	padding: 0
+	margin: 0
+	list-style-type: none
+
+.inline-list
+	padding: 0
+	margin: 0
+	list-style-type: none
+	&>li
+		display: inline-block
+
+span.accent
+	color: $accent
+
+.col-right
+	text-align: right
+.col-left
+	text-align: left
+.col-center
+	text-align: center
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	margin: 0 auto
+
+.main-wrapper
+	display: flex
+	flex-direction: column
+	height: 100%
+	position: relative
+
+.content
+	flex: 1 0 auto
+	position: relative
+	background-color: $mainbg-light
+
+.input
+	height: 39px
+	display: inline-block
+	width: 100%
+	border: 1px solid $border
+	padding: 0 15px
+	font-size: 12px
+	color: #000
+	&:focus
+		border-color: #333
+	&_dark
+		background-color: $input-dark
+
+.textarea
+	@extend .input
+	resize: none
+	padding: 10px 15px
+	height: auto
+
+.btn
+	display: inline-block
+	width: 100%
+	height: 41px
+	line-height: 38px
+	border: 1px solid $border	
+	background-color: #fff
+	border-radius: 0
+	text-transform: uppercase
+	font-size: 12px
+	font-weight: 600
+	text-align: center
+	color: $main
+	&:hover,
+	&:focus
+		background-color: $border
+		color: $main
+	&_accent
+		background-color: $accent
+		color: #fff
+		border-color: $accent
+		&:hover,
+		&:focus
+			background-color: $accent-dark
+			border-color: $accent-dark
+			color: #fff
+	&_light
+		background-color: $border-light
+		color: #333
+		border-color: $border-dark
+		&:hover,
+		&:focus
+			background-color: $border-dark
+			color: #333
+
+.check-label
+	display: inline-block
+	cursor: pointer
+	padding-left: 29px
+	height: 12px
+	background-image: url('../img/check.png')
+	background-repeat: no-repeat
+	font-size: 12px
+
+.checkbox
+	display: none
+
+.checkbox:checked + .check-label
+	background-position-y: -12px
+
+.page-title
+	position: relative
+	text-align: center
+	font-size: 30px
+	font-weight: 200
+	color: $main
+	text-transform: uppercase
+	margin:
+		top: 33px
+		bottom: 24px
+	padding-bottom: 18px
+	&:before
+		@extend .before
+		width: 50px
+		height: 2px
+		background-color: #000
+		bottom: 0
+		left: 0
+		right: 0
+		margin: 0 auto
+
+.scroll-top
+	display: block
+	height: 50px
+	width: 50px
+	z-index: 2
+	text-align: center
+	line-height: 50px
+	color: $main
+	background-color: #fff
+	position: absolute
+	bottom: 20px
+	right: -55px
+	font-size: 20px
+	&:hover
+		background-color: $border-dark
+
+// ---- header ----
+
+.header
+	background-color: #fff
+
+.top-line
+	padding:
+		top: 42px
+		bottom: 58px
+
+.header-phones
+	@extend .inline-list
+	font-weight: 300
+	color: #616161
+	font-size: 14px
+	padding: 17px 0
+	li
+		margin-right: 20px
+		i
+			font-size: 20px
+			vertical-align: middle
+
+.header-right
+	@extend .inline-list
+	text-align: right
+	padding: 	10px 0
+
+.header-right__icon
+	display: block
+	position: relative
+	color: #000
+	font-size: 25px	
+	margin-left: 17px
+	span
+		font-size: 11px
+		font-weight: 600
+		color: $accent
+		position: absolute
+		right: -5px
+		top: 1px
+	&:hover,
+	&:focus
+		color: $accent
+
+.header-right__link
+	font-size: 14px
+	color: #000
+	&:hover,
+	&:focus
+		color: $accent
+
+.currency-switcher
+	display: block
+	border-right: 1px solid $border-dark
+	border-left: 1px solid $border-dark
+	color: #000
+	margin: 
+		left: 8px
+		right: 3px
+	padding: 
+		left: 12px
+		right: 8px
+	font-size: 14px
+	&:hover
+		color: $accent
+	&:focus
+		color: #000
+
+.header-popup
+	@extend .clear-list
+	border: 1px solid $border-dark
+	background-color: #fff
+	position: absolute
+	top: 50px
+	box-shadow: 0px 13px 38px 0px rgba(0,0,0,0.22)
+	text-align: left
+	z-index: -2
+	transform: translateY(70px)
+	opacity: 0
+	transition: transform .4s, opacity .4s
+	&:before
+		@extend .before
+		width: 7px
+		height: 7px
+		margin: 0 auto
+		top: -7px
+		left: 88px
+		background-image: url('../img/before-triangle.png')
+	&.active
+		z-index: 2
+		opacity: 1
+		transform: translateY(0)
+		transition: transform .4s, opacity .4s
+
+.currency-mnu
+	width: 206px
+	right: 98px
+	padding: 10px 0
+	li
+		display: block
+		a
+			display: block
+			line-height: 31px
+			padding-left: 19px
+			font-size: 12px
+			color: #616161
+			span
+				display: inline-block
+				width: 32px
+				color: #000
+			&:hover
+				background-color: #f4f4f4
+
+.login-form
+	width: 260px
+	right: 30px
+	color: #333
+	padding: 
+		top: 29px
+		right: 19px
+		left: 19px
+		bottom: 19px
+	&:before
+		left: 0
+		right: 0
+	.input,
+	.check-label
+		margin-top: 10px
+	.check-label
+		margin-left: 16px
+	.btn
+		margin-top: 20px
+
+.header-popup__title
+	font-size: 12px
+	text-transform: uppercase
+	font-weight: 600
+
+.login-form__forgot
+	font-size: 11px
+	display: inline-block
+	color: #333
+	text-decoration: underline
+	margin:
+		top: 10px
+		left: 16px
+	&:hover
+		color: #333
+
+.login-form__customer
+	margin-top: 25px
+	padding-bottom: 15px
+	border-bottom: 1px solid $border
+
+.cart-popup
+	width: 300px
+	right: 12px
+	padding: 29px 20px 19px
+	&:before
+		right: 12px
+		left: auto
+	.btn
+		margin-top: 10px
+	.cart-popup__continue
+		margin-top: 22px
+
+.product-small-list
+	@extend .clear-list
+	margin-top: 10px
+	li
+		border-bottom: 1px solid $border
+
+
+.product-small-item
+	display: block
+	padding: 10px
+	width: 100%
+	color: $main
+	&:hover
+		color: $main
+		background-color: $border
+
+.product-small-item__img
+	float: left
+	width: 70px
+	height: 70px
+	line-height: 70px
+	border: 1px solid $border
+	text-align: center
+	background-color: #fff
+	img
+		display: inline-block
+		max-height: 64px
+
+.product-small-item__text
+	float: left
+	padding-left: 11px
+	max-width: calc(100% - 80px)
+	padding-top: 3px
+	&>div
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+
+.product-small-item__name
+	width: 100%
+	font-size: 12px
+	color: #000
+	margin-bottom: 3px
+
+.product-small-item__model
+	font-size: 10px
+	color: #8c8c8c
+	font-weight: 500
+
+.product-small-item__descr
+	font-size: 10px
+	color: #8c8c8c
+
+.product-small-item__price
+	font-size: 14px
+	color: #000
+	margin-top: 5px
+
+.cart-popup__result
+	margin-top: 14px
+	vertical-align: middle
+	span
+		display: inline-block
+		font-size: 12px
+		font-weight: 600
+		color: #000
+		text-transform: uppercase
+		vertical-align: bottom
+	strong
+		display: inline-block
+		float: right
+		font-size: 18px
+		font-weight: normal
+		vertical-align: bottom
+
+.main-mnu
+	ul
+		@extend .inline-list
+		li
+			margin-right: 25px
+			a
+				font-size: 14px
+				color: #000
+				text-transform: uppercase
+				font-weight: bold
+				display: block
+				padding-bottom: 19px
+				border-bottom: 2px solid #fff
+				&:hover
+					border-color: $accent
+
+// ---- footer ----
+
+.footer
+	background-color: $mainbg-dark
+	color: $footer-color
+
+.footer-main
+	@extend .clear-list
+	padding-top: 47px
+	display: flex
+	justify-content: space-between
+
+.footer-main__item
+	padding-bottom: 37px
+	margin-right: 30px
+	&:last-child
+		margin-right: 0
+		.footer-main__mnu
+			padding-right: 0
+			border: none
+
+.footer-main__title
+	text-transform: uppercase
+	font-weight: bold
+	margin-bottom: 25px
+
+.footer-main__mnu
+	@extend .clear-list
+	font-size: 14px
+	padding-right: 30px
+	border-right: 1px solid #c8c8c8
+	li
+		margin-bottom: 14px
+		a
+			color: $footer-color
+			&:hover
+				text-decoration: underline
+
+.footer-bottom
+	border-top: 1px solid #c8c8c8
+	padding: 
+		top: 40px
+		bottom: 30px
+
+.footer-social
+	@extend .inline-list
+	li
+		a
+			display: block
+			width: 49px
+			height: 49px
+			text-align: center
+			line-height: 49px
+			font-size: 20px
+			color: $main
+			&:hover
+				color: #fff
+				background-color: $main
+
+.footer-logo
+	display: inline-block
+	max-width: 160px
+
+.copyright
+	font-size: 10px
+	margin-top: 10px
+
+.footer-subscribe
+	float: right
+	display: inline-block
+	width: 100%
+	max-width: 296px
+	position: relative
+	.input
+		height: 50px
+		background-color: #e9e9e9
+		border-color: #e9e9e9
+		padding-right: 50px
+
+.footer-subscribe__btn
+	display: block
+	height: 43px
+	width: 43px
+	border: none
+	background-color: $main
+	color: #fff
+	font-size: 24px
+	position: absolute
+	right: 3px
+	top: 3px
+
+.add-to-card
+	position: relative
+	background-color: #fff
+	width: 100%
+	max-width: 540px
+	margin: 0 auto
+	padding: 25px
+	text-align: center
+
+.add-to-card__title
+	font-size: 24px
+	text-transform: uppercase
+	margin: 
+		top: 15px
+		bottom: 26px
+
+.add-to-card__subtitle
+	font-size: 14px
+
+.add-to-card__btns
+	@extend .inline-list
+	padding-top: 20px
+	li
+		width: 48%
+		margin-top: 15px
+
+// ---- breadcrumbs ----
+
+.breadcrumbs
+	ul
+		@extend .inline-list
+		padding: 
+			left: 15px
+			right: 15px 
+			top: 12px
+			bottom: 10px
+		border-bottom: 1px solid $border-dark
+		font-size: 12px
+		li
+			a
+				color: #616161
+				&:hover
+					color: #000
+			i
+				font-size: 16px
+				vertical-align: middle
+				margin: 0 5px
+			span
+				color: #000
+
+// ---- iner-brands ----
+
+.page-top-links
+	@extend .inline-list
+	text-align: center
+	li
+		width: 100%
+		max-width: 400px
+		margin:
+			left: 10px
+			right: 10px
+			bottom: 24px
+		.btn
+			height: 50px
+			line-height: 48px
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+
+.brands
+	.row	
+		margin:
+			left: -10px
+			right: -10px
+	.col-lg-3
+		padding: 
+			left: 10px
+			right: 10px
+
+.brand-item__wrap
+	display: block
+	text-align: center
+	background-color: #fff
+	color: #000
+	font-weight: 600
+	padding: 
+		top: 29px
+		bottom: 30px
+	margin-bottom: 20px
+	transition: .4s
+	img
+		display: block
+		margin: 0 auto
+		margin-bottom: 46px
+	&:hover
+		color: #000
+		box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.2)
+
+// ---- inner-products ----
+
+.products
+	.row
+		margin: 
+			left: -5px
+			right: -5px
+	.col-lg-3
+		padding: 
+			left: 5px
+			right: 5px
+	.scroll-top
+		bottom: 10px
+
+.products-sidebar
+	width: calc(20% - 10px)
+	background-color: #fff
+	float: left
+
+.product-greed
+	width: 80%
+	float: right
+
+.products-item
+	position: relative
+	text-align: center
+	.btn
+		position: absolute
+		max-width: 148px
+		z-index: -2
+		top: 200px
+		opacity: 0
+		left: 0
+		right: 0
+		margin: 0 auto
+		transform: translateY(50px)
+		transition: opacity .4s, transform .4s
+		box-shadow: 0px 11px 40px 0px rgba(0,0,0,0.41)
+	&:hover
+		.btn
+			opacity: 1
+			z-index: 2
+			transform: translateY(0)
+			transition: opacity .4s, transform .4s
+
+.products-item__wrap
+	display: block
+	background-color: #fff
+	color: #000
+	text-align: center
+	margin-bottom: 10px
+	padding: 
+		top: 10px
+		bottom: 24px
+	&:hover
+		color: #000
+
+.products-item__name
+	font-weight: 600
+	margin-top: 21px
+	overflow: hidden
+	white-space: nowrap
+	text-overflow: ellipsis
+
+.products-item__model
+	font-size: 10px
+	position: relative
+	color: #8c8c8c
+	padding-bottom: 14px
+	margin-top: 6px
+	&:before
+		@extend .before
+		width: 42px
+		height: 1px
+		background-color: $border
+		left: 0
+		right: 0
+		bottom: 0
+		margin: 0 auto
+
+.products-item__descr
+	font-size: 12px
+	max-width: 176px
+	height: 28px
+	height: 28px
+	overflow: hidden
+	margin: 
+		top: 13px
+		left: auto
+		right: auto
+
+.products-item__condition
+	font-size: 10px
+	color: #8c8c8c
+	margin-top: 10px
+
+.products-item__price
+	font-size: 24px
+	margin-top: 16px
+
+.products-item__oldprice
+	color: #8c8c8c
+	font-size: 14px
+	text-decoration: line-through
+	margin-top: 5px
+
+.products-sidebar
+	padding: 5px 16px 20px
+	margin-bottom: 10px
+	.jq-selectbox
+		width: 100%
+		.jq-selectbox__select
+			background: #fff
+			border-radius: 0
+			border-color: $border
+			box-shadow: none
+			height: 36px
+		.jq-selectbox__select-text
+			height: 35px
+			font-family: $default-font
+			font-size: 12px
+			color: $main
+			font-weight: 300
+		.jq-selectbox__trigger
+			border-left: none
+		.jq-selectbox__dropdown
+			box-shadow: 0px 22px 38px 0px rgba(0,0,0,0.22)
+			border-radius: 0
+		li
+			min-height: 32px
+			line-height: 32px
+			padding: 0 25px
+			font-family: $default-font
+			font-size: 12px
+			color: $main
+			font-weight: 300
+			&.selected,
+			&:hover
+				background-color: #f1f1f1
+				font-weight: 600
+	.jslider
+		margin-top: 24px
+		font-family: $default-font
+		.jslider-label
+			display: none !important
+		.jslider-value
+			font-size: 12px
+			top: -23px
+		.jslider-bg 
+			.l,
+			.f,
+			.r
+				height: 2px
+				background-color: #d1d1d1
+			.v
+				background-color: #6e6e6e
+				height: 2px
+		.jslider-pointer
+			height: 15px
+			width: 15px
+			border: 1px solid #a2a2a2
+			border-radius: 50%
+			top: -6px
+			background-color: #fff
+			&:before
+				@extend .before
+				height: 9px
+				width: 9px
+				background-color: #a2a2a2
+				border-radius: 50%
+				left: 2px
+				top: 2px
+			&-to
+				border-color: #000
+				&:before
+					background-color: #000
+	.btn
+		margin-top: 15px
+
+.products-sidebar__title
+	font-size: 12px
+	color: $main
+	text-transform: uppercase
+	font-weight: 600
+	margin: 
+		top: 15px
+		bottom: 5px
+
+.products-sidebar__check-list
+	@extend .clear-list
+	color: $main
+
+.quick-view
+	position: relative
+	max-width: 850px
+	background-color: #fff
+	margin: 0 auto
+	.product-card
+		padding-top: 34px
+	.product-slider
+		padding-top: 0
+		img
+			max-height: 350px
+	.product-slider-arr
+		top: auto
+		bottom: -13px
+	.product-slider-descr
+		font-size: 10px
+	.product-descr
+		padding:
+			left: 0
+			right: 0
+	.product-title
+		font-size: 24px
+		padding-bottom: 29px
+	.product-characteristics
+		border-bottom: 1px solid $border
+		padding-bottom: 24px
+	.product-contacts
+		padding: 0
+	.chat-btn
+		margin-top: 18px
+	.product-prices
+		margin-top: 15px
+	.product-old-price
+		font-size: 18px
+	.product-new-price
+		font-size: 30px
+
+.quick-view__btns
+	@extend .inline-list
+	padding-top: 34px
+	li
+		float: left
+		width: 50%
+		&:last-child
+			padding-left: 10px
+
+// ---- product-card ----
+
+.product-card
+	padding: 46px 15px 27px
+	background-color: #fff
+
+.product-slider
+	padding-top: 37px
+
+.product-slider-arr
+	background-color: transparent
+	border: none
+	position: absolute
+	top: 40%
+	font-size: 27px
+	z-index: 2
+	color: #b9b9b9
+	&_prev
+		transform: rotate(180deg)
+		left: 8px
+	&_next
+		right: 8px
+	&:hover
+		color: $main
+
+.slick-dots
+	@extend .inline-list
+	text-align: center
+	margin-top: -25px
+	li
+		margin: 0 6px
+		button
+			display: block
+			font-size: 0
+			width: 10px
+			height: 10px
+			border: none
+			border-radius: 50%
+			background-color: #bcbcbc
+			padding: 0
+			position: relative
+			&:hover
+				background-color: $accent
+		&.slick-active
+			button
+				background-color: $accent
+				&:before
+					@extend .before
+					width: 16px
+					height: 16px
+					border: 1px solid #bcbcbc
+					border-radius: 50%
+					left: -3px
+					top: -3px
+
+.product-slider-descr
+	font-size: 12px
+	color: #a3a3a3
+	text-align: center
+	margin-top: 25px
+
+.product-descr
+	position: relative
+	padding:
+		left: 36px
+		right: 15px
+
+.product-title
+	position: relative
+	font-size: 30px
+	text-transform: uppercase
+	font-weight: 900
+	padding:
+		right: 40px
+		bottom: 18px
+	&:before
+		@extend .before
+		width: 50px
+		height: 2px
+		background: #000
+		bottom: 0
+		left: 0	
+
+.product-subtitle
+	font-size: 14px
+	margin: 
+		top: 22px
+		bottom: 10px
+
+.product-model
+	font-size: 12px
+	font-weight: 600
+	color: #8b8b8b
+
+.product-characteristics
+	@extend .clear-list
+	font-size: 14px
+	padding-top: 21px
+	color: #616161
+	li
+		margin-bottom: 8px
+		.product-characteristics__left
+			display: inline-block
+			font-weight: 600
+			width: 170px
+		.product-characteristics__right
+			strong
+				color: $accent
+				font-weight: 600
+
+.product-contacts
+	@extend .clear-list
+	padding:
+		left: 12px
+		top: 20px
+	color: #616161
+	font-size: 14px
+	i
+		font-size: 20px
+		vertical-align: middle
+
+.product-btns
+	@extend .clear-list
+	padding-top: 20px
+	margin-top: 22px
+	border-top: 1px solid $border
+	li
+		width: 50%
+		float: left
+		padding: 
+			right: 10px
+			bottom: 10px
+		i
+			font-size: 22px
+			vertical-align: middle
+			color: #7a7a7a
+
+.product-prices
+	margin-top: 34px
+
+.product-old-price
+	font-size: 24px
+	font-weight: 300
+	color: #8c8c8c
+	text-decoration: line-through
+
+.product-new-price
+	font-size: 36px
+	margin-top: 10px
+
+.products-icons
+	@extend .inline-list
+	position: absolute
+	bottom: -3px
+	right: 28px
+	li
+		margin-left: 10px
+		a
+			font-size: 24px
+			color: $main
+			&:hover,
+			&:focus
+				color: $accent
+
+.product-tabs
+	background-color: #fff
+	margin-top: 15px
+	padding-top: 40px
+
+.tabs-caption
+	@extend .inline-list
+	li
+		line-height: 44px
+		font-size: 18px
+		font-weight: 300
+		color: #616161
+		cursor: pointer
+		margin-right: 30px
+		border-bottom: 2px solid transparent
+		&:hover
+			color: $main
+		&.active
+			font-weight: normal
+			color: $main
+			border-color: $accent
+
+.tabs-content
+	display: none
+	border-top: 1px solid $border
+	margin-top: -1px
+	font-size: 14px
+	padding:
+		bottom: 80px
+	&.active
+		display: block
+	p
+		line-height: 1.7
+		margin: 0
+		strong
+			font-weight: 600
+
+.product-details-title
+	font-size: 18px
+	font-weight: 300
+	border-bottom: 1px solid $border
+	margin:
+		top: 43px
+		bottom: 33px
+	padding-bottom: 15px
+
+.product-details
+	@extend .clear-list
+	padding: 0 22px
+	color: #616161
+	li
+		padding: 
+			top: 4px
+			bottom: 9px
+		border-bottom: 1px solid $border
+		.product-details__left
+			width: 168px
+			font-weight: 600
+			color: $main
+			display: table-cell
+		.product-details__right
+			display: table-cell
+		&:last-child
+			border: none
+
+.tabs-content__text-block
+	margin-top: 30px
+
+.tabs-content__title
+	text-transform: uppercase
+	font-weight: 600
+	margin-bottom: 30px
+
+.products-under
+	@extend .clear-list
+	border-top: 1px solid $border
+	margin-top: 30px
+	padding-top: 30px
+	font-size: 18px
+	font-weight: 300
+	li
+		margin-bottom: 10px
+		&:first-child
+			margin-bottom: 33px
+		&:last-child
+			margin-bottom: 0
+			margin-top: 38px
+		.products-under__left
+			width: 205px
+			display: table-cell
+		.products-under__right
+			display: table-cell
+		strong
+			font-weight: 600
+
+.question-list__title
+	line-height: 38px
+
+.question-list
+	@extend .clear-list
+	padding-right: 60px
+
+.question-list__item
+	border-bottom: 1px solid $border
+
+.question-list__title
+	cursor: pointer
+	padding: 0 20px
+	border-left: 2px solid #fff
+	&:hover
+		font-weight: 600
+	&:before
+		content: '+'
+		font-size: 24px
+		float: right
+		font-weight: normal
+	&.active
+		background-color: $border
+		font-weight: 600
+		border-color: $accent
+		&:before
+			content: '-'
+.question-list__text
+	display: none
+	font-size: 12px
+	padding: 
+		top: 20px
+		left: 34px
+		right: 34px
+		bottom: 25px
+	p
+		margin: 0
+
+.question-form
+	.input
+		margin-bottom: 10px
+	.btn
+		margin-top: 10px
+
+.make-an-offer
+	position: relative
+	padding: 34px 25px 25px
+	max-width: 950px
+	background-color: #fff
+	margin: 0 auto
+
+.make-an-offer__left
+	width: 316px
+	float: left
+	text-align: center
+
+.make-an-offer__title
+	font-size: 30px
+	font-weight: 200
+	text-transform: uppercase
+
+.make-an-offer__img
+	border: 1px solid $border
+	margin: 27px auto 15px
+	height: 316px
+	line-height: 316px
+	img
+		max-height: 300px
+		display: inline-block
+
+.make-an-offer__wrap
+	padding: 0 74px 15px
+	border-bottom: 1px solid $border
+
+.make-an-offer__name
+	font-weight: 600
+	position: relative
+	text-transform: uppercase
+	padding-bottom: 8px
+	&:before
+		@extend .before
+		height: 1px
+		width: 40px
+		background-color: $border
+		bottom: 0
+		left: 0
+		right: 0
+		margin: 0 auto
+
+.make-an-offer__descr
+	font-size: 12px
+	margin-top: 10px
+
+.make-an-offer__model
+	font-size: 12px
+	color: #8b8b8b
+	font-weight: 600
+	margin-top: 6px
+
+.make-an-offer__price
+	font-size: 24px
+	margin-top: 15px
+
+.make-an-offer__btn
+	margin-top: 10px
+
+.make-an-offer-form
+	width: calc(100% - 346px)
+	float: right
+	padding-top: 65px
+	.row
+		margin: 
+			left: -5px
+			right: -5px
+	.col-md-4,
+	.col-md-6,
+	.col-md-8,
+	.col-md-12
+		padding: 
+			left: 5px
+			right: 5px
+	.btn
+		margin-top: 17px
+
+.make-an-offer-form__title
+	font-size: 18px
+	font-weight: 600
+
+.make-an-offer-form__subtitle
+	font-size: 14px
+	color: #616161
+	margin:
+		top: 12px
+		bottom: 16px
+
+.make-an-offer-form__label
+	display: block
+	font-size: 12px
+	margin: 
+		top: 14px
+		bottom: 12px
+	span
+		color: #838383
+
+.make-an-offer__how
+	display: none
+	position: absolute
+	width: 100%
+	height: 100%
+	background-color: #fff
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	padding: 33px 84px
+	.tabs-content__text-block
+		font-size: 12px
+		p
+			line-height: 2
+
+.make-an-offer__how-title
+	font-size: 18px
+	font-weight: 600
+	margin-top: 30px
+
+@import "media" // Всегда в конце
