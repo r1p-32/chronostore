@@ -14,6 +14,11 @@
 	.product-contacts
 		padding-left: 0
 
+	.faq-item
+		&.active
+			&:before
+				left: -93px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
 	.top-line
@@ -69,6 +74,11 @@
 		.product-model,
 		.product-subtitle
 			text-align: left
+
+	.faq-item
+		&.active
+			&:before
+				left: -15px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
@@ -146,6 +156,15 @@
 		width: 100%
 		margin: 0 auto
 		float: none
+
+	.inner-section
+		padding: 
+			top: 20px
+			bottom: 50px
+		margin-bottom: 50px
+
+	.knowledge-base
+		margin-bottom: 30px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)

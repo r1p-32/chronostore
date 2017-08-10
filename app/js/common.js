@@ -14,6 +14,14 @@ $(function() {
 		offset: 70
 	});
 
+	$('.faq-list__link').click(function(){
+		var questId = $(this).attr('href');
+		$('.faq-item.active').removeClass('active');
+		$(questId).addClass('active');
+	}).mPageScroll2id({
+		offset: 100
+	});
+
 	$('select').styler({
 		locale: 'en'
 	});
@@ -66,6 +74,14 @@ $(function() {
 
 	$('.close-cart-popup').click(function(){
 		$.magnificPopup.close();
+	});
+
+	$('.search-btn').click(function(){
+		$('.search-form').addClass('active').children('.search-input').focus();
+	});
+
+	$('.search-input').focusout(function(){
+		$(this).parent('.search-form').removeClass('active');
 	});
 
 });

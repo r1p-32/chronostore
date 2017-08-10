@@ -400,8 +400,10 @@ span.accent
 		vertical-align: bottom
 
 .main-mnu
+	position: relative
 	ul
 		@extend .inline-list
+		display: inline-block
 		li
 			margin-right: 25px
 			a
@@ -414,6 +416,42 @@ span.accent
 				border-bottom: 2px solid #fff
 				&:hover
 					border-color: $accent
+
+.search-btn
+	float: right
+	font-size: 24px
+	color: $main
+	vertical-align: middle
+	text-align: right
+	margin-top: -2px
+	&:hover
+		color: $accent
+	&:focus
+		color: $main
+
+.search-btn-reset
+	position: absolute
+	top: 10px
+	right: 10px
+	font-size: 14px
+	background-color: #fff
+	border: none
+	&:hover
+		color: $accent
+
+.search-form
+	width: 0
+	overflow: hidden
+	max-width: 407px
+	position: absolute
+	right: 0
+	top: -9px
+	transition: .7s
+	padding-bottom: 10px
+	&.active
+		width: 100%
+	.input
+		padding-right: 48px
 
 // ---- footer ----
 
@@ -655,6 +693,7 @@ span.accent
 	color: #000
 	text-align: center
 	margin-bottom: 10px
+	min-height: 455px
 	padding: 
 		top: 10px
 		bottom: 24px
@@ -1071,13 +1110,18 @@ span.accent
 		&:last-child
 			border: none
 
-.tabs-content__text-block
+.text-block
 	margin-top: 30px
+	&_12
+		font-size: 12px
+		line-height: 2
 
-.tabs-content__title
+.text-title
 	text-transform: uppercase
 	font-weight: 600
-	margin-bottom: 30px
+	margin-top: 30px
+	&_18
+		font-size: 18px
 
 .products-under
 	@extend .clear-list
@@ -1256,7 +1300,7 @@ span.accent
 	top: 0
 	bottom: 0
 	padding: 33px 84px
-	.tabs-content__text-block
+	.text-block
 		font-size: 12px
 		p
 			line-height: 2
@@ -1265,5 +1309,120 @@ span.accent
 	font-size: 18px
 	font-weight: 600
 	margin-top: 30px
+
+// ---- inner-section -----
+
+.inner-section
+	background-color: #fff
+	padding: 46px 15px 80px
+	font-size: 14px
+	line-height: 1.7
+	margin-bottom: 60px
+	strong
+		font-weight: 600
+	.text-title
+		margin-top: 28px
+	.text-block
+		margin-top: 28px
+		ul
+			margin: 0
+			list-style-type: none
+			li
+				position: relative
+				&:before
+					@extend .before
+					width: 8px
+					height: 8px
+					background-color: $accent
+					left: -37px
+					top: 7px
+	p
+		margin: 0
+
+// ---- knowledge-base ----
+
+.knowledge-base-title
+	font-size: 18px
+	font-weight: 600
+	margin-bottom: 12px
+
+.knowledge-base
+	@extend .clear-list
+	li
+		border-top: 1px solid $border
+		padding: 2px 0
+		&:last-child
+			border-bottom: 1px solid $border
+
+.knowledge-base__item
+	display: block
+	position: relative
+	padding: 
+		top: 8px 
+		right: 130px
+		bottom: 7px
+		left: 15px
+	color: #616161
+	border-right: 2px solid transparent
+	&:hover
+		font-weight: 600
+		color: $main
+		background-color: $mainbg-light
+		border-color: $accent
+		span
+			color: $main
+			font-size: 10px
+	span
+		position: absolute
+		right: 15px
+		top: 50%
+		transform: translateY(-50%)
+		font-size: 10px
+		font-weight: normal
+		font-size: 0
+		color: #c6c6c6
+		i
+			font-size: 25px
+			vertical-align: middle
+			margin-left: 5px
+			font-weight: normal
+
+// ---- faq ----
+
+.faq-block
+	border-bottom: 1px solid $border
+	padding-bottom: 14px
+	font-weight: 300
+
+.faq-list
+	@extend .clear-list
+	counter-reset: num
+	padding-top: 19px
+	li
+		margin-bottom: 1px
+		&:before
+			content: counter(num) '. '
+			counter-increment: num 
+			margin-right: 5px
+			font-weight: 600
+		.faq-list__link
+			font-weight: 300
+			color: $main
+		&:hover
+			&:before
+				color: $accent
+			.faq-list__link
+				font-weight: 600
+				text-decoration: underline
+
+.faq-item
+	position: relative
+	&.active
+		&:before
+			@extend .before
+			height: 100%
+			width: 2px
+			background-color: $accent
+			left: -110px
 
 @import "media" // Всегда в конце
