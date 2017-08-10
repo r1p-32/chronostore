@@ -15,8 +15,9 @@ $(function() {
 	});
 
 	$('.faq-list__link').click(function(){
+		$('.faq-item.active, .faq-list__link.active').removeClass('active');
+		$(this).addClass('active');
 		var questId = $(this).attr('href');
-		$('.faq-item.active').removeClass('active');
 		$(questId).addClass('active');
 	}).mPageScroll2id({
 		offset: 100

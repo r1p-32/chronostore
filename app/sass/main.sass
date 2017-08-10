@@ -1400,20 +1400,19 @@ span.accent
 	padding-top: 19px
 	li
 		margin-bottom: 1px
-		&:before
-			content: counter(num) '. '
-			counter-increment: num 
-			margin-right: 5px
-			font-weight: 600
 		.faq-list__link
 			font-weight: 300
 			color: $main
-		&:hover
 			&:before
-				color: $accent
-			.faq-list__link
+				content: counter(num) '. '
+				counter-increment: num 
+				margin-right: 5px
 				font-weight: 600
-				text-decoration: underline
+			&:hover,
+			&.active
+				font-weight: 600
+				&:before
+					color: $accent
 
 .faq-item
 	position: relative
