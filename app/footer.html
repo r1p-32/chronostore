@@ -83,10 +83,32 @@
 		<div class="add-to-card__title">Added to your Bag</div>
 		<div class="add-to-card__subtitle">Product has been added to your shopping bag.</div>
 		<ul class="add-to-card__btns">
-		<li><a href="javascript:void(0)" class="btn btn_light close-cart-popup">Continue Shopping</a></li>
+			<li><a href="javascript:void(0)" class="btn btn_light close-popup">Continue Shopping</a></li>
 			<li><a href="javascript:void(0)" class="btn btn_light">View My Bag</a></li>
 		</ul>
 	</div>
+	<form class="orders-and-returns">
+		<div class="orders-and-returns__title">orders and returns</div>
+		<label for="orderid" class="">Order ID <span class="accent">*</span></label>
+		<input type="text" name="orderid" class="input">
+		<div class="orders-and-returns__descr">Enter the billing last name and <br> Email/ZIP as in the order billing address.</div>
+		<label for="billing" class="">Billing Last Name <span class="accent">**</span></label>
+		<input type="text" name="billing" class="input">
+		<label for="find" class="">Find Order By: <span class="accent">*</span></label>
+		<select name="find" id="" class="orders-and-returns__select" data-placeholder="Choose">
+			<option value="">Oldest</option>
+			<option value="">Newest</option>
+			<option value="" checked>Name: A to Z</option>
+			<option value="">Name: Z to A</option>
+			<option value="">Price: Low to High</option>
+			<option value="">Price: High to Low</option>
+		</select>
+		<label for="email" class="">Email Address: <span class="accent">*</span></label>
+		<input type="text" name="email" class="input">
+		<strong>* Required Fields <span class="accent">*</span></strong>
+		<button type="submit" class="btn btn_accent">Continue</button>
+		<a href="javascript:void(0)" class="btn btn_light">Close</a>
+	</form>
 </div>
 
 <link rel="stylesheet" href="css/main.min.css">

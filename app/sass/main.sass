@@ -28,6 +28,9 @@
 span.accent
 	color: $accent
 
+strong
+	font-weight: 600
+
 .col-right
 	text-align: right
 .col-left
@@ -752,37 +755,6 @@ span.accent
 .products-sidebar
 	padding: 5px 16px 20px
 	margin-bottom: 10px
-	.jq-selectbox
-		width: 100%
-		.jq-selectbox__select
-			background: #fff
-			border-radius: 0
-			border-color: $border
-			box-shadow: none
-			height: 36px
-		.jq-selectbox__select-text
-			height: 35px
-			font-family: $default-font
-			font-size: 12px
-			color: $main
-			font-weight: 300
-		.jq-selectbox__trigger
-			border-left: none
-		.jq-selectbox__dropdown
-			box-shadow: 0px 22px 38px 0px rgba(0,0,0,0.22)
-			border-radius: 0
-		li
-			min-height: 32px
-			line-height: 32px
-			padding: 0 25px
-			font-family: $default-font
-			font-size: 12px
-			color: $main
-			font-weight: 300
-			&.selected,
-			&:hover
-				background-color: #f1f1f1
-				font-weight: 600
 	.jslider
 		margin-top: 24px
 		font-family: $default-font
@@ -822,6 +794,37 @@ span.accent
 	.btn
 		margin-top: 15px
 
+.jq-selectbox
+	width: 100%
+	.jq-selectbox__select
+		background: #fff
+		border-radius: 0
+		border-color: $border
+		box-shadow: none
+		height: 36px
+	.jq-selectbox__select-text
+		height: 35px
+		font-family: $default-font
+		font-size: 12px
+		color: $main
+		font-weight: 300
+	.jq-selectbox__trigger
+		border-left: none
+	.jq-selectbox__dropdown
+		box-shadow: 0px 22px 38px 0px rgba(0,0,0,0.22)
+		border-radius: 0
+		li
+			min-height: 32px
+			line-height: 32px
+			padding: 0 25px
+			font-family: $default-font
+			font-size: 12px
+			color: $main
+			font-weight: 300
+			&.selected,
+			&:hover
+				background-color: #f1f1f1
+				font-weight: 600
 .products-sidebar__title
 	font-size: 12px
 	color: $main
@@ -1300,15 +1303,30 @@ span.accent
 	top: 0
 	bottom: 0
 	padding: 33px 84px
+	.text-title
+		font-size: 14px
+		margin-top: 27px
 	.text-block
-		font-size: 12px
+		font-size: 14px
 		p
-			line-height: 2
+			line-height: 1.8
+			margin: 25px 0
 
 .make-an-offer__how-title
 	font-size: 18px
 	font-weight: 600
 	margin-top: 30px
+
+.make-an-offer__list
+	@extend .clear-list
+	counter-reset: num
+	li
+		margin-bottom: 5px
+		&:before
+			content: counter(num) '. '
+			counter-increment: num 
+			margin-right: 5px
+			color: $accent
 
 // ---- inner-section -----
 
@@ -1423,5 +1441,126 @@ span.accent
 			width: 2px
 			background-color: $accent
 			left: -110px
+
+// ---- contacts ----
+
+.contacts
+	padding-bottom: 0 !important
+
+.contacts-block
+	margin-bottom: 40px
+	font-size: 14px
+
+.contacts-title
+	font-size: 18px
+	font-weight: 600
+	line-height: 1.3
+	border-bottom: 1px solid $border
+	padding-bottom: 15px
+	margin-bottom: 25px
+
+.contacts-addr
+	font-size: 14px
+	font-weight: 600
+
+.contacts-list
+	@extend .clear-list
+	margin-top: 15px	
+	li
+		margin-bottom: 1px
+		.contacts-list__left
+			display: inline-block
+			width: 95px
+			&_long
+				width: 230px
+		.contacts-list__right
+			color: #616161
+		strong
+			font-weight: 600
+			color: $main
+
+.contact-form
+	.row
+		margin: 
+			left: -5px
+			right: -5px
+		.col-sm-6,
+		.col-sm-12
+			padding: 
+				left: 5px
+				right: 5px
+	.input
+		margin-top: 10px
+	.btn
+		margin-top: 18px
+
+.contact-form__descr
+	margin-bottom: 10px
+
+// ---- paypal-finance ----
+
+.paypal-finance
+	max-width: 650px
+	margin: 0 auto
+	padding-top: 70px
+	.text-block
+		padding: 0 30px
+	.btn
+		margin-top: 57px
+
+.paypal-finance__title
+	font-size: 30px
+	font-weight: bold
+	color: #009cde
+	text-align: center
+	margin-top: 70px
+	span
+		color: #003087
+
+.paypal-finance__subtitle
+	color: #009cde
+	text-align: center
+	line-height: 2
+	font-size: 16px
+	border-bottom: 1px solid $border
+	padding-bottom: 52px
+	margin-bottom: 35px
+
+// ---- order-and-returns
+
+.orders-and-returns
+	width: 100%
+	max-width: 410px
+	margin: 0 auto
+	background-color: #fff
+	padding: 41px 44px 25px
+	font-size: 12px
+	label,
+	strong
+		display: block
+		margin:
+			bottom: 14px
+			top: 12px
+	strong
+		text-align: right
+	.jq-selectbox
+		.jq-selectbox__select
+			height: 39px
+			line-height: 36px
+	.btn
+		margin-top: 15px
+ 
+.orders-and-returns__title
+	font-size: 24px
+	font-weight: 200
+	text-align: center
+	text-transform: uppercase
+	margin-bottom: 27px
+
+.orders-and-returns__descr
+	line-height: 2
+	margin-top: 19px
+	border-bottom: 1px solid $border
+	padding-bottom: 20px
 
 @import "media" // Всегда в конце

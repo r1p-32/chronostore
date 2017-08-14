@@ -73,7 +73,7 @@ $(function() {
 		$('.make-an-offer__how').fadeToggle();
 	});
 
-	$('.close-cart-popup').click(function(){
+	$('.close-popup').click(function(){
 		$.magnificPopup.close();
 	});
 

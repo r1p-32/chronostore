@@ -459,10 +459,21 @@
 		<div class="make-an-offer__how">
 			<div class="make-an-offer__title">Price Offer</div>
 			<div class="make-an-offer__how-title">How It Works</div>
+			<div class="text-title">WHAT'S PRICE OFFER?</div>
 			<div class="text-block">
-				<div class="text-title">FREE UNITED STATES SHIPPING</div>
-				<p>ChronoStore will pay for FREE Expedited Shipping for every order to the United States. Delivery time for Expedited Shipping generally can range from 2 to 6 business days. All items shipped are fully insured. Note that air and ground shipping times are measured in business days. USPS Next Day Air delivery option is available for an additional $20.00 to the United States.</p>
-				<p>You will receive a tracking number via email when your order is shipped from our store. United States Postal Service shipments can be tracked here at the USPS website. UPS shipments can be tracked here at the UPS website. FedEx shipments as well can be tracked at the FedEx website.</p>
+				<p>Price Offer helps you save money by making negotiation simple, fast, and pain-free. With Price Offer, you name your price on products you want, and customer service will accept, counter, or reject your offer, often very quickly. Then you check out, and voilà, you save money.</p>
+			</div>
+			<div class="text-title">HOW DOES THIS WORK?</div>
+			<div class="text-block">
+			<ul class="make-an-offer__list">
+				<li>Make an Offer on a product.</li>
+				<li>You will be notified by email when ChronoStore has accepted, countered, or rejected your offer.</li>
+				<li>You simply check out and await your goodies.</li>
+			</ul>
+			</div>
+			<div class="text-title">WHY DO YOU NEED MY EMAIL?</div>
+			<div class="text-block">
+				<p>ChronoStore needs your email to alert you of our response to your offer, and ChronoStore needs to know you're a real person.</p>
 			</div>
 			<div class="row">
 				<div class="col-sm-5">
