@@ -8,7 +8,7 @@ $(function() {
 		$(this).parent('.header-popup').toggleClass('active');
 	});
 
-	$('.footer-main__mnu').equalHeights();
+	$('.footer-main__mnu, .login-block').equalHeights();
 
 	$('.scroll-top').mPageScroll2id({
 		offset: 70
@@ -85,4 +85,10 @@ $(function() {
 		$(this).parent('.search-form').removeClass('active');
 	});
 
+});
+
+$(document).ready(function() {
+	$('.testimonials-item__text').dotdotdot({
+		after: "a.readmore"
+	});
 });

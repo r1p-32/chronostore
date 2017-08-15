@@ -34,6 +34,7 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/jqueryformstyler/jquery.formstyler.min.js',
 		'app/libs/magnific-popup/jquery.magnific-popup.min.js',
 		'app/libs/slick/slick.min.js',
+		'app/libs/dotdotdot/jquery.dotdotdot.min.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

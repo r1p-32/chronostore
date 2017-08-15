@@ -64,7 +64,7 @@ strong
 	font-size: 12px
 	color: #000
 	&:focus
-		border-color: #333
+		border-color: #b1b1b1
 	&_dark
 		background-color: $input-dark
 
@@ -108,6 +108,14 @@ strong
 		&:focus
 			background-color: $border-dark
 			color: #333
+	&_dark
+		background-color: #000
+		color: #fff
+		border-color: #000
+		&:hover
+			background-color: #000
+			color: #fff
+			border-color: #000
 
 .check-label
 	display: inline-block
@@ -354,6 +362,7 @@ strong
 	img
 		display: inline-block
 		max-height: 64px
+		max-width: 64px
 
 .product-small-item__text
 	float: left
@@ -1684,5 +1693,151 @@ strong
 			text-decoration: underline
 			&:hover
 				text-decoration: none
+
+// ---- testimonials ----
+
+.testimonials-wrap
+	position: relative
+	border-bottom: 1px solid $border
+	height: 142px
+
+.testimonials-text
+	height: 40px
+
+.testimonials-item
+	width: 100%
+
+.testimonials-item__img
+	display: table-cell
+	width: 95px
+	img
+		max-height: 141px
+
+.testimonials-item__descr
+	display: table-cell
+	vertical-align: top
+	padding:
+		left: 15px
+		top: 20px
+
+.testimonials-item__name
+	font-size: 14px
+	font-weight: 600
+	margin-bottom: 5px
+
+.testimonials-item__text
+	// height: 46px
+	font-size: 14px
+	// overflow: hidden
+
+// ---- account ----
+
+.account-sidebar
+	padding: 
+		left: 80px
+		right: 65px
+
+.account-title
+	@extend .contacts-title
+	&_14
+		font-size: 14px
+
+.account-mnu
+	@extend .clear-list
+	li
+		a
+			display: block
+			padding: 0 15px
+			color: #616161
+			line-height: 30px
+			&:hover
+				font-weight: 600
+		&.active
+			a
+				background-color: #f1f1f1
+				font-weight: 600
+
+.account-form
+	.row
+		margin: 
+			right: -5px
+			left: -5px
+	.col-sm-6,
+	.col-sm-12,
+	.col-sm-5,
+	.col-sm-3
+		padding: 
+			right: 5px
+			left: 5px
+	.input
+		margin-bottom: 10px
+	.check-label
+		font-size: 14px
+		line-height: 1
+	.btn
+		margin-top: 23px
+
+.account-form__descr
+	font-size: 14px
+	color: #616161
+
+.account-form__title
+	font-weight: 600
+	margin: 20px 0
+
+.account-form__required
+	border-top: 1px solid $border
+	text-align: right
+	font-size: 12px
+	font-weight: 600
+	padding: 10px
+	margin-top: 5px
+
+.account-form__forgot
+	text-align: right
+	a
+		font-size: 12px
+		color: $main
+		text-decoration: underline
+		margin-top: 5px
+		&:hover
+			color: $main
+			text-decoration: none
+
+// ---- account-login ----
+
+.login-block
+	position: relative
+	margin-bottom: 52px
+	.account-form__descr
+		margin-bottom: 20px
+
+.login-block__btn
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+
+.login-block__text
+	padding-top: 43px
+
+.btn_amazon
+	max-width: 234px
+	background-color: #37475a
+	color: #fff
+	i
+		font-size: 23px
+		font-weight: normal
+		vertical-align: bottom
+		line-height: 35px
+	&:hover
+		background-color: #455f7d
+		color: #fff
+
+// ---- account-password ----
+
+.forgot-form
+	.input
+		margin: 25px 0 29px
 
 @import "media" // Всегда в конце
