@@ -85,10 +85,27 @@ $(function() {
 		$(this).parent('.search-form').removeClass('active');
 	});
 
+	$('.cart-main__arrows li').click( function(){
+		var field = $(this).parents('ul').siblings('.input');
+		var testValue = field.val();
+		if($(this).hasClass('minus')){
+			testValue--;
+			if(testValue == 0){
+				testValue = 0;
+			}
+		}	
+		else{
+			testValue++;
+		}
+
+		if(testValue != 0)
+			field.val(testValue).trigger('change');
 });
 
-$(document).ready(function() {
-	$('.testimonials-item__text').dotdotdot({
-		after: "a.readmore"
-	});
 });
+
+// $(document).ready(function() {
+// 	$('.testimonials-item__text').dotdotdot({
+// 		after: "a.readmore"
+// 	});
+// });

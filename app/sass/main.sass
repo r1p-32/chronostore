@@ -116,6 +116,11 @@ strong
 			background-color: #000
 			color: #fff
 			border-color: #000
+	i
+		font-size: 21px
+		vertical-align: bottom
+		line-height: 40px
+		color: #7a7a7a
 
 .check-label
 	display: inline-block
@@ -1025,10 +1030,6 @@ strong
 		padding: 
 			right: 10px
 			bottom: 10px
-		i
-			font-size: 22px
-			vertical-align: middle
-			color: #7a7a7a
 
 .product-prices
 	margin-top: 34px
@@ -1341,7 +1342,7 @@ strong
 
 .inner-section
 	background-color: #fff
-	padding: 46px 15px 80px
+	padding: 46px 0px 80px
 	font-size: 14px
 	line-height: 1.7
 	margin-bottom: 60px
@@ -1830,6 +1831,7 @@ strong
 		font-weight: normal
 		vertical-align: bottom
 		line-height: 35px
+		color: #fff
 	&:hover
 		background-color: #455f7d
 		color: #fff
@@ -1839,5 +1841,193 @@ strong
 .forgot-form
 	.input
 		margin: 25px 0 29px
+
+// ---- cart ----
+
+.cart__or
+	font-size: 14px
+	text-align: center
+	text-transform: uppercase
+	line-height: 41px
+
+.cart__btn-list
+	@extend .inline-list
+	display: flex
+	justify-content: space-between
+	li
+		width: 49%
+		width: calc(50% - 5px)
+
+.cart-main
+	width: 100%
+	margin-top: 33px
+	tr
+		border-bottom: 1px solid $border
+	td
+		text-align: center
+		&:nth-child(2)
+			text-align: left
+			padding: 0 64px
+	thead
+		td
+			height: 34px
+			font-size: 12px
+			text-transform: uppercase
+			font-weight: 600
+			color: #8c8c8c
+	tbody
+		td
+			height: 150px
+
+.cart-main__img
+	width: 12%
+	a
+		display: block
+		width: 100%
+		max-height: 120px
+		img
+			max-width: 100%
+			max-height: 120px
+
+.cart-main__descr
+	width: 35%
+
+.cart-main__name
+	font-size: 14px
+	font-weight: 600
+	color: #000
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
+
+.cart-main__model
+	font-size: 12px
+	color: #8c8c8c
+	margin: 12px 0
+
+.cart-main__descr
+	font-size: 12px
+	color: #000
+	line-height: 1
+	height: 24px
+	overflow: hidden
+
+.cart-main__sky
+	width: 15%
+	font-size: 16px
+	font-weight: 300
+
+.cart-main__qty
+	width: 18%
+	.clearfix
+		display: inline-block
+
+.cart-main__input
+	width: 50px
+	text-align: center
+	padding: 0
+	vertical-align: middle
+	float: left
+
+.cart-main__arrows
+	@extend .clear-list
+	display: inline-block
+	line-height: 20px
+	float: left
+	margin-left: 10px
+	li
+		cursor: pointer
+		color: #c7c7c7
+		user-select: none
+		&:hover
+			color: $main
+
+.cart-main__total
+	width: 14%
+	font-size: 18px
+	color: #000
+
+.cart-main__delete
+	width: 6%
+	a
+		font-size: 20px
+		color: #616161
+		&:hover
+			color: #000
+
+.cart-result__item
+	padding-top: 19px
+
+.cart-subtotal
+	font-size: 18px
+	font-weight: 300
+	text-align: right
+	color: #8c8c8c
+	padding-right: 22px
+
+.cart-total
+	display: table
+	width: 100%
+
+.cart-total__left
+	display: table-cell
+	font-size: 14px
+	color: #000
+	vertical-align: bottom
+	line-height: 2
+
+.cart-total__right
+	display: table-cell
+	font-size: 24px
+	vertical-align: bottom
+	text-align: right
+	padding-right: 22px
+
+.cart-checkout__btn
+	margin-top: 35px
+
+.financing-program
+	padding: 0 20px
+	float: left
+	width: 58%
+
+.financing-program__title
+	font-size: 16px
+
+.financing-program__text
+	font-size: 12px
+	line-height: 18px
+	color: #616161
+	margin-top: 13px
+
+.financing-program__link
+	display: inline-block
+	color: $accent
+	font-size: 13px
+	text-decoration: underline
+	margin-top: 12px
+	&:hover,
+	&:focus
+		text-decoration: none
+		color: $accent
+
+.cart-promocode
+	float: right
+	width: 42%
+	padding: 
+		top: 7px
+		left: 34px
+		right: 34px
+		bottom: 20px
+	border-left: 1px solid $border
+	border-right: 1px solid $border
+	font-size: 12px
+	color: #616161
+	.input
+		text-align: center
+		height: 55px
+		margin: 
+			top: 9px
+			bottom: 16px
 
 @import "media" // Всегда в конце

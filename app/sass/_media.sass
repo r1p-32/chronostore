@@ -86,6 +86,19 @@
 	.account-sidebar
 		padding: 0
 
+	.inner-section
+		padding: 
+			top: 20px
+			bottom: 50px
+			right: 15px
+			left: 15px
+		margin-bottom: 50px
+
+	.cart-promocode
+		padding: 
+			left: 15px
+			right: 15px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
 	.footer-main
@@ -163,12 +176,6 @@
 		margin: 0 auto
 		float: none
 
-	.inner-section
-		padding: 
-			top: 20px
-			bottom: 50px
-		margin-bottom: 50px
-
 	.knowledge-base
 		margin-bottom: 30px
 
@@ -193,6 +200,46 @@
 
 	.btn_amazon
 		max-width: 100%
+
+	.cart-main
+		border-top: 1px solid $border
+		thead
+			display: none
+		tbody
+			tr
+				display: block
+				position: relative
+			td
+				display: block
+				width: 100%
+				height: auto
+				padding: 0 15px
+				margin-top: 10px
+				&:nth-child(2)
+					text-align: center
+					padding: 0 15px
+			.cart-main__delete
+				position: absolute
+				width: 50px
+				height: 50px
+				right: 0
+				top: 0
+				z-index: 1
+				padding: 0
+				margin: 0
+				a
+					font-size: 30px
+			.cart-main__total
+				padding-bottom: 10px
+
+	.financing-program,
+	.cart-promocode
+		width: 100%
+		padding: 0
+	
+	.cart-promocode
+		border: none
+		margin-top: 20px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
