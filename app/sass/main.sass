@@ -352,6 +352,7 @@ strong
 	padding: 10px
 	width: 100%
 	color: $main
+	line-height: 1.2
 	&:hover
 		color: $main
 		background-color: $border
@@ -2029,5 +2030,184 @@ strong
 		margin: 
 			top: 9px
 			bottom: 16px
+
+// ---- checkout ----
+
+.checkout
+	padding: 
+		left: 95px
+		right: 95px
+
+.checkout-main
+	padding: 0 15px
+	width: 67%
+	float: left
+
+.checkout-right
+	padding: 0 15px
+	width: 33%
+	float: left
+	.account-title
+		padding-left: 14px
+
+.checkout-title__login
+	font-weight: normal
+	font-size: 12px
+	float: right
+	padding-right: 20px
+	a
+		color: $accent
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+			color: $accent
+
+.checkout-form
+	padding-left: 27px
+	.row
+		margin: 
+			right: -5px
+			left: -5px
+		.col-sm-6,
+		.col-sm-12
+			padding: 
+				right: 5px
+				left: 5px
+	.input
+		margin-bottom: 10px
+	.btn
+		margin-top: 15px
+	.jq-selectbox 
+		.jq-selectbox__select
+			height: 39px
+			margin-bottom: 10px
+		.jq-selectbox__select-text
+			height: 39px
+			line-height: 38px
+
+.checkout-form__label
+	font-size: 12px
+	margin-bottom: 11px
+
+.checkout-title
+	font-size: 14px
+	text-transform: uppercase
+	border-bottom: 1px solid $border
+	margin-top: 40px
+	padding-bottom: 13px
+
+.checkout-step
+	padding-top: 18px
+
+.checkout-form__title
+	font-size: 16px
+	margin-bottom: 16px
+
+.radio-list
+	@extend .clear-list
+	padding:
+		left: 24px
+		bottom: 15px
+	li
+		margin-bottom: 16px
+
+.radio-label
+	display: block
+	font-size: 12px
+	height: 11px
+	line-height: 1
+	padding-left: 29px
+	background-image: url(../img/radio.png)
+	background-repeat: no-repeat
+	cursor: pointer
+
+.radio:checked + .radio-label
+	background-position: 0 -11px
+
+.checkout-sidebar
+	border: 1px solid $border
+	border-top: none
+	margin-top: -25px
+	padding: 0 20px 20px
+	.product-small-item
+		padding: 
+			left: 0
+			right: 0
+		&:hover
+			background-color: #fff
+	.product-small-item__text
+		width: calc(100% - 145px)
+	.product-small-item__amount
+		width: 65px
+		text-align: center
+		float: left
+		line-height: 68px
+
+.checkout-subtotal
+	@extend .clear-list
+	padding-top: 15px
+	font-size: 12px
+	color: #000
+	li
+		margin-bottom: 4px
+		span
+			float: right
+			font-size: 14px
+			font-weight: 300
+			color: $main
+
+.checkout-total
+	padding: 15px 0 24px
+	font-size: 14px
+	text-transform: uppercase
+	font-weight: 600
+	color: #000
+	line-height: 18px
+	span
+		float: right
+		font-size: 18px
+		font-weight: normal
+
+.payment-message
+	max-width: 540px
+	background-color: #fff
+	text-align: center
+	margin: 0 auto
+	padding: 47px 15px 30px
+	.btn
+		max-width: 240px
+		margin-top: 30px
+
+.payment-message__icon
+	display: block
+	height: 80px
+	width: 80px
+	text-align: center
+	line-height: 78px
+	border: 3px solid $border
+	border-radius: 50%
+	font-size: 60px
+	color: $border
+	margin: 0 auto
+
+.payment-message__title
+	font-size: 24px
+	text-transform: uppercase
+	margin: 35px 0
+
+.payment-message__orders
+	font-size: 16px
+	color: #919191
+	font-weight: 300
+	span
+		font-weight: normal
+		color: $main
+
+.payment-message__text
+	color: #919191
+	font-size: 12px
+	font-weight: 300
+	max-width: 410px
+	margin: 7px auto 0
 
 @import "media" // Всегда в конце
