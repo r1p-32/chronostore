@@ -1738,26 +1738,63 @@ strong
 	padding: 
 		left: 80px
 		right: 65px
+	.product-small-list
+		margin-bottom: 15px
+		li
+			margin-bottom: 7px
+			border: none
+	.product-small-item
+		padding: 4px
 
 .account-title
 	@extend .contacts-title
 	&_14
 		font-size: 14px
+	&_16
+		font-size: 16px
+	&_ttu
+		text-transform: uppercase
 
 .account-mnu
-	@extend .clear-list
+	@extend .clear-list	
 	li
 		a
 			display: block
 			padding: 0 15px
 			color: #616161
 			line-height: 30px
+			white-space: nowrap
 			&:hover
 				font-weight: 600
 		&.active
 			a
 				background-color: #f1f1f1
 				font-weight: 600
+
+.account-sidebar__block
+	padding-top: 23px
+
+.last-ordered-descr
+	font-size: 12px
+	color: #848484
+	margin-top: -18px
+
+.last-ordered-links
+	border-top: 1px solid $border
+	padding-top: 10px
+	.last-ordered__all
+		display: inline-block
+		float: left
+		color: $accent
+		text-decoration: underline
+		font-size: 13px
+		padding: 0 5px
+		line-height: 39px
+		&:hover
+			text-decoration: none
+	.btn
+		float: right
+		width: 138px
 
 .account-form
 	.row
@@ -1842,6 +1879,187 @@ strong
 .forgot-form
 	.input
 		margin: 25px 0 29px
+
+// ---- account-dashboard ----
+
+.account-hello
+	font-size: 12px
+	color: #848484
+	padding: 0 28px
+	strong
+		color: $main
+		font-size: 14px
+		display: block 
+		margin-bottom: 7px
+
+.account-block
+	padding-top: 37px
+	.account-title
+		font-weight: normal
+		font-size: 14px
+		text-transform: uppercase
+
+.account-title__link
+	float: right
+	text-transform: none
+	color: $accent
+	text-decoration: underline
+	font-size: 12px
+	font-weight: normal
+	line-height: 18px
+	&:hover,
+	&:focus
+		text-decoration: none
+		color: $accent
+
+.recent-orders
+	width: 100%
+	td
+		border: 1px solid #bfbfbf
+		text-align: center
+		font-size: 12px
+		height: 22px
+		strong
+			display: none
+	tr
+		&:nth-child(odd)
+			td
+				background-color: #f8f8f8
+	.recent-orders__head
+		td
+			text-align: center
+			height: 41px
+			font-weight: 600
+	a
+		text-decoration: underline
+		color: #777
+		&:hover
+			text-decoration: none
+	.accent
+		color: $accent
+		&:hover
+			color: $accent
+	.succes
+		color: #7da789
+		&:hover
+			color: #7da789
+
+.account-inner
+	padding-left: 30px
+
+.account-information
+	.input
+		background-color: #fafafa
+		border-color: #d1d1d1
+		max-width: 240px
+		margin-top: 12px
+		float: left
+		&::-webkit-input-placeholder
+			color: #a8adb3
+		&:-moz-placeholder
+			color: #a8adb3
+		&::-moz-placeholder
+			color: #a8adb3
+		&:-ms-input-placeholder
+			color: #a8adb3
+
+.account-information__left
+	float: left
+	width: 65%
+
+.account-information__right
+	float: left
+	width: 35%
+
+.account-information__title
+	font-size: 16px
+
+.account-information__descr
+	font-size: 12px
+	margin-top: 3px
+	line-height: 27px
+	i
+		color: $accent
+		font-size: 16px
+		vertical-align: super
+
+.account-information__link
+	display: inline-block
+	color: $accent
+	text-decoration: underline
+	line-height: 39px
+	margin-top: 12px
+	margin-left: 20px
+	font-size: 12px
+	&:hover,
+	&:focus
+		color: $accent
+		text-decoration: none
+
+.newsletter-switcher
+	padding-top: 20px
+
+.newsletter-switcher__btn
+	display: inline-block
+	position: relative
+	width: 41px
+	height: 26px
+	background-color: $border
+	border: 1px solid $border-dark
+	border-radius: 10em
+	&:before
+		@extend .before
+		width: 27px
+		height: 27px
+		background-color: #fff
+		border: 1px solid $border-dark
+		border-radius: 50%
+		top: -2px
+		left: -2px
+		transition: .2s
+	&.active
+		background-color: $accent
+		&:before
+			transform: translateX(17px)
+
+.newsletter-switcher__text
+	display: inline-block
+	line-height: 26px
+	vertical-align: top
+	margin-left: 15px
+	font-size: 12px
+
+.account-addres-book
+	padding-bottom: 35px
+	border-bottom: 1px solid $border
+
+.account-addres-book__title
+	font-size: 16px
+	i
+		color: $accent
+		font-size: 24px
+		vertical-align: middle
+
+.account-addres-book__list
+	@extend .clear-list
+	display: inline-block
+	width: 270px
+	color: #919191
+
+.account-addres-book__edit-link
+	display: block
+	font-size: 13px
+	color: $accent
+	text-decoration: underline
+	margin-top: 17px
+	&:hover,
+	&:focus
+		color: $accent
+
+.account-addres-book__descr
+	color: #919191
+	font-size: 12px
+	margin-top: 30px
 
 // ---- cart ----
 
@@ -1954,7 +2172,7 @@ strong
 		font-size: 20px
 		color: #616161
 		&:hover
-			color: #000
+			color: $accent
 
 .cart-result__item
 	padding-top: 19px
@@ -1985,7 +2203,7 @@ strong
 	padding-right: 22px
 
 .cart-checkout__btn
-	margin-top: 35px
+	margin-top: 37px
 
 .financing-program
 	padding: 0 20px
@@ -2209,5 +2427,39 @@ strong
 	font-weight: 300
 	max-width: 410px
 	margin: 7px auto 0
+
+// ---- account-edit ----
+
+.account-edit-form
+	.account-form__required
+		margin-top: 35px
+	.btn
+		margin-top: 15px
+	.jq-selectbox 
+		.jq-selectbox__select
+			height: 39px
+			margin-bottom: 10px
+		.jq-selectbox__select-text
+			height: 39px
+			line-height: 38px
+
+.account-edit-form__inner
+	padding: 0 27px
+	.row
+		margin: 
+			right: -5px
+			left: -5px
+		.col-sm-6,
+		.col-sm-12
+			padding: 
+				left: 5px
+				right: 5px
+	.input
+		margin-bottom: 10px
+
+.account-edit-form__descr
+	font-size: 12px
+	color: #848484
+	margin-top: 20px
 
 @import "media" // Всегда в конце

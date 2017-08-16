@@ -102,6 +102,10 @@ $(function() {
 			field.val(testValue).trigger('change');
 });
 
+	$('.newsletter-switcher__btn').click(function(){
+		$(this).toggleClass('active');
+	});
+
 });
 
 // $(document).ready(function() {

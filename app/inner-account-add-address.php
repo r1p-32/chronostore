@@ -18,9 +18,9 @@
 				<aside class="account-sidebar">
 					<div class="account-title">Account:</div>
 					<ul class="account-mnu">
-						<li class="active"><a href="javascript:void(0)">Account Dashboard</a></li>
+						<li><a href="javascript:void(0)">Account Dashboard</a></li>
 						<li><a href="javascript:void(0)">Account Information</a></li>
-						<li><a href="javascript:void(0)">Address Book</a></li>
+						<li class="active"><a href="javascript:void(0)">Address Book</a></li>
 						<li><a href="javascript:void(0)">My Orders</a></li>
 						<li><a href="javascript:void(0)">Billing Agreements</a></li>
 						<li><a href="javascript:void(0)">My Wishlist</a></li>
@@ -98,12 +98,86 @@
 				</aside>
 			</div>
 			<div class="col-sm-8 col-md-7">
-				
+				<div class="account-title">Add new address:</div>
+				<form action="" class="account-edit-form">
+					<div class="account-block">
+						<div class="account-title">Contact Information:</div>
+						<div class="account-edit-form__inner">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="checkout-form__label">First Name <span class="accent">*</span></div>
+									<input type="text" name="first-name" class="input" plaseholder="John">
+								</div>
+								<div class="col-sm-6">
+									<div class="checkout-form__label">Last Name <span class="accent">*</span></div>
+									<input type="text" name="ast-name" class="input" plaseholder="Doe">
+								</div>
+								<div class="col-sm-12">
+									<div class="checkout-form__label">Company</div>
+									<input type="text" name="email" class="input" plaseholder="mymail@gmail.com">
+								</div>
+								<div class="col-sm-6">
+									<div class="checkout-form__label">Telephone <span class="accent">*</span></div>
+									<input type="text" name="phone" class="input">
+								</div>
+								<div class="col-sm-6">
+									<div class="checkout-form__label">Fax</div>
+									<input type="text" name="fax" class="input" plaseholder="Doe">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="account-block">
+						<div class="account-title">Address</div>
+						<div class="account-edit-form__inner">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="checkout-form__label">Address 1 <span class="accent">*</span></div>
+									<input type="text" name="adress-1" class="input">
+								</div>
+								<div class="col-sm-6">
+									<div class="checkout-form__label">Address 2</div>
+									<input type="text" name="addres-2" class="input">
+								</div>
+								<div class="col-sm-6">
+									<div class="checkout-form__label">City <span class="accent">*</span></div>
+									<input type="text" name="city" class="input">
+								</div>
+								<div class="col-sm-6">
+									<div class="checkout-form__label">State/Province <span class="accent">*</span></div>
+									<select name="country" id="" class="account-edit-form" data-placeholder="Choose">
+										<option value="">Region, State or Province</option>
+									</select>
+								</div>
+								<div class="col-sm-6">
+									<div class="checkout-form__label">Zip Code <span class="accent">*</span></div>
+									<input type="text" name="zip" class="input">
+								</div>
+								<div class="col-sm-6">
+									<div class="checkout-form__label">Country <span class="accent">*</span></div>
+									<select name="country" id="" class="account-edit-form" data-placeholder="Choose">
+										<option value="">United States</option>
+									</select>
+								</div>
+								<div class="col-sm-12">
+									<div class="account-edit-form__descr">For security reasons, if you’re paying with the credit card, we will only be able to ship to the billing address. We apologize for any inconvenience.</div>
+								</div>
+							</div>
+						</div>
+						<div class="account-form__required">* Required Fields <span class="accent">*</span></div>
+						<div class="row">
+							<div class="col-sm-3">
+								<a href="javascript:void(0)" class="btn btn_light">Back</a>
+							</div>
+							<div class="col-sm-5 col-sm-offset-4">
+								<button type="submit" class="btn btn_accent">Save</button>
+							</div>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-</div>
 
 
-<?php include 'footer.html'; ?>
+	<?php include 'footer.html'; ?>
