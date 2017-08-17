@@ -28,6 +28,9 @@
 span.accent
 	color: $accent
 
+strong
+	font-weight: 600
+
 .col-right
 	text-align: right
 .col-left
@@ -61,7 +64,7 @@ span.accent
 	font-size: 12px
 	color: #000
 	&:focus
-		border-color: #333
+		border-color: #b1b1b1
 	&_dark
 		background-color: $input-dark
 
@@ -105,6 +108,19 @@ span.accent
 		&:focus
 			background-color: $border-dark
 			color: #333
+	&_dark
+		background-color: #000
+		color: #fff
+		border-color: #000
+		&:hover
+			background-color: #000
+			color: #fff
+			border-color: #000
+	i
+		font-size: 21px
+		vertical-align: bottom
+		line-height: 40px
+		color: #7a7a7a
 
 .check-label
 	display: inline-block
@@ -336,6 +352,7 @@ span.accent
 	padding: 10px
 	width: 100%
 	color: $main
+	line-height: 1.2
 	&:hover
 		color: $main
 		background-color: $border
@@ -351,6 +368,7 @@ span.accent
 	img
 		display: inline-block
 		max-height: 64px
+		max-width: 64px
 
 .product-small-item__text
 	float: left
@@ -400,8 +418,10 @@ span.accent
 		vertical-align: bottom
 
 .main-mnu
+	position: relative
 	ul
 		@extend .inline-list
+		display: inline-block
 		li
 			margin-right: 25px
 			a
@@ -414,6 +434,42 @@ span.accent
 				border-bottom: 2px solid #fff
 				&:hover
 					border-color: $accent
+
+.search-btn
+	float: right
+	font-size: 24px
+	color: $main
+	vertical-align: middle
+	text-align: right
+	margin-top: -2px
+	&:hover
+		color: $accent
+	&:focus
+		color: $main
+
+.search-btn-reset
+	position: absolute
+	top: 10px
+	right: 10px
+	font-size: 14px
+	background-color: #fff
+	border: none
+	&:hover
+		color: $accent
+
+.search-form
+	width: 0
+	overflow: hidden
+	max-width: 407px
+	position: absolute
+	right: 0
+	top: -9px
+	transition: .7s
+	padding-bottom: 10px
+	&.active
+		width: 100%
+	.input
+		padding-right: 48px
 
 // ---- footer ----
 
@@ -655,6 +711,7 @@ span.accent
 	color: #000
 	text-align: center
 	margin-bottom: 10px
+	min-height: 455px
 	padding: 
 		top: 10px
 		bottom: 24px
@@ -713,37 +770,6 @@ span.accent
 .products-sidebar
 	padding: 5px 16px 20px
 	margin-bottom: 10px
-	.jq-selectbox
-		width: 100%
-		.jq-selectbox__select
-			background: #fff
-			border-radius: 0
-			border-color: $border
-			box-shadow: none
-			height: 36px
-		.jq-selectbox__select-text
-			height: 35px
-			font-family: $default-font
-			font-size: 12px
-			color: $main
-			font-weight: 300
-		.jq-selectbox__trigger
-			border-left: none
-		.jq-selectbox__dropdown
-			box-shadow: 0px 22px 38px 0px rgba(0,0,0,0.22)
-			border-radius: 0
-		li
-			min-height: 32px
-			line-height: 32px
-			padding: 0 25px
-			font-family: $default-font
-			font-size: 12px
-			color: $main
-			font-weight: 300
-			&.selected,
-			&:hover
-				background-color: #f1f1f1
-				font-weight: 600
 	.jslider
 		margin-top: 24px
 		font-family: $default-font
@@ -783,6 +809,37 @@ span.accent
 	.btn
 		margin-top: 15px
 
+.jq-selectbox
+	width: 100%
+	.jq-selectbox__select
+		background: #fff
+		border-radius: 0
+		border-color: $border
+		box-shadow: none
+		height: 36px
+	.jq-selectbox__select-text
+		height: 35px
+		font-family: $default-font
+		font-size: 12px
+		color: $main
+		font-weight: 300
+	.jq-selectbox__trigger
+		border-left: none
+	.jq-selectbox__dropdown
+		box-shadow: 0px 22px 38px 0px rgba(0,0,0,0.22)
+		border-radius: 0
+		li
+			min-height: 32px
+			line-height: 32px
+			padding: 0 25px
+			font-family: $default-font
+			font-size: 12px
+			color: $main
+			font-weight: 300
+			&.selected,
+			&:hover
+				background-color: #f1f1f1
+				font-weight: 600
 .products-sidebar__title
 	font-size: 12px
 	color: $main
@@ -974,10 +1031,6 @@ span.accent
 		padding: 
 			right: 10px
 			bottom: 10px
-		i
-			font-size: 22px
-			vertical-align: middle
-			color: #7a7a7a
 
 .product-prices
 	margin-top: 34px
@@ -1071,13 +1124,18 @@ span.accent
 		&:last-child
 			border: none
 
-.tabs-content__text-block
+.text-block
 	margin-top: 30px
+	&_12
+		font-size: 12px
+		line-height: 2
 
-.tabs-content__title
+.text-title
 	text-transform: uppercase
 	font-weight: 600
-	margin-bottom: 30px
+	margin-top: 30px
+	&_18
+		font-size: 18px
 
 .products-under
 	@extend .clear-list
@@ -1256,14 +1314,1267 @@ span.accent
 	top: 0
 	bottom: 0
 	padding: 33px 84px
-	.tabs-content__text-block
-		font-size: 12px
+	.text-title
+		font-size: 14px
+		margin-top: 27px
+	.text-block
+		font-size: 14px
 		p
-			line-height: 2
+			line-height: 1.8
+			margin: 25px 0
 
 .make-an-offer__how-title
 	font-size: 18px
 	font-weight: 600
 	margin-top: 30px
+
+.make-an-offer__list
+	@extend .clear-list
+	counter-reset: num
+	li
+		margin-bottom: 5px
+		&:before
+			content: counter(num) '. '
+			counter-increment: num 
+			margin-right: 5px
+			color: $accent
+
+// ---- inner-section -----
+
+.inner-section
+	background-color: #fff
+	padding: 46px 0px 80px
+	font-size: 14px
+	line-height: 1.7
+	margin-bottom: 60px
+	strong
+		font-weight: 600
+	.text-title
+		margin-top: 28px
+	.text-block
+		margin-top: 28px
+		ul
+			margin: 0
+			list-style-type: none
+			li
+				position: relative
+				&:before
+					@extend .before
+					width: 8px
+					height: 8px
+					background-color: $accent
+					left: -37px
+					top: 7px
+	p
+		margin: 0
+
+// ---- knowledge-base ----
+
+.knowledge-base-title
+	font-size: 18px
+	font-weight: 600
+	margin-bottom: 12px
+
+.knowledge-base
+	@extend .clear-list
+	li
+		border-top: 1px solid $border
+		padding: 2px 0
+		&:last-child
+			border-bottom: 1px solid $border
+
+.knowledge-base__item
+	display: block
+	position: relative
+	padding: 
+		top: 8px 
+		right: 130px
+		bottom: 7px
+		left: 15px
+	color: #616161
+	border-right: 2px solid transparent
+	&:hover
+		font-weight: 600
+		color: $main
+		background-color: $mainbg-light
+		border-color: $accent
+		span
+			color: $main
+			font-size: 10px
+	span
+		position: absolute
+		right: 15px
+		top: 50%
+		transform: translateY(-50%)
+		font-size: 10px
+		font-weight: normal
+		font-size: 0
+		color: #c6c6c6
+		i
+			font-size: 25px
+			vertical-align: middle
+			margin-left: 5px
+			font-weight: normal
+
+// ---- faq ----
+
+.faq-block
+	border-bottom: 1px solid $border
+	padding-bottom: 14px
+	font-weight: 300
+
+.faq-list
+	@extend .clear-list
+	counter-reset: num
+	padding-top: 19px
+	li
+		margin-bottom: 1px
+		.faq-list__link
+			font-weight: 300
+			color: $main
+			&:before
+				content: counter(num) '. '
+				counter-increment: num 
+				margin-right: 5px
+				font-weight: 600
+			&:hover,
+			&.active
+				font-weight: 600
+				&:before
+					color: $accent
+
+.faq-item
+	position: relative
+	&.active
+		&:before
+			@extend .before
+			height: 100%
+			width: 2px
+			background-color: $accent
+			left: -110px
+
+// ---- contacts ----
+
+.contacts
+	padding-bottom: 0 !important
+
+.contacts-block
+	margin-bottom: 40px
+	font-size: 14px
+
+.contacts-title
+	font-size: 18px
+	font-weight: 600
+	line-height: 1.3
+	border-bottom: 1px solid $border
+	padding-bottom: 15px
+	margin-bottom: 25px
+
+.contacts-addr
+	font-size: 14px
+	font-weight: 600
+
+.contacts-list
+	@extend .clear-list
+	margin-top: 15px	
+	li
+		margin-bottom: 1px
+		.contacts-list__left
+			display: inline-block
+			width: 95px
+			&_long
+				width: 230px
+		.contacts-list__right
+			color: #616161
+		strong
+			font-weight: 600
+			color: $main
+
+.contact-form
+	.row
+		margin: 
+			left: -5px
+			right: -5px
+		.col-sm-6,
+		.col-sm-12
+			padding: 
+				left: 5px
+				right: 5px
+	.input
+		margin-top: 10px
+	.btn
+		margin-top: 18px
+
+.contact-form__descr
+	margin-bottom: 10px
+
+// ---- paypal-finance ----
+
+.paypal-finance
+	max-width: 650px
+	margin: 0 auto
+	padding-top: 70px
+	.text-block
+		padding: 0 30px
+	.btn
+		margin-top: 57px
+
+.paypal-finance__title
+	font-size: 30px
+	font-weight: bold
+	color: #009cde
+	text-align: center
+	margin-top: 70px
+	span
+		color: #003087
+
+.paypal-finance__subtitle
+	color: #009cde
+	text-align: center
+	line-height: 2
+	font-size: 16px
+	border-bottom: 1px solid $border
+	padding-bottom: 52px
+	margin-bottom: 35px
+
+// ---- order-and-returns
+
+.orders-and-returns
+	width: 100%
+	max-width: 410px
+	margin: 0 auto
+	background-color: #fff
+	padding: 41px 44px 25px
+	font-size: 12px
+	label,
+	strong
+		display: block
+		margin:
+			bottom: 14px
+			top: 12px
+	strong
+		text-align: right
+	.jq-selectbox
+		.jq-selectbox__select
+			height: 39px
+			line-height: 36px
+	.btn
+		margin-top: 15px
+ 
+.orders-and-returns__title
+	font-size: 24px
+	font-weight: 200
+	text-align: center
+	text-transform: uppercase
+	margin-bottom: 27px
+
+.orders-and-returns__descr
+	line-height: 2
+	margin-top: 19px
+	border-bottom: 1px solid $border
+	padding-bottom: 20px
+
+// ---- about ----
+
+.about
+	.text-title
+		border-bottom: 1px solid $border
+		margin-top: 33px
+		padding-bottom: 12px
+
+
+.about-form
+	background-color: $mainbg-light
+	padding: 19px 30px 25px
+
+.about-form__title
+	font-size: 18px
+	font-weight: 600
+	margin-bottom: 4px
+
+.about-subscribe
+	position: relative
+	.input
+		height: 49px
+		padding-right: 55px
+
+.about-subscribe__btn
+	@extend .footer-subscribe__btn
+	background-color: $accent
+	&:hover
+		background-color: $accent-dark
+
+.about-video-container
+	border-top: 1px solid $border
+	border-bottom: 1px solid $border
+	padding: 
+		top: 25px
+		bottom: 35px
+	margin-top: 24px
+
+.about-video
+	position: relative
+	padding-bottom: 54%
+	height: 0
+	iframe
+		position: absolute
+		top: 0
+		right: 0
+		left: 0
+
+.about__small-descr
+	font-size: 12px
+	strong
+		font-size: 14px
+
+// ---- 404 ----
+
+.content-404
+	text-align: center
+	background-image: url('../img/404.jpg')
+	background-size: cover
+	background-position: center
+	padding: 60px 0 160px
+	color: #fff
+	.btn
+		max-width: 234px
+		margin: 22px 0px 11px
+
+.content-404__main
+	font-size: 188px
+	font-family: 'MontserratHairline', sans-serif
+
+.content-404__title
+	font-size: 30px
+	font-weight: 900
+	text-transform: uppercase
+	margin-top: 45px
+
+.content-404__subtitle
+	font-size: 12px
+	text-transform: uppercase
+	font-weight: 900
+	margin-top: 27px
+
+.content-404__descr
+	color: #9e9e9e
+	font-size: 12px
+	line-height: 1.6
+	margin-top: 8px
+	&_white
+		color: #fff
+
+.content-404__small-title
+	font-size: 18px
+	font-weight: 900
+	position: relative
+	text-transform: uppercase
+	margin-top: 27px
+	padding-top: 28px
+	&:before
+		@extend .before
+		width: 50px
+		height: 1px
+		background-color: #9e9e9e
+		top: 0
+		left: 0
+		right: 0
+		margin: 0 auto
+
+.content-404__links
+	@extend .inline-list
+	padding-top: 10px
+	li
+		&:first-child
+			border-right: 1px solid #fff
+			line-height: 1
+			padding-right: 5px
+		a
+			font-size: 12px
+			color: #fff
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+
+// ---- testimonials ----
+
+.testimonials-wrap
+	position: relative
+	border-bottom: 1px solid $border
+	height: 142px
+
+.testimonials-text
+	height: 40px
+
+.testimonials-item
+	width: 100%
+
+.testimonials-item__img
+	display: table-cell
+	width: 95px
+	img
+		max-height: 141px
+
+.testimonials-item__descr
+	display: table-cell
+	vertical-align: top
+	padding:
+		left: 15px
+		top: 20px
+
+.testimonials-item__name
+	font-size: 14px
+	font-weight: 600
+	margin-bottom: 5px
+
+.testimonials-item__text
+	// height: 46px
+	font-size: 14px
+	// overflow: hidden
+
+// ---- account ----
+
+.account-sidebar
+	padding: 
+		left: 80px
+		right: 65px
+	.product-small-list
+		margin-bottom: 15px
+		li
+			margin-bottom: 7px
+			border: none
+	.product-small-item
+		padding: 4px
+
+.account-title
+	@extend .contacts-title
+	&_14
+		font-size: 14px
+	&_16
+		font-size: 16px
+	&_ttu
+		text-transform: uppercase
+
+.account-mnu
+	@extend .clear-list	
+	li
+		a
+			display: block
+			padding: 0 15px
+			color: #616161
+			line-height: 30px
+			white-space: nowrap
+			&:hover
+				font-weight: 600
+		&.active
+			a
+				background-color: #f1f1f1
+				font-weight: 600
+
+.account-sidebar__block
+	padding-top: 23px
+
+.last-ordered-descr
+	font-size: 12px
+	color: #848484
+	margin-top: -18px
+
+.last-ordered-links
+	border-top: 1px solid $border
+	padding-top: 10px
+	.last-ordered__all
+		display: inline-block
+		float: left
+		color: $accent
+		text-decoration: underline
+		font-size: 13px
+		padding: 0 5px
+		line-height: 39px
+		&:hover
+			text-decoration: none
+	.btn
+		float: right
+		width: 138px
+
+.account-form
+	.row
+		margin: 
+			right: -5px
+			left: -5px
+	.col-sm-6,
+	.col-sm-12,
+	.col-sm-5,
+	.col-sm-3
+		padding: 
+			right: 5px
+			left: 5px
+	.input
+		margin-bottom: 10px
+	.check-label
+		font-size: 14px
+		line-height: 1
+	.btn
+		margin-top: 23px
+
+.account-form__descr
+	font-size: 14px
+	color: #616161
+
+.account-form__title
+	font-weight: 600
+	margin: 20px 0
+
+.account-form__required
+	border-top: 1px solid $border
+	text-align: right
+	font-size: 12px
+	font-weight: 600
+	padding: 10px
+	margin-top: 5px
+
+.account-form__forgot
+	text-align: right
+	a
+		font-size: 12px
+		color: $main
+		text-decoration: underline
+		margin-top: 5px
+		&:hover
+			color: $main
+			text-decoration: none
+
+// ---- account-login ----
+
+.login-block
+	position: relative
+	margin-bottom: 52px
+	.account-form__descr
+		margin-bottom: 20px
+
+.login-block__btn
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+
+.login-block__text
+	padding-top: 43px
+
+.btn_amazon
+	max-width: 234px
+	background-color: #37475a
+	color: #fff
+	i
+		font-size: 23px
+		font-weight: normal
+		vertical-align: bottom
+		line-height: 35px
+		color: #fff
+	&:hover
+		background-color: #455f7d
+		color: #fff
+
+// ---- account-password ----
+
+.forgot-form
+	.input
+		margin: 25px 0 29px
+
+// ---- account-dashboard ----
+
+.account-hello
+	font-size: 12px
+	color: #848484
+	padding: 0 28px
+	strong
+		color: $main
+		font-size: 14px
+		display: block 
+		margin-bottom: 7px
+
+.account-block
+	padding-top: 37px
+	.account-title
+		font-weight: normal
+		font-size: 14px
+		text-transform: uppercase
+
+.account-title__link
+	float: right
+	text-transform: none
+	color: $accent
+	text-decoration: underline
+	font-size: 12px
+	font-weight: normal
+	line-height: 18px
+	&:hover,
+	&:focus
+		text-decoration: none
+		color: $accent
+
+.recent-orders
+	width: 100%
+	td
+		border: 1px solid #bfbfbf
+		text-align: center
+		font-size: 12px
+		height: 22px
+		strong
+			display: none
+	tr
+		&:nth-child(odd)
+			td
+				background-color: #f8f8f8
+	.recent-orders__head
+		td
+			text-align: center
+			height: 41px
+			font-weight: 600
+	a
+		text-decoration: underline
+		color: #777
+		&:hover
+			text-decoration: none
+	.accent
+		color: $accent
+		&:hover
+			color: $accent
+	.succes
+		color: #7da789
+		&:hover
+			color: #7da789
+
+.account-inner
+	padding-left: 30px
+
+.account-information
+	.input
+		background-color: #fafafa
+		border-color: #d1d1d1
+		max-width: 240px
+		margin-top: 12px
+		float: left
+		&::-webkit-input-placeholder
+			color: #a8adb3
+		&:-moz-placeholder
+			color: #a8adb3
+		&::-moz-placeholder
+			color: #a8adb3
+		&:-ms-input-placeholder
+			color: #a8adb3
+
+.account-information__left
+	float: left
+	width: 65%
+
+.account-information__right
+	float: left
+	width: 35%
+
+.account-information__title
+	font-size: 16px
+
+.account-information__descr
+	font-size: 12px
+	margin-top: 3px
+	line-height: 27px
+	i
+		color: $accent
+		font-size: 16px
+		vertical-align: super
+
+.account-information__link
+	display: inline-block
+	color: $accent
+	text-decoration: underline
+	line-height: 39px
+	margin-top: 12px
+	margin-left: 20px
+	font-size: 12px
+	&:hover,
+	&:focus
+		color: $accent
+		text-decoration: none
+
+.newsletter-switcher
+	padding-top: 20px
+
+.newsletter-switcher__btn
+	display: inline-block
+	position: relative
+	width: 41px
+	height: 26px
+	background-color: $border
+	border: 1px solid $border-dark
+	border-radius: 10em
+	&:before
+		@extend .before
+		width: 27px
+		height: 27px
+		background-color: #fff
+		border: 1px solid $border-dark
+		border-radius: 50%
+		top: -2px
+		left: -2px
+		transition: .2s
+	&.active
+		background-color: $accent
+		&:before
+			transform: translateX(17px)
+
+.newsletter-switcher__text
+	display: inline-block
+	line-height: 26px
+	vertical-align: top
+	margin-left: 15px
+	font-size: 12px
+
+.account-addres-book
+	border-bottom: 1px solid $border
+
+.account-addres-book__title
+	font-size: 16px
+	i
+		color: $accent
+		font-size: 24px
+		vertical-align: middle
+
+.account-addres-book__list
+	@extend .clear-list
+	display: inline-block
+	width: 270px
+	color: #919191
+	margin-bottom: 35px
+	span
+		color: $main
+
+.account-addres-book__edit-link
+	display: block
+	font-size: 13px
+	color: $accent
+	text-decoration: underline
+	margin-top: 17px
+	&:hover,
+	&:focus
+		color: $accent
+
+.account-addres-book__descr
+	color: #919191
+	font-size: 12px
+	margin-top: 30px
+
+// ---- cart ----
+
+.cart__or
+	font-size: 14px
+	text-align: center
+	text-transform: uppercase
+	line-height: 41px
+
+.cart__btn-list
+	@extend .inline-list
+	display: flex
+	justify-content: space-between
+	li
+		width: 49%
+		width: calc(50% - 5px)
+
+.cart-main
+	width: 100%
+	margin-top: 33px
+	tr
+		border-bottom: 1px solid $border
+	td
+		text-align: center
+		&:nth-child(2)
+			text-align: left
+			padding: 0 64px
+	thead
+		td
+			height: 34px
+			font-size: 12px
+			text-transform: uppercase
+			font-weight: 600
+			color: #8c8c8c
+	tbody
+		td
+			height: 150px
+
+.cart-main__img
+	width: 12%
+	a
+		display: block
+		width: 100%
+		max-height: 120px
+		img
+			max-width: 100%
+			max-height: 120px
+
+.cart-main__descr
+	width: 35%
+
+.cart-main__name
+	font-size: 14px
+	font-weight: 600
+	color: #000
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
+
+.cart-main__model
+	font-size: 12px
+	color: #8c8c8c
+	margin: 12px 0
+
+.cart-main__descr
+	font-size: 12px
+	color: #000
+	line-height: 1
+	height: 24px
+	overflow: hidden
+
+.cart-main__sky
+	width: 15%
+	font-size: 16px
+	font-weight: 300
+
+.cart-main__qty
+	width: 18%
+	.clearfix
+		display: inline-block
+
+.cart-main__input
+	width: 50px
+	text-align: center
+	padding: 0
+	vertical-align: middle
+	float: left
+
+.cart-main__arrows
+	@extend .clear-list
+	display: inline-block
+	line-height: 20px
+	float: left
+	margin-left: 10px
+	li
+		cursor: pointer
+		color: #c7c7c7
+		user-select: none
+		&:hover
+			color: $main
+
+.cart-main__total
+	width: 14%
+	font-size: 18px
+	color: #000
+
+.cart-main__delete
+	width: 6%
+	a
+		font-size: 20px
+		color: #616161
+		&:hover
+			color: $accent
+
+.cart-result__item
+	padding-top: 19px
+
+.cart-subtotal
+	font-size: 18px
+	font-weight: 300
+	text-align: right
+	color: #8c8c8c
+	padding-right: 22px
+
+.cart-total
+	display: table
+	width: 100%
+
+.cart-total__left
+	display: table-cell
+	font-size: 14px
+	color: #000
+	vertical-align: bottom
+	line-height: 2
+
+.cart-total__right
+	display: table-cell
+	font-size: 24px
+	vertical-align: bottom
+	text-align: right
+	padding-right: 22px
+
+.cart-checkout__btn
+	margin-top: 37px
+
+.financing-program
+	padding: 0 20px
+	float: left
+	width: 58%
+
+.financing-program__title
+	font-size: 16px
+
+.financing-program__text
+	font-size: 12px
+	line-height: 18px
+	color: #616161
+	margin-top: 13px
+
+.financing-program__link
+	display: inline-block
+	color: $accent
+	font-size: 13px
+	text-decoration: underline
+	margin-top: 12px
+	&:hover,
+	&:focus
+		text-decoration: none
+		color: $accent
+
+.cart-promocode
+	float: right
+	width: 42%
+	padding: 
+		top: 7px
+		left: 34px
+		right: 34px
+		bottom: 20px
+	border-left: 1px solid $border
+	border-right: 1px solid $border
+	font-size: 12px
+	color: #616161
+	.input
+		text-align: center
+		height: 55px
+		margin: 
+			top: 9px
+			bottom: 16px
+
+// ---- checkout ----
+
+.checkout
+	padding: 
+		left: 95px
+		right: 95px
+
+.checkout-main
+	padding: 0 15px
+	width: 67%
+	float: left
+
+.checkout-right
+	padding: 0 15px
+	width: 33%
+	float: left
+	.account-title
+		padding-left: 14px
+
+.checkout-title__login
+	font-weight: normal
+	font-size: 12px
+	float: right
+	padding-right: 20px
+	a
+		color: $accent
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+			color: $accent
+
+.checkout-form
+	padding-left: 27px
+	.row
+		margin: 
+			right: -5px
+			left: -5px
+		.col-sm-6,
+		.col-sm-12
+			padding: 
+				right: 5px
+				left: 5px
+	.input
+		margin-bottom: 10px
+	.btn
+		margin-top: 15px
+	.jq-selectbox 
+		.jq-selectbox__select
+			height: 39px
+			margin-bottom: 10px
+		.jq-selectbox__select-text
+			height: 39px
+			line-height: 38px
+
+.checkout-form__label
+	font-size: 12px
+	margin-bottom: 11px
+
+.checkout-title
+	font-size: 14px
+	text-transform: uppercase
+	border-bottom: 1px solid $border
+	margin-top: 40px
+	padding-bottom: 13px
+
+.checkout-step
+	padding-top: 18px
+
+.checkout-form__title
+	font-size: 16px
+	margin-bottom: 16px
+
+.radio-list
+	@extend .clear-list
+	padding:
+		left: 24px
+		bottom: 15px
+	li
+		margin-bottom: 16px
+
+.radio-label
+	display: block
+	font-size: 12px
+	height: 11px
+	line-height: 1
+	padding-left: 29px
+	background-image: url(../img/radio.png)
+	background-repeat: no-repeat
+	cursor: pointer
+
+.radio:checked + .radio-label
+	background-position: 0 -11px
+
+.checkout-sidebar
+	border: 1px solid $border
+	border-top: none
+	margin-top: -25px
+	padding: 0 20px 20px
+	.product-small-item
+		padding: 
+			left: 0
+			right: 0
+		&:hover
+			background-color: #fff
+	.product-small-item__text
+		width: calc(100% - 145px)
+	.product-small-item__amount
+		width: 65px
+		text-align: center
+		float: left
+		line-height: 68px
+
+.checkout-subtotal
+	@extend .clear-list
+	padding-top: 15px
+	font-size: 12px
+	color: #000
+	li
+		margin-bottom: 4px
+		span
+			float: right
+			font-size: 14px
+			font-weight: 300
+			color: $main
+
+.checkout-total
+	padding: 15px 0 24px
+	font-size: 14px
+	text-transform: uppercase
+	font-weight: 600
+	color: #000
+	line-height: 18px
+	span
+		float: right
+		font-size: 18px
+		font-weight: normal
+
+.payment-message
+	max-width: 540px
+	background-color: #fff
+	text-align: center
+	margin: 0 auto
+	padding: 47px 15px 30px
+	.btn
+		max-width: 240px
+		margin-top: 30px
+
+.payment-message__icon
+	display: block
+	height: 80px
+	width: 80px
+	text-align: center
+	line-height: 78px
+	border: 3px solid $border
+	border-radius: 50%
+	font-size: 60px
+	color: $border
+	margin: 0 auto
+
+.payment-message__title
+	font-size: 24px
+	text-transform: uppercase
+	margin: 35px 0
+
+.payment-message__orders
+	font-size: 16px
+	color: #919191
+	font-weight: 300
+	span
+		font-weight: normal
+		color: $main
+
+.payment-message__text
+	color: #919191
+	font-size: 12px
+	font-weight: 300
+	max-width: 410px
+	margin: 7px auto 0
+
+// ---- account-edit ----
+
+.account-edit-form
+	.account-form__required
+		margin-top: 35px
+	.btn
+		margin-top: 15px
+	.jq-selectbox 
+		.jq-selectbox__select
+			height: 39px
+			margin-bottom: 10px
+		.jq-selectbox__select-text
+			height: 39px
+			line-height: 38px
+
+.account-edit-form__inner
+	padding: 0 27px
+	.row
+		margin: 
+			right: -5px
+			left: -5px
+		.col-sm-6,
+		.col-sm-12
+			padding: 
+				left: 5px
+				right: 5px
+	.input
+		margin-bottom: 10px
+
+.account-edit-form__descr
+	font-size: 12px
+	color: #848484
+	margin-top: 20px
+
+// ----- account-orders -----
+
+.account-orders
+	padding-bottom: 45px
+	border-bottom: 1px solid $border
+
+.account-orders__head
+	border-bottom: 1px solid $border
+	padding-bottom: 7px
+	margin-bottom: 25px
+	font-size: 12px
+	.jq-selectbox
+		width: 55px
+		margin: 0 5px
+		.jq-selectbox__select
+			padding-right: 0
+
+.account-orders-btn
+	margin-top: 51px
+
+.view-order-title-right
+	float: right
+	font-size: 12px
+	font-weight: normal
+	line-height: 20px
+	i
+		font-size: 32px
+		vertical-align: middle
+		margin: 0 10px
+	a
+		color: $main
+		&:hover
+			color: #777
+			text-decoration: underline
+
+.view-order-date
+	font-size: 12px
+	margin-bottom: 25px
+	padding-left: 30px
+
+.items-ordered
+	width: 100%
+	td
+		border: 1px solid #bfbfbf
+		text-align: center
+		font-size: 12px
+		height: 27px
+		&:first-child
+			text-align: left
+			padding-left: 20px
+		&.tar
+			text-align: right
+			padding-right: 20px
+		div
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+			max-width: 204px
+	tr
+		&:nth-child(odd)
+			td
+				background-color: #f8f8f8
+	.items-ordered__head
+		td
+			text-align: center
+			height: 41px
+			font-weight: 600
+			&:first-child
+				text-align: left
+
+.items-ordered__name
+	width: 204px
+
+.items-ordered-wrap
+	padding-bottom: 27px
+	border-bottom: 1px solid $border
+	margin-top: 45px
+
+.payment-info
+	font-size: 12px
+	background-color: #e5f3e9
+	color: #616161
+	margin: 0 30px
+	padding: 10px 23px
+
+.wishlist
+	td
+		text-align: center
+		&:nth-child(2)
+			text-align: left
+			padding: 0 15px 0 25px  
+	thead
+		td
+			text-transform: none
+	.btn
+		margin-bottom: 10px
+
+.wishlist__descr
+	width: 30%
+
+.wishlist__qty
+	width: 15%
+	.clearfix
+		display: inline-block
+
+.wishlist__price
+	width: 20%
+	span
+		display: block
+		color: #8c8c8c
+		text-decoration: line-through
+		font-size: 14px
 
 @import "media" // Всегда в конце

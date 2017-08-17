@@ -8,10 +8,19 @@ $(function() {
 		$(this).parent('.header-popup').toggleClass('active');
 	});
 
-	$('.footer-main__mnu').equalHeights();
+	$('.footer-main__mnu, .login-block').equalHeights();
 
 	$('.scroll-top').mPageScroll2id({
 		offset: 70
+	});
+
+	$('.faq-list__link').click(function(){
+		$('.faq-item.active, .faq-list__link.active').removeClass('active');
+		$(this).addClass('active');
+		var questId = $(this).attr('href');
+		$(questId).addClass('active');
+	}).mPageScroll2id({
+		offset: 100
 	});
 
 	$('select').styler({
@@ -64,8 +73,43 @@ $(function() {
 		$('.make-an-offer__how').fadeToggle();
 	});
 
-	$('.close-cart-popup').click(function(){
+	$('.close-popup').click(function(){
 		$.magnificPopup.close();
 	});
 
+	$('.search-btn').click(function(){
+		$('.search-form').addClass('active').children('.search-input').focus();
+	});
+
+	$('.search-input').focusout(function(){
+		$(this).parent('.search-form').removeClass('active');
+	});
+
+	$('.cart-main__arrows li').click( function(){
+		var field = $(this).parents('ul').siblings('.input');
+		var testValue = field.val();
+		if($(this).hasClass('minus')){
+			testValue--;
+			if(testValue == 0){
+				testValue = 0;
+			}
+		}	
+		else{
+			testValue++;
+		}
+
+		if(testValue != 0)
+			field.val(testValue).trigger('change');
 });
+
+	$('.newsletter-switcher__btn').click(function(){
+		$(this).toggleClass('active');
+	});
+
+});
+
+// $(document).ready(function() {
+// 	$('.testimonials-item__text').dotdotdot({
+// 		after: "a.readmore"
+// 	});
+// });

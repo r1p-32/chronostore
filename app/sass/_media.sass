@@ -14,6 +14,19 @@
 	.product-contacts
 		padding-left: 0
 
+	.faq-item
+		&.active
+			&:before
+				left: -93px
+
+	.account-sidebar
+		padding: 0 50px
+
+	.checkout
+		padding: 
+			left: 15px
+			right: 15px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
 	.top-line
@@ -69,6 +82,65 @@
 		.product-model,
 		.product-subtitle
 			text-align: left
+
+	.faq-item
+		&.active
+			&:before
+				left: -15px
+
+	.account-sidebar
+		padding: 0
+
+	.inner-section
+		padding: 
+			top: 20px
+			bottom: 50px
+			right: 15px
+			left: 15px
+		margin-bottom: 50px
+
+	.cart-promocode
+		padding: 
+			left: 15px
+			right: 15px
+
+	.checkout-main,
+	.checkout-right
+		width: 100%
+
+	.checkout-right
+		margin-top: 30px
+		.account-title
+			padding-left: 0
+
+	.checkout-form
+		padding-left: 0
+
+	.account-information__left,
+	.account-information__right
+		width: 100%
+
+	.account-information__left
+		margin-bottom: 30px
+
+	.wishlist
+		border-top: 1px solid $border
+		thead
+			display: none
+		tbody
+			tr
+				display: block
+				position: relative
+			td
+				display: block
+				width: 100%
+				height: auto
+				padding: 0 15px
+				margin-top: 10px
+				&:nth-child(2)
+					text-align: center
+					padding: 0 15px
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
@@ -147,6 +219,104 @@
 		margin: 0 auto
 		float: none
 
+	.knowledge-base
+		margin-bottom: 30px
+
+	.paypal-finance
+		.text-block
+			padding: 0
+
+	.about-subscribe
+		margin-top: 30px
+
+	.account-sidebar
+		padding-bottom: 30px
+
+	.login-block
+		height: auto !important
+
+	.login-block__text
+		padding-top: 0
+
+	.login-block__btn
+		position: static
+
+	.btn_amazon
+		max-width: 100%
+
+	.cart-main
+		border-top: 1px solid $border
+		thead
+			display: none
+		tbody
+			tr
+				display: block
+				position: relative
+			td
+				display: block
+				width: 100%
+				height: auto
+				padding: 0 15px
+				margin-top: 10px
+				&:nth-child(2)
+					text-align: center
+					padding: 0 15px
+			.cart-main__delete
+				position: absolute
+				width: 50px
+				height: 50px
+				right: 0
+				top: 0
+				z-index: 1
+				padding: 0
+				margin: 0
+				a
+					font-size: 30px
+			.cart-main__total
+				padding-bottom: 10px
+
+	.financing-program,
+	.cart-promocode
+		width: 100%
+		padding: 0
+	
+	.cart-promocode
+		border: none
+		margin-top: 20px
+
+	.recent-orders
+		.recent-orders__head
+			display: none
+		tr
+			border-bottom: 1px solid $border
+		td
+			display: block
+			border: none
+			text-align: right
+			strong
+				display: inline
+				float: left
+
+	.account-inner
+		padding-left: 0
+
+	.account-edit-form__inner
+		padding: 0
+
+	.view-order-title-right
+		float: none
+		margin-top: 15px
+
+	.items-ordered-wrap
+		overflow-y: scroll
+
+	.items-ordered
+		td
+			padding: 0 5px
+
+	.payment-info
+		margin: 0
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	.add-to-card__btns
@@ -159,6 +329,30 @@
 			padding-bottom: 10px
 			&:last-child
 				padding-left: 0
+
+	.contacts-list
+		li
+			.contacts-list__left
+				&_long
+					display: block
+
+	.orders-and-returns
+		padding: 20px 15px
+
+	.content-404
+		padding: 40px 0
+
+	.content-404__main
+		font-size: 150px
+
+	.content-404__title
+		font-size: 24px
+
+	.checkout-total
+		span
+			float: none
+			display: block
+			margin-top: 5px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
@@ -190,4 +384,5 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
 	/**/
+
 

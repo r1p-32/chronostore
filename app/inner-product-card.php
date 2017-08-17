@@ -120,7 +120,7 @@
 			<li>Have Question?</li>
 		</ul>
 		<article class="tabs-content tabs-content_details active">
-			<div class="tabs-content__text-block">
+			<div class="text-block">
 				<p>This display model Omega Speedmaster 321.13.44.50.02.001 is a beautiful men's timepiece that is powered by an automatic movement which is cased in a stainless steel case. It has a round shape face, chronograph, date, small seconds subdial dial and has hand arabic numerals style markers. It is completed with a leather band that opens and closes with a steel. This watch comes with original box and papers.</p>
 				<p> It ships worldwide with 30 day hassle free return and backed by a three year warranty provided by Chronostore.</p>
 			</div>
@@ -273,24 +273,24 @@
 			</div>
 		</article>
 		<article class="tabs-content">
-			<div class="tabs-content__text-block">
-				<div class="tabs-content__title">FREE UNITED STATES SHIPPING</div>
+			<div class="text-title">FREE UNITED STATES SHIPPING</div>
+			<div class="text-block">
 				<p>ChronoStore will pay for FREE Expedited Shipping for every order to the United States. Delivery time for Expedited Shipping generally can range from 2 to 6 business days. All items shipped are fully insured. Note that air and ground shipping times are measured in business days. USPS Next Day Air delivery option is available for an additional $20.00 to the United States.</p>
 				<p>You will receive a tracking number via email when your order is shipped from our store. United States Postal Service shipments can be tracked here at the USPS website. UPS shipments can be tracked here at the UPS website. FedEx shipments as well can be tracked at the FedEx website.</p>
 			</div>
-			<div class="tabs-content__text-block">
-				<div class="tabs-content__title">SHIPPING RESTRICTIONS</div>
+			<div class="text-title">SHIPPING RESTRICTIONS</div>
+			<div class="text-block">
 				<p>For security purposes, we do not ship to P.O Boxes.</p>
 				<p>Air and ground shipment time frames are in business days only, and exclude weekends and/or holidays.</p>
 				<p>Weekend deliveries are valid only if the "Express" delivery option is selected, and the package is being sent to a domestic location.</p>
 			</div>
-			<div class="tabs-content__text-block">
-				<div class="tabs-content__title">INTERNATIONAL SHIPPING</div>
+			<div class="text-title">INTERNATIONAL SHIPPING</div>
+			<div class="text-block">
 				<p>With customers all around the world, we are happy to send our timepieces to anywhere that has a letterbox.</p>
 				<p>While we always dispatch an order within 1 working day, we can’t directly control the delivery times beyond our end. As a general rule, assume that regular post will take 3-8 days for Australia, North America, & the UK, and 6-14 days for the rest of the world. Express post is generally 1-3 days for Australia; and 4-8 days for other regions.</p>
 			</div>
-			<div class="tabs-content__text-block">
-				<div class="tabs-content__title">CUSTOMS, TAXES, AND OTHER CHARGES:</div>
+			<div class="text-title">CUSTOMS, TAXES, AND OTHER CHARGES:</div>
+			<div class="text-block">
 				<p>All Shipments outside the United States are generally subject to duties, taxes (such as VAT), and other charges, as determined by the local jurisdiction. Please be advised that you, the customer is responsible for these charges and they will be in addition to the purchase price displayed on our website (plus any shipping charges). Also, in the event there are customs charges assigned to your package, you must pay for any associated import taxes as well, including VAT and duties, required by your country's governmental regulations. To learn more, please contact your local customs office for further information. Your package will include a copy of your actual invoice, and the customs office will determine any applicable fees.</p>
 			</div>
 			<ul class="products-under">
@@ -313,50 +313,46 @@
 			</ul>
 		</article>
 		<article class="tabs-content">
-			<div class="tabs-content__text-block">
-				<div class="tabs-content__title">Return policy</div>
-				<div class="tabs-content__text-block">
-					<p>If you are not fully satisfied with your purchase, you may exchange or return your item for a refund (excluding shipping and handling charges) within 14 days of first receiving your item. Item must be in the same condition as it was received, unworn and with all original booklets, box & packaging.</p>
-				</div>
-				<div class="tabs-content__text-block">
-					<p>Special Order items are not returnable; please see our note below regarding Special Orders. <span class="accent">*</span></p>
-				</div>
-				<div class="tabs-content__text-block">
-					<p>ANY SIGNS OF WEAR, WATER DAMAGE OR REMOVAL OF PARTS, WILL RESULT IN REFUSAL OF YOUR RETURN.</p>
-				</div>
-				<div class="tabs-content__text-block">
-					<p>If there are any discrepancies or damage during shipment, Please contact us immediately </p>
-				</div>
-				<div class="tabs-content__text-block">
-					<p>Special Orders<span class="accent">*</span> Select items sold on Chronostore may be considered a <strong>"Special Order"</strong> and subject to a limited return policy. A <strong>"Special Order"</strong> may be items that we do not have in our warehouse, items that we do not have on our website which are special ordered from our distributor, or items that have been customized. All orders that are <strong>"Special Order"</strong> cannot be refunded or exchanged, unless otherwise agreed by the Chronostore staff via mail, fax or e-mail.</p>
-				</div>
-				<div class="tabs-content__text-block">
-					<div class="tabs-content__title">How to return or exchange an item:</div>
-					<p>Please Include the invoice and the reason for the return.</p>
-					<p>Please Make Sure All Returns Are Fully Insured And With Signature Confirmation</p>
-				</div>
+			<div class="text-title">Return policy</div>
+			<div class="text-block">
+				<p>If you are not fully satisfied with your purchase, you may exchange or return your item for a refund (excluding shipping and handling charges) within 14 days of first receiving your item. Item must be in the same condition as it was received, unworn and with all original booklets, box & packaging.</p>
+			</div>
+			<div class="text-block">
+				<p>Special Order items are not returnable; please see our note below regarding Special Orders. <span class="accent">*</span></p>
+			</div>
+			<div class="text-block">
+				<p>ANY SIGNS OF WEAR, WATER DAMAGE OR REMOVAL OF PARTS, WILL RESULT IN REFUSAL OF YOUR RETURN.</p>
+			</div>
+			<div class="text-block">
+				<p>If there are any discrepancies or damage during shipment, Please contact us immediately </p>
+			</div>
+			<div class="text-block">
+				<p>Special Orders<span class="accent">*</span> Select items sold on Chronostore may be considered a <strong>"Special Order"</strong> and subject to a limited return policy. A <strong>"Special Order"</strong> may be items that we do not have in our warehouse, items that we do not have on our website which are special ordered from our distributor, or items that have been customized. All orders that are <strong>"Special Order"</strong> cannot be refunded or exchanged, unless otherwise agreed by the Chronostore staff via mail, fax or e-mail.</p>
+			</div>
+			<div class="text-block">
+				<div class="text-title">How to return or exchange an item:</div>
+				<p>Please Include the invoice and the reason for the return.</p>
+				<p>Please Make Sure All Returns Are Fully Insured And With Signature Confirmation</p>
 			</div>
 		</article>
 		<article class="tabs-content">
-			<div class="tabs-content__text-block">
-				<div class="tabs-content__title">WARRANTY COVERAGE</div>
-				<div class="tabs-content__text-block">
-					<p>ChronoStore offers warranty of a period of one (1) year for pre-owned watches, and three (3) years for new watches from date of purchase. The warranty covers the watch movement, hands and dial, and manufacturing defects.</p>
-				</div>
-				<div class="tabs-content__text-block">
-					<p>The warranty excludes: Battery, case, crystal, strap or bracelet, or metal plating. Warranty does not cover damage due to water damage, improper care, accident, misuse, neglect, or normal wear and tear.</p>
-				</div>
-				<div class="tabs-content__text-block">
-					<p>The warranty is void if the watch has been damaged by accident, opened or taken apart, unauthorized service performed, or other factors not due to defects in materials or workmanship.</p>
-				</div>
-				<div class="tabs-content__text-block">
-					<p>Service work that is not covered under warranty may be completed for a charge; such charges will be notified and agreed by you prior to performing the repair services.</p>
-				</div>
+			<div class="text-title">WARRANTY COVERAGE</div>
+			<div class="text-block">
+				<p>ChronoStore offers warranty of a period of one (1) year for pre-owned watches, and three (3) years for new watches from date of purchase. The warranty covers the watch movement, hands and dial, and manufacturing defects.</p>
+			</div>
+			<div class="text-block">
+				<p>The warranty excludes: Battery, case, crystal, strap or bracelet, or metal plating. Warranty does not cover damage due to water damage, improper care, accident, misuse, neglect, or normal wear and tear.</p>
+			</div>
+			<div class="text-block">
+				<p>The warranty is void if the watch has been damaged by accident, opened or taken apart, unauthorized service performed, or other factors not due to defects in materials or workmanship.</p>
+			</div>
+			<div class="text-block">
+				<p>Service work that is not covered under warranty may be completed for a charge; such charges will be notified and agreed by you prior to performing the repair services.</p>
 			</div>
 		</article>
 		<article class="tabs-content">
-			<div class="tabs-content__text-block">
-				<div class="tabs-content__title">FREQUENTLY ASKED QUESTIONS</div>
+			<div class="text-title">FREQUENTLY ASKED QUESTIONS</div>
+			<div class="text-block">
 				<div class="row">
 					<div class="col-sm-6">
 						<ul class="question-list">
@@ -463,10 +459,21 @@
 		<div class="make-an-offer__how">
 			<div class="make-an-offer__title">Price Offer</div>
 			<div class="make-an-offer__how-title">How It Works</div>
-			<div class="tabs-content__text-block">
-				<div class="tabs-content__title">FREE UNITED STATES SHIPPING</div>
-				<p>ChronoStore will pay for FREE Expedited Shipping for every order to the United States. Delivery time for Expedited Shipping generally can range from 2 to 6 business days. All items shipped are fully insured. Note that air and ground shipping times are measured in business days. USPS Next Day Air delivery option is available for an additional $20.00 to the United States.</p>
-				<p>You will receive a tracking number via email when your order is shipped from our store. United States Postal Service shipments can be tracked here at the USPS website. UPS shipments can be tracked here at the UPS website. FedEx shipments as well can be tracked at the FedEx website.</p>
+			<div class="text-title">WHAT'S PRICE OFFER?</div>
+			<div class="text-block">
+				<p>Price Offer helps you save money by making negotiation simple, fast, and pain-free. With Price Offer, you name your price on products you want, and customer service will accept, counter, or reject your offer, often very quickly. Then you check out, and voilà, you save money.</p>
+			</div>
+			<div class="text-title">HOW DOES THIS WORK?</div>
+			<div class="text-block">
+			<ul class="make-an-offer__list">
+				<li>Make an Offer on a product.</li>
+				<li>You will be notified by email when ChronoStore has accepted, countered, or rejected your offer.</li>
+				<li>You simply check out and await your goodies.</li>
+			</ul>
+			</div>
+			<div class="text-title">WHY DO YOU NEED MY EMAIL?</div>
+			<div class="text-block">
+				<p>ChronoStore needs your email to alert you of our response to your offer, and ChronoStore needs to know you're a real person.</p>
 			</div>
 			<div class="row">
 				<div class="col-sm-5">
