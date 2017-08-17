@@ -2030,7 +2030,6 @@ strong
 	font-size: 12px
 
 .account-addres-book
-	padding-bottom: 35px
 	border-bottom: 1px solid $border
 
 .account-addres-book__title
@@ -2045,6 +2044,9 @@ strong
 	display: inline-block
 	width: 270px
 	color: #919191
+	margin-bottom: 35px
+	span
+		color: $main
 
 .account-addres-book__edit-link
 	display: block
@@ -2461,5 +2463,90 @@ strong
 	font-size: 12px
 	color: #848484
 	margin-top: 20px
+
+// ----- account-orders -----
+
+.account-orders
+	padding-bottom: 45px
+	border-bottom: 1px solid $border
+
+.account-orders__head
+	border-bottom: 1px solid $border
+	padding-bottom: 7px
+	margin-bottom: 25px
+	font-size: 12px
+	.jq-selectbox
+		width: 55px
+		margin: 0 5px
+		.jq-selectbox__select
+			padding-right: 0
+
+.account-orders-btn
+	margin-top: 51px
+
+.view-order-title-right
+	float: right
+	font-size: 12px
+	font-weight: normal
+	line-height: 20px
+	i
+		font-size: 32px
+		vertical-align: middle
+		margin: 0 10px
+	a
+		color: $main
+		&:hover
+			color: #777
+			text-decoration: underline
+
+.view-order-date
+	font-size: 12px
+	margin-bottom: 25px
+	padding-left: 30px
+
+.items-ordered
+	width: 100%
+	td
+		border: 1px solid #bfbfbf
+		text-align: center
+		font-size: 12px
+		height: 27px
+		&:first-child
+			text-align: left
+			padding-left: 20px
+		&.tar
+			text-align: right
+			padding-right: 20px
+		div
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+			max-width: 204px
+	tr
+		&:nth-child(odd)
+			td
+				background-color: #f8f8f8
+	.items-ordered__head
+		td
+			text-align: center
+			height: 41px
+			font-weight: 600
+			&:first-child
+				text-align: left
+
+.items-ordered__name
+	width: 204px
+
+.items-ordered-wrap
+	padding-bottom: 27px
+	border-bottom: 1px solid $border
+	margin-top: 45px
+
+.payment-info
+	font-size: 12px
+	background-color: #e5f3e9
+	color: #616161
+	margin: 0 30px
+	padding: 10px 23px
 
 @import "media" // Всегда в конце
