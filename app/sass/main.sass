@@ -1708,29 +1708,61 @@ strong
 
 .testimonials-item
 	width: 100%
+	background-color: #fff
+	&.active
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		box-shadow: 0px 13px 38px 0px rgba(0,0,0,0.22)
+		z-index: 5
+		.testimonials-item__text
+			height: auto !important
+		.testimonials-item__dots
+			color: $accent
 
 .testimonials-item__img
 	display: table-cell
 	width: 95px
+	padding:
+		left: 10px
+		top: 10px
 	img
 		max-height: 141px
 
 .testimonials-item__descr
 	display: table-cell
 	vertical-align: top
+	font-size: 14px
+	width: 79%
 	padding:
 		left: 15px
 		top: 20px
 
 .testimonials-item__name
-	font-size: 14px
 	font-weight: 600
 	margin-bottom: 5px
 
+.testimonials-item__bottom
+	margin-top: 15px
+	padding:
+		right: 15px
+		bottom: 5px
+
 .testimonials-item__text
-	// height: 46px
-	font-size: 14px
-	// overflow: hidden
+	min-height: 46px
+	overflow: hidden
+	padding-right: 35px
+
+.testimonials-item__date
+	float: right
+	font-size: 12px
+
+.testimonials-item__dots
+	font-size: 18px
+	line-height: 12px
+	display: none
+
 
 // ---- account ----
 

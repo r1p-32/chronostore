@@ -100,16 +100,25 @@ $(function() {
 
 		if(testValue != 0)
 			field.val(testValue).trigger('change');
-});
+	});
 
 	$('.newsletter-switcher__btn').click(function(){
 		$(this).toggleClass('active');
 	});
 
-});
+	$('.testimonials-item__text').each(function(){
+		if ($(this).height() > 46){
+			$(this).height(46);
+			$(this).siblings('.testimonials-item__bottom').children('.testimonials-item__dots').css('display', 'inline');
+			$(this).closest('.testimonials-wrap').addClass('testimonials-wrap_cut')
+		}
+	})
 
-// $(document).ready(function() {
-// 	$('.testimonials-item__text').dotdotdot({
-// 		after: "a.readmore"
-// 	});
-// });
+	$('.testimonials-wrap_cut').hover(
+		function(){
+			$(this).children(".testimonials-item").addClass("active");
+		}, function(){
+			$(this).children(".testimonials-item").removeClass("active");
+		});
+
+});
