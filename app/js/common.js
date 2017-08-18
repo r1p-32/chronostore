@@ -121,4 +121,22 @@ $(function() {
 			$(this).children(".testimonials-item").removeClass("active");
 		});
 
+	$('.main-mnu li').hover(
+		function(){
+			$(this).children(".submenu").addClass("active");
+		}, function(){
+			$(this).children(".submenu").removeClass("active");
+		});
+
+$('.btn-nav').click(function(){
+	$(this).toggleClass('active');
+});
+
+$('.footer-main__title').click(function(){
+	if ( $(window).width() < 768){
+		$(this).toggleClass('active');
+		$(this).siblings('.footer-main__mnu').slideToggle();
+	}
+});
+
 });

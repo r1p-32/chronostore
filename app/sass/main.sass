@@ -89,8 +89,9 @@ strong
 	color: $main
 	&:hover,
 	&:focus
-		background-color: $border
-		color: $main
+		background-color: $accent
+		color: #fff
+		border-color: $accent
 	&_accent
 		background-color: $accent
 		color: #fff
@@ -104,18 +105,10 @@ strong
 		background-color: $border-light
 		color: #333
 		border-color: $border-dark
-		&:hover,
-		&:focus
-			background-color: $border-dark
-			color: #333
 	&_dark
 		background-color: #000
 		color: #fff
 		border-color: #000
-		&:hover
-			background-color: #000
-			color: #fff
-			border-color: #000
 	i
 		font-size: 21px
 		vertical-align: bottom
@@ -182,7 +175,7 @@ strong
 .top-line
 	padding:
 		top: 42px
-		bottom: 58px
+		bottom: 39px
 
 .header-phones
 	@extend .inline-list
@@ -263,7 +256,7 @@ strong
 		left: 88px
 		background-image: url('../img/before-triangle.png')
 	&.active
-		z-index: 2
+		z-index: 3
 		opacity: 1
 		transform: translateY(0)
 		transition: transform .4s, opacity .4s
@@ -419,12 +412,14 @@ strong
 
 .main-mnu
 	position: relative
-	ul
+	background-color: #fff
+	&>ul
 		@extend .inline-list
 		display: inline-block
-		li
+		&>li
+			padding-top: 19px
 			margin-right: 25px
-			a
+			&>a
 				font-size: 14px
 				color: #000
 				text-transform: uppercase
@@ -441,7 +436,7 @@ strong
 	color: $main
 	vertical-align: middle
 	text-align: right
-	margin-top: -2px
+	margin-top: 15px
 	&:hover
 		color: $accent
 	&:focus
@@ -463,13 +458,202 @@ strong
 	max-width: 407px
 	position: absolute
 	right: 0
-	top: -9px
+	top: 10px
 	transition: .7s
 	padding-bottom: 10px
 	&.active
 		width: 100%
 	.input
 		padding-right: 48px
+
+.submenu
+	width: 100vw
+	background-color: #fff
+	position: absolute
+	z-index: 2
+	padding: 33px 0
+	left: calc(50% - 50vw)
+	border-top: 1px solid $border
+	z-index: -2
+	transform: translateY(70px)
+	opacity: 0
+	transition: transform .4s, opacity .4s
+	&_popular,
+	&_mens
+		.submenu__all-brands
+			background-image: url(../img/submnu_1.jpg)
+	&_ladies
+		.submenu__all-brands
+			background-image: url(../img/submnu_2.jpg)
+	&_jewelry
+		.submenu__all-brands
+			background-image: url(../img/submnu_3.jpg)
+	&_accessories
+		.submenu__all-brands
+			background-image: url(../img/submnu_4.jpg)
+	&.active
+		z-index: 3
+		opacity: 1
+		transform: translateY(0)
+		transition: transform .4s, opacity .4s
+
+.submenu__title
+	text-transform: uppercase
+	margin-bottom: 29px
+	&_mt
+		margin-top: 33px
+
+.submenu__list
+	@extend .clear-list
+	font-size: 11px
+	text-transform: uppercase
+	li
+		margin-bottom: 10px
+		a
+			display: inline-block
+			color: #7c7c7c
+			border-bottom: 1px solid transparent
+			&:hover,
+			&:focus
+				color: $main
+				border-bottom: 1px solid #7c7c7c
+			span
+				text-transform: none
+
+.submenu__all-brands
+	display: block
+	position: relative
+	width: 200px
+	height: 200px
+	text-align: center
+	font-size: 17px
+	color: #fff
+	text-transform: uppercase
+	font-weight: 300
+	padding: 80px 30px
+	letter-spacing: 2px
+	float: right
+	span
+		position: relative
+	&:before
+		@extend .before
+		background-color: #000
+		opacity: .5
+		top: 0
+		left: 0
+		transition: .4s
+	&:hover,
+	&:focus
+		color: #fff
+		&:before
+			opacity: .6
+
+.submenu__stock
+	display: inline-block
+	float: right
+	margin-right: 30px
+	color: $main
+	&:hover
+		color: $main
+		text-decoration: underline
+		.submenu__stock-link
+			border-color: $main
+
+.submenu__stock-link
+	display: block
+	width: 164px
+	height: 139px
+	border: 1px solid $border
+	line-height: 137px
+	text-align: center
+	img
+		max-width: 100%
+
+.submenu__stock-title
+	text-transform: uppercase
+	text-align: center
+	font-weight: 600
+	margin-top: 23px
+
+.submenu__stock-descr
+	text-align: center
+	font-size: 12px
+	color: #7b7b7b
+	margin-top: 5px
+
+.submenu__abc
+	width: 226px
+	margin: 0 auto
+	tr
+		&:first-child
+			td
+				padding-top: 0
+		&:last-child
+			td
+				padding-bottom: 0
+				border-bottom: none
+		td
+			padding: 2px
+			border-bottom: 1px solid $border
+			border-right: 1px solid $border
+			&:first-child
+				padding-left: 0
+			&:last-child
+				padding-right: 0
+				border-right: none
+		a
+			display: block
+			height: 28px
+			width: 28px
+			text-align: center
+			line-height: 28px
+			text-transform: uppercase
+			font-size: 11px
+			color: #7c7c7c
+			font-weight: normal
+			&:hover,
+			&:focus
+				background-color: $accent
+				color: #fff
+		.btn
+			width: 100%
+
+.btn-nav
+	width: 50px
+	height: 54px
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	justify-content: center
+	cursor: pointer
+	right: 15px
+	z-index: 1000
+	background-color: transparent
+
+.btn-nav__row
+	height: 2px
+	width: 35px
+	margin: 4px 0
+	background-color: $main
+	position: relative
+	-webkit-transition: all .5s
+	-o-transition: all .5s
+	transition: all .5s
+	&:last-child
+		width: 25px
+
+.btn-nav.active .btn-nav__row:first-child
+	transform: rotate(-135deg)
+	top: 10px;
+	width: 40px;
+
+.btn-nav.active .btn-nav__row:last-child
+	transform: rotate(-225deg)
+	top: -10px
+	width: 40px
+
+.btn-nav.active .btn-nav__row:nth-child(2)
+	opacity: 0
 
 // ---- footer ----
 
@@ -496,6 +680,10 @@ strong
 	text-transform: uppercase
 	font-weight: bold
 	margin-bottom: 25px
+	i
+		float: right
+		display: none
+		color: #bababa
 
 .footer-main__mnu
 	@extend .clear-list
@@ -561,6 +749,9 @@ strong
 	position: absolute
 	right: 3px
 	top: 3px
+	&:hover,
+	&:focus
+		background-color: $accent-dark
 
 .add-to-card
 	position: relative
@@ -1711,11 +1902,12 @@ strong
 	background-color: #fff
 	&.active
 		position: absolute
-		top: 0
+		top: -1px
 		left: 0
 		right: 0
 		box-shadow: 0px 13px 38px 0px rgba(0,0,0,0.22)
-		z-index: 5
+		z-index: 1
+		padding-top: 1px
 		.testimonials-item__text
 			height: auto !important
 		.testimonials-item__dots
