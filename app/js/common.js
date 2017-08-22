@@ -139,4 +139,10 @@ $('.footer-main__title').click(function(){
 	}
 });
 
+$(".compare-wrap").niceScroll({
+		cursorcolor:"#e94350",
+		cursorwidth: "12px",
+		cursorborderradius: "0px",
+	});
+
 });
