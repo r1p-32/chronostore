@@ -173,6 +173,19 @@
 	.search-btn
 		margin-top: 10px
 
+	.main-page-list 
+		ul 
+			li 
+				a
+					font-size: 12px
+					padding: 0 20px
+
+	.main-category
+		li
+			width: 33%
+			&:nth-child(4)
+				margin-left: 17%
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
 	.footer-main
@@ -369,6 +382,72 @@
 
 	.payment-info
 		margin: 0
+
+	.main-page-list 
+		ul 
+			display: block
+			li
+				display: block
+				a
+					border-left: none
+					border-right: none
+					&:before
+						display: none !important
+
+	.main-readmore
+		padding: 8px 62px 8px 15px
+
+	.main-readmore__btn
+		width: 62px
+
+	.main-category
+		li
+			width: 100%
+			&:nth-child(4)
+				margin-left: 0
+	
+	.fav-item
+		&_2
+			padding: 40px 30px
+			img
+				height: 75%
+				right: -86px
+		&_4
+			padding: 40px 30px
+			img
+				height: 160px
+		&_5
+			img
+				height: 160px
+
+	.main-banner
+		.product-slider-arr
+			display: none !important
+
+	.top-line
+		padding: 10px 0
+
+	.search-btn
+		font-size: 22px
+		margin-top: 0
+		&_desctop
+			display: none
+
+	.main-mnu
+		position: absolute
+		top: 40px
+		z-index: 2
+		left: 0
+		width: 220px
+		padding: 0px 15px
+		ul
+			display: block
+			text-align: center
+			&>li
+				display: block
+
+	.homepage-title
+		font-size: 22px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)

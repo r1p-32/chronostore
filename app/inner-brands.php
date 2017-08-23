@@ -24,97 +24,129 @@
 		<div class="row">
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 brand-item">
 				<a href="javascript:void(0)" class="brand-item__wrap">
-					<img src="img/_brand_1.jpg" alt="" class="img-responsive">
+					<div class="brand-item__img">
+						<img src="img/_brand_1.jpg" alt="">
+					</div>
 					Rolex
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 brand-item">
 				<a href="javascript:void(0)" class="brand-item__wrap">
-					<img src="img/_brand_1.jpg" alt="" class="img-responsive">
+					<div class="brand-item__img">
+						<img src="img/_brand_1.jpg" alt="">
+					</div>
 					Rolex
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 brand-item">
 				<a href="javascript:void(0)" class="brand-item__wrap">
-					<img src="img/_brand_1.jpg" alt="" class="img-responsive">
+					<div class="brand-item__img">
+						<img src="img/_brand_1.jpg" alt="">
+					</div>
 					Rolex
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 brand-item">
 				<a href="javascript:void(0)" class="brand-item__wrap">
-					<img src="img/_brand_1.jpg" alt="" class="img-responsive">
+					<div class="brand-item__img">
+						<img src="img/_brand_1.jpg" alt="">
+					</div>
 					Rolex
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 brand-item">
 				<a href="javascript:void(0)" class="brand-item__wrap">
-					<img src="img/_brand_1.jpg" alt="" class="img-responsive">
+					<div class="brand-item__img">
+						<img src="img/_brand_1.jpg" alt="">
+					</div>
 					Rolex
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 brand-item">
 				<a href="javascript:void(0)" class="brand-item__wrap">
-					<img src="img/_brand_1.jpg" alt="" class="img-responsive">
+					<div class="brand-item__img">
+						<img src="img/_brand_1.jpg" alt="">
+					</div>
 					Rolex
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 brand-item">
 				<a href="javascript:void(0)" class="brand-item__wrap">
-					<img src="img/_brand_1.jpg" alt="" class="img-responsive">
+					<div class="brand-item__img">
+						<img src="img/_brand_1.jpg" alt="">
+					</div>
 					Rolex
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 brand-item">
 				<a href="javascript:void(0)" class="brand-item__wrap">
-					<img src="img/_brand_1.jpg" alt="" class="img-responsive">
+					<div class="brand-item__img">
+						<img src="img/_brand_1.jpg" alt="">
+					</div>
 					Rolex
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 brand-item">
 				<a href="javascript:void(0)" class="brand-item__wrap">
-					<img src="img/_brand_1.jpg" alt="" class="img-responsive">
+					<div class="brand-item__img">
+						<img src="img/_brand_1.jpg" alt="">
+					</div>
 					Rolex
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 brand-item">
 				<a href="javascript:void(0)" class="brand-item__wrap">
-					<img src="img/_brand_1.jpg" alt="" class="img-responsive">
+					<div class="brand-item__img">
+						<img src="img/_brand_1.jpg" alt="">
+					</div>
 					Rolex
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 brand-item">
 				<a href="javascript:void(0)" class="brand-item__wrap">
-					<img src="img/_brand_1.jpg" alt="" class="img-responsive">
+					<div class="brand-item__img">
+						<img src="img/_brand_1.jpg" alt="">
+					</div>
 					Rolex
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 brand-item">
 				<a href="javascript:void(0)" class="brand-item__wrap">
-					<img src="img/_brand_1.jpg" alt="" class="img-responsive">
+					<div class="brand-item__img">
+						<img src="img/_brand_1.jpg" alt="">
+					</div>
 					Rolex
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 brand-item">
 				<a href="javascript:void(0)" class="brand-item__wrap">
-					<img src="img/_brand_1.jpg" alt="" class="img-responsive">
+					<div class="brand-item__img">
+						<img src="img/_brand_1.jpg" alt="">
+					</div>
 					Rolex
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 brand-item">
 				<a href="javascript:void(0)" class="brand-item__wrap">
-					<img src="img/_brand_1.jpg" alt="" class="img-responsive">
+					<div class="brand-item__img">
+						<img src="img/_brand_1.jpg" alt="">
+					</div>
 					Rolex
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 brand-item">
 				<a href="javascript:void(0)" class="brand-item__wrap">
-					<img src="img/_brand_1.jpg" alt="" class="img-responsive">
+					<div class="brand-item__img">
+						<img src="img/_brand_1.jpg" alt="">
+					</div>
 					Rolex
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 brand-item">
 				<a href="javascript:void(0)" class="brand-item__wrap">
-					<img src="img/_brand_1.jpg" alt="" class="img-responsive">
+					<div class="brand-item__img">
+						<img src="img/_brand_1.jpg" alt="">
+					</div>
 					Rolex
 				</a>
 			</div>
