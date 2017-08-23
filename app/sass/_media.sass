@@ -28,7 +28,7 @@
 			right: 15px
 
 	.main-mnu
-		&>ul
+		.main-mnu-list
 			&>li
 				margin-right: 20px
 				&>a
@@ -149,7 +149,7 @@
 					padding: 0 15px
 
 	.main-mnu
-		&>ul
+		.main-mnu-list
 			&>li
 				margin-right: 10px
 				&>a
@@ -434,20 +434,84 @@
 			display: none
 
 	.main-mnu
+		display: none
 		position: absolute
-		top: 40px
+		top: 47px
 		z-index: 2
 		left: 0
-		width: 220px
-		padding: 0px 15px
-		ul
+		width: 240px
+		padding: 0 0 0 15px
+		.main-mnu-list
 			display: block
 			text-align: center
 			&>li
 				display: block
+				margin-right: 0
+				&>a
+					display: inline-block
+					border-bottom: 1px solid #fff	
+					padding-bottom: 9px
 
 	.homepage-title
 		font-size: 22px
+
+	.submenu
+		width: 100%
+		position: absolute
+		left: 0
+		right: 0
+		top: 53px
+		padding: 0 0 10px 
+		display: none
+		transform: none
+		opacity: 1
+		border: none
+		&.active
+			display: block
+
+	.back-to-main
+		display: block
+
+	.submenu__title
+		font-size: 11px
+
+	.submenu__list 
+		li
+			margin-bottom: 6px
+
+	.submenu__abc
+		width: 100%
+		margin-bottom: 20px
+		tr
+			a
+				height: 23px
+				width: 23px
+				font-size: 10px
+				line-height: 23px
+
+	.header-mobile-top
+		display: block
+		border-top: 1px solid $border
+		border-bottom: 1px solid $border
+		padding-right: 15px
+		li
+			&:first-child
+				float: left
+				line-height: 30px
+
+	.header-mobile-bottom
+		display: block
+		text-align: center
+		border-top: 1px solid $border
+		li
+			position: relative
+
+	.currency-mnu
+		top: 26px
+		left: -50px
+
+	.header-mobile-phone
+		display: block
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
