@@ -44,16 +44,16 @@ strong
 	height: auto
 	margin: 0 auto
 
-.main-wrapper
-	display: flex
-	flex-direction: column
-	height: 100%
-	position: relative
+// .main-wrapper
+// 	display: flex
+// 	flex-direction: column
+// 	height: 100%
+// 	position: relative
 
-.content
-	flex: 1 0 auto
-	position: relative
-	background-color: $mainbg-light
+// .content
+// 	flex: 1 0 auto
+// 	position: relative
+// 	background-color: $mainbg-light
 
 .input
 	height: 39px
@@ -109,6 +109,11 @@ strong
 		background-color: #000
 		color: #fff
 		border-color: #000
+		&:hover,
+		&:focus
+			background-color: #fff
+			border-color: #fff
+			color: #000
 	i
 		font-size: 21px
 		vertical-align: bottom
@@ -413,7 +418,7 @@ strong
 .main-mnu
 	position: relative
 	background-color: #fff
-	&>ul
+	.main-mnu-list
 		@extend .inline-list
 		display: inline-block
 		&>li
@@ -428,7 +433,41 @@ strong
 				padding-bottom: 19px
 				border-bottom: 2px solid #fff
 				&:hover
+					color: #6a6a6a
+			&.active
+				&>a
 					border-color: $accent
+
+.header-mobile-top,
+.header-mobile-bottom
+	display: none
+
+.header-mobile-phones
+	display: none
+	@extend .clear-list
+	font-size: 11px
+	text-align: center
+	padding: 20px 0
+
+.back-to-main
+	display: none
+	font-size: 10px
+	line-height: 34px
+	color: $main
+	text-align: left
+	border-bottom: 1px solid $border
+	margin:
+		right: -15px
+		bottom: 10px
+	padding-left: 10px
+	&:hover,
+	&:focus
+		color: $main
+	i
+		display: inline-block
+		font-size: 16px
+		vertical-align: middle
+		transform: rotate(90deg)
 
 .search-btn
 	float: right
@@ -619,8 +658,8 @@ strong
 			width: 100%
 
 .btn-nav
-	width: 50px
-	height: 54px
+	width: 24px
+	height: 24px
 	display: flex
 	flex-direction: column
 	align-items: flex-start
@@ -631,26 +670,26 @@ strong
 	background-color: transparent
 
 .btn-nav__row
-	height: 2px
-	width: 35px
-	margin: 4px 0
+	height: 1px
+	width: 24px
+	margin: 3px 0
 	background-color: $main
 	position: relative
 	-webkit-transition: all .5s
 	-o-transition: all .5s
 	transition: all .5s
 	&:last-child
-		width: 25px
+		width: 16px
 
 .btn-nav.active .btn-nav__row:first-child
 	transform: rotate(-135deg)
-	top: 10px;
-	width: 40px;
+	top: 7px;
+	width: 24px;
 
 .btn-nav.active .btn-nav__row:last-child
 	transform: rotate(-225deg)
-	top: -10px
-	width: 40px
+	top: -7px
+	width: 24px
 
 .btn-nav.active .btn-nav__row:nth-child(2)
 	opacity: 0
@@ -821,6 +860,9 @@ strong
 			white-space: nowrap
 			overflow: hidden
 			text-overflow: ellipsis
+	&_main
+		li
+			max-width: 344px
 
 .brands
 	.row	
@@ -843,13 +885,20 @@ strong
 		bottom: 30px
 	margin-bottom: 20px
 	transition: .4s
-	img
-		display: block
-		margin: 0 auto
-		margin-bottom: 46px
 	&:hover
 		color: #000
 		box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.2)
+
+.brand-item__img
+	display: block
+	margin: 0 auto
+	margin-bottom: 46px
+	height: 211px
+	line-height: 211px
+	vertical-align: middle
+	img
+		max-width: 100%
+		max-height: 100%
 
 // ---- inner-products ----
 
@@ -913,6 +962,7 @@ strong
     width: calc(100% - 30px)
 
 .products-item__name
+	padding: 0 15px
 	font-weight: 600
 	margin-top: 21px
 	overflow: hidden
@@ -956,6 +1006,7 @@ strong
 .products-item__price
 	font-size: 24px
 	margin-top: 16px
+	color: #000
 
 .products-item__oldprice
 	color: #8c8c8c
@@ -2805,5 +2856,472 @@ strong
 		color: #8c8c8c
 		text-decoration: line-through
 		font-size: 14px
+
+// ---- inner-compare -----
+
+.compare
+	background-color: #fff
+	padding-bottom: 60px
+	margin-bottom: 60px
+
+.compare-wrap
+	overflow-x: scroll
+
+.compare-table
+	width: 100%
+	tr
+		&:nth-child(even)
+			td
+				background-color: #f8f8f8
+		&:first-child
+			td
+				border-top: none
+				&:first-child
+					border-left: none
+		&:last-child
+			td
+				&:first-child
+					border-left: none
+					border-bottom: none
+		&:hover
+			td
+				background-color: #fbfae5
+				&:first-child
+					position: relative
+					&:before
+						@extend .before
+						width: 2px
+						background-color: $accent
+						left: -1px
+			&:first-child,
+			&:last-child
+				td
+					background-color: transparent
+					&:before
+						display: none
+	td
+		width: 225px
+		min-width: 225px
+		border: 1px solid $border
+		font-size: 12px
+		padding: 0px 15px
+		vertical-align: top
+		line-height: 24px
+		&.compare-table__short-descr
+			font-size: 11px
+			line-height: 18px
+		&.compare-table__card,
+		&.compare-table__bottom
+			padding:
+				top: 45px
+				bottom: 20px
+			position: relative
+			font-size: 16px
+			line-height: 1.2
+			.products-item__model
+				padding-bottom: 0
+				&:before
+					display: none
+			.products-item__descr
+				max-width: 100%
+				color: #000
+			.btn
+				margin-top: 25px
+		&.compare-table__bottom
+			padding-top: 0
+
+
+.compare-table__img
+	text-align: center
+	position: relative
+	img
+		max-height: 190px
+		margin: 0 auto
+
+.compare-table__delete
+	font-size: 20px
+	color: $main
+	position: absolute
+	top: 12px
+	right: 15px
+	&:hover
+		color: $accent
+
+.compare-table__fav
+	position: absolute
+	bottom: 10px
+	right: 20px
+	&:before
+		content: "\e812"
+		font-family: "icons"
+		font-size: 22px
+		color: $main
+	&:hover
+		&:before
+			color: $accent
+	&.active
+		&:before
+			content: '\E821'
+			color: $accent
+
+.compare-table__name
+	color: #000
+	font-size: 16px
+	font-weight: 600
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
+	max-width: 199px
+
+.compare-table__prices
+	height: 49px
+
+// ---- index ----
+
+.main-banner
+	.slick-dots
+		text-align: center
+		margin-top: 0
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 25px 
+		li
+			button
+				background-color: #2c2c2c
+			&.slick-active 
+				button
+					background-color: #fff
+
+.main-banner__slide
+	background-size: cover
+	background-position: center
+
+.main-banner-composition
+	display: flex
+	align-items: center
+	height: 450px
+	.btn
+		max-width: 240px
+		margin-top: 35px
+
+.main-banner__title
+	font-size: 36px
+	text-transform: uppercase
+	color: #fff
+	font-weight: 200
+
+.main-banner__text
+	font-size: 14px
+	color: #8d8b8b
+	font-weight: 300
+	line-height: 18px
+	margin-top: 22px
+
+.main-page-list
+	background-color: $mainbg-light
+	margin: 
+		top: 15px
+		bottom: 35px
+	ul
+		@extend .inline-list
+		display: flex
+		align-items: center
+		justify-content: center
+		li
+			margin: 0
+			a
+				display: block
+				position: relative
+				color: #000
+				font-size: 14px
+				font-weight: bold
+				text-align: center
+				padding: 0 30px
+				white-space: nowrap
+				text-transform: uppercase
+				line-height: 40px
+				border-left: 1px solid #fff
+				border-right: 1px solid #dadada
+				border-bottom: 2px solid transparent
+				&:hover,
+				&:focus
+					color: #000
+					border-bottom-color: $accent
+			&:first-child
+				a
+					&:before
+						@extend .before
+						width: 1px
+						background-color: #dadada
+						left: -2px
+			&:last-child
+				a
+					&:before
+						@extend .before
+						width: 1px
+						background-color: #fff
+						right: -2px
+	&_bottom
+		margin: 0
+		ul
+			li
+				a
+					line-height: 56px
+
+.main-readmore
+	position: relative
+	font-size: 10px
+	line-height: 16px
+	color: #848484
+	background-color: #fff
+	white-space: nowrap
+	margin-top: 7px
+	padding: 8px 94px 8px 46px
+	overflow: hidden
+	margin-bottom: 10px
+	transition: .4s
+	&.active
+		white-space: normal
+		height: auto
+		.main-readmore__btn
+			i
+				transform: rotate(180deg)
+
+.main-readmore__btn
+	display: inline-block
+	height: 32px
+	width: 97px
+	padding-left: 15px
+	line-height: 32px
+	background-color: #fff
+	position: absolute
+	right: 0
+	bottom: 0
+	color: $main
+	&:focus
+		color: $main
+	&:hover
+		color: $accent
+	i
+		display: inline-block
+
+.main-category
+	@extend .clear-list
+	margin: 
+		left: -10px
+		right: -10px
+	li
+		float: left
+		width: 20%
+		padding: 0 10px
+	.brand-item__wrap
+		border: 1px solid transparent
+		&:hover
+			box-shadow: none
+			border-color: $border
+
+.learn-more
+	position: relative
+	text-align: center
+	text-transform: uppercase
+	font-size: 14px
+	font-weight: 600
+	padding: 10px 0
+	&:before
+		@extend .before
+		height: 1px
+		background-color: $border
+		right: 0
+		left: 0
+		top: 50%
+	span
+		display: inline-block
+		padding: 0 30px
+		background-color: $mainbg-light
+		position: relative
+		a
+			color: $accent
+			&:hover
+				color: $accent
+				text-decoration: underline
+
+.homepage-title
+	position: relative
+	font-size: 30px
+	text-transform: uppercase
+	font-weight: 300
+	position: relative
+	text-align: center
+	&:before
+		@extend .before
+		height: 1px
+		background-color: $border
+		right: 0
+		left: 0
+		top: 50%
+	span
+		display: inline-block
+		padding: 0 30px
+		background-color: #fff
+		position: relative
+		strong
+			font-weight: 900
+
+.homepage-subtitle
+	font-size: 12px
+	color: #c8c8c8
+	text-align: center
+	margin-top: 15px
+
+.main-blog
+	background-color: #fff
+	padding-bottom: 58px
+
+.blog-item
+	margin-top: 34px
+	&:hover
+		.blog-item__thumb
+			&:before
+				transform: scale(0.9)
+		.blog-item__date
+			i
+				color: $accent
+
+.blog-item__thumb
+	display: block
+	position: relative
+	max-height: 225px
+	overflow: hidden
+	img
+		width: 100%
+	&:before
+		@extend .before
+		border: 1px solid rgba(#fff, 0.4)
+		left: 0
+		top: 0
+		transition: .2s
+
+.blog-item__date
+	font-size: 14px
+	color: #8c8c8c
+	margin-top: 13px
+	i
+		font-size: 18px
+
+.blog-item__title
+	display: block
+	font-size: 16px
+	font-weight: 300
+	line-height: 24px
+	text-transform: uppercase
+	color: $main
+	margin-top: 13px
+	height: 48px
+	overflow: hidden
+	&:hover,
+	&:focus
+		color: $main
+
+.main-fav
+	background-color: #fff
+	margin-top: 24px
+	padding:
+		top: 60px
+		bottom: 20px
+
+.fav-item
+	display: block
+	position: relative
+	margin-bottom: 32px
+	color: $main
+	transition: .2s
+	border: 1px solid transparent
+	overflow: hidden
+	&_bordered
+		&:before
+			@extend .before
+			height: calc(100% - 36px)
+			width: calc(100% - 36px)
+			top: 18px
+			left: 18px
+			border: 1px solid #d9d9d9
+	&_1
+		height: 415px
+		text-align: center
+		background-color: #f7f5e8
+		text-transform: uppercase
+		font-size: 24px
+		font-weight: 300
+		img
+			max-height: 100%
+			vertical-align: middle
+		.fav-item__img
+			padding-top: 33px
+	&_2
+		padding: 261px 55px 25px
+		height: 415px
+		background-color: #edf4f8
+		img
+			position: absolute
+			height: 100%
+			bottom: 0
+			right: 0
+	&_4
+		height: 334px
+		padding: 179px 55px 25px
+		background-color: #eaeae2
+		img
+			position: absolute
+			bottom: 0
+			right: 58px
+			height: 308px
+	&_5
+		height: 334px
+		background-color: #edf4f8
+		padding: 40px 20px 40px 60px
+		img
+			position: absolute
+			bottom: 0
+			left: 0
+		.fav-item__title
+			font-size: 24px
+			strong
+				font-weight: 900
+	&:hover
+		color: $main
+		border-color: #d9d9d9
+	&:focus
+		color: $main
+
+.fav-item__title
+	font-size: 36px
+	text-transform: uppercase
+	font-weight: 300
+	position: relative
+
+.fav-item__text
+	font-size: 12px
+	line-height: 18px
+	max-width: 265px
+	margin-top: 14px
+	position: relative
+
+.insta-gallery
+	padding-top: 73px
+
+.inst-list
+	@extend .clear-list
+	padding-top: 60px
+	li
+		width: 20%
+		float: left
+
+.inst-list__link
+	display: block
+	max-height: 244px
+	overflow: hidden
+	img
+		width: 100%
 
 @import "media" // Всегда в конце
