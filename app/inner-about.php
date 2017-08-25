@@ -15,18 +15,23 @@
 	<div class="inner-section about">
 		<div class="row">
 			<div class="col-lg-10 col-lg-offset-1">
-				<form action="" class="about-form">
+				<form action="" method="post" id="newsletter-validate-detail-about" class="about-form">
 					<div class="about-form__title">Newsletter Sign Up</div>
 					<div class="row">
 						<div class="col-sm-7">Get exclusive deals for watches and jewelry you will not find anywhere else straight to your inbox!</div>
 						<div class="col-sm-5">
 							<div class="about-subscribe">
-								<input type="text" class="input" placeholder="Enter your email address">
+								<input type="email" autocapitalize="off" autocorrect="off" spellcheck="false" name="email" id="newsletter" title="Sign up for our newsletter" class="input input-text required-entry validate-email" placeholder="Enter your email address">
 								<button class="about-subscribe__btn"><i>&#xE805</i></button>
 							</div>
 						</div>
 					</div>
 				</form>
+				<script type="text/javascript">
+            //<![CDATA[
+            var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail-about');
+            //]]>
+          </script>
 				<div class="text-title text-title_18">WHO WE ARE</div>
 				<div class="text-block">Chronostore is an online retailer of luxury watches and jewelry in Manhattan. With decades of experience in selling watches, customizing and an outstanding full-service repair department, we’ve attracted thousands of satisfied customers worldwide. New York’s undying love for art and style can be found in a visit to our store in the Diamond District where you can see luxury names such as Rolex, Breitling, Raymond Weil, Panerai, Cartier and more.</div>
 				<div class="text-block">The focus of our knowledgeable staff is building long-term relationships with our customers. All of our timepieces are 100% authentic and be customized or serviced on site as well. Although we aren’t an authorized dealer, we are offer a 1-year warranty for all our pre-owned watches and a 3-year warranty for all our new watches, which come with a certificate of authenticity as well as a warranty card.</div>
