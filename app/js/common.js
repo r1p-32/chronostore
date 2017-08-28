@@ -8,7 +8,9 @@ $(function() {
 		$(this).parent('.header-popup').toggleClass('active');
 	});
 
-	$('.footer-main__mnu, .login-block').equalHeights();
+	$('.footer-main__mnu').equalHeights();
+	$('.login-block').equalHeights();
+	$('.products-item__wrap').equalHeights();
 
 	$('.scroll-top').mPageScroll2id({
 		offset: 70

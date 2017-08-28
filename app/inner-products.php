@@ -206,7 +206,6 @@
 						<div class="products-item__descr">18K Everose Gold AutomaticMen's Wristwatch</div>
 						<div class="products-item__condition">New watch</div>
 						<div class="products-item__price">$21,999.00</div>
-						<div class="products-item__oldprice">$28,800.00</div>
 					</a>
 					<a href=".quick-view" class="btn btn_accent popup-inline">Quick view</a>
 				</div>

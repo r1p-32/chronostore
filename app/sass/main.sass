@@ -531,7 +531,7 @@ strong
 		.submenu__all-brands
 			background-image: url(../img/submnu_4.jpg)
 	&.active
-		z-index: 3
+		z-index: 999
 		opacity: 1
 		transform: translateY(0)
 		transition: transform .4s, opacity .4s
@@ -699,6 +699,7 @@ strong
 .footer
 	background-color: $mainbg-dark
 	color: $footer-color
+	font-family: $default-font
 
 .footer-main
 	@extend .clear-list
@@ -951,7 +952,6 @@ strong
 	color: #000
 	text-align: center
 	margin-bottom: 10px
-	min-height: 455px
 	padding: 
 		top: 10px
 		bottom: 24px
@@ -977,6 +977,7 @@ strong
 	color: #8c8c8c
 	padding-bottom: 14px
 	margin-top: 6px
+	text-transform: uppercase
 	&:before
 		@extend .before
 		width: 42px
@@ -3323,5 +3324,49 @@ strong
 	overflow: hidden
 	img
 		width: 100%
+
+.minicart
+	display: none
+
+// ---- paginator ----
+
+.toolbar
+	border: none
+	text-align: center
+	line-height: 1
+	margin-top: 20px
+	margin-bottom: 25px
+
+.pager
+	float: none
+	display: inline-block
+	font-family: $default-font
+	line-height: 1
+
+.pages
+	float: none
+	margin: 0
+	a
+		color: $main
+		font-family: $default-font
+		width: auto
+		padding: 0 2px
+		margin: 0 5px
+		&:hover
+			color: $main
+			border-bottom: 1px solid $main
+	.next,
+	.previous
+		color: $main
+		&:hover
+			border: none
+	.current
+		border: none
+		color: $accent
+		width: auto
+		&:hover
+			border: none
+			color: $accent
+			text-decoration: none
 
 @import "media" // Всегда в конце
