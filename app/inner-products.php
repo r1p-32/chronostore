@@ -53,7 +53,7 @@
 					<option value="">Price: High to Low</option>
 				</select>
 				<div class="products-sidebar__title">Price:</div>
-				<input id="price-slider" type="slider" name="price" value="5000;20000" />
+        <input id="amount" value="30965;79999" data-min="9.99" data-max="79999" data-url="/inner-products.php" data-rate="1" data-params="&amp;size=341&amp;dir=acs&amp;order=price" style="display: none;" type="slider">
 				<div class="products-sidebar__title">Gender:</div>
 				<ul class="products-sidebar__check-list">
 					<li>

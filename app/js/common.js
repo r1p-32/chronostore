@@ -27,13 +27,18 @@ $(function() {
 		locale: 'en'
 	});
 
-	$("#price-slider").slider({ 
-		from: 1000, 
-		to: 30000,
-		step: 1, 
-		smooth: true, 
-		round: 0, 
-		dimension: "&nbsp;$" });
+    var amount = $("#amount");
+    var min = Math.floor(amount.data('min'));
+    var max = Math.ceil(amount.data('max'));
+    amount.slider({from:min,to:max,step:0.01,smooth:!0,round:0,dimension:"&nbsp;$",  onstatechange:function( value ){
+        var values = value.split(';');
+        $('input[name="first_price"]').val(values[0]);
+        $('input[name="last_price"]').val(values[1]);
+    }, callback:function( value ){
+        var values = value.split(';');
+        var baseUrl = amount.data('url')+'?rate='+amount.data('rate')+'&first='+values[0]+'&last='+values[1]+amount.data('params');
+        ajaxFilter(baseUrl);
+    }});
 
 	$('.product-slider').slick({
 		dots: true,
