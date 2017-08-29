@@ -261,7 +261,7 @@ strong
 		left: 88px
 		background-image: url('../img/before-triangle.png')
 	&.active
-		z-index: 3
+		z-index: 1000
 		opacity: 1
 		transform: translateY(0)
 		transition: transform .4s, opacity .4s
@@ -492,18 +492,69 @@ strong
 		color: $accent
 
 .search-form
-	width: 0
-	overflow: hidden
+	display: none
+	width: 100%
 	max-width: 407px
 	position: absolute
 	right: 0
 	top: 10px
-	transition: .7s
 	padding-bottom: 10px
-	&.active
-		width: 100%
 	.input
 		padding-right: 48px
+
+.live-search
+	background-color: #fff
+	background: linear-gradient(to right, $mainbg-light 23%, #fff 23%)
+	z-index: 1001
+	width: 754px
+	height: 346px
+	border: 1px solid $border
+	position: absolute
+	top: 46px
+	right: 0
+	padding-right: 20px
+	.row
+		margin: 
+			left: -8px
+			right: -8px
+	.col-sm-3,
+	.col-sm-9,
+	.col-sm-6
+		padding: 
+			left: 8px
+			right: 8px
+	.product-small-list
+		li
+			border: none
+			margin-bottom: 7px
+	.product-small-item
+		padding: 4px
+	.btn
+		margin-top: 10px
+		strong
+			font-weight: bold
+			color: #000
+
+.live-search__categories
+	padding: 26px 3px 30px 30px
+
+.live-search__categories-title
+	font-size: 12px
+	margin-bottom: 20px
+	color: #000
+	font-weight: 600
+	text-transform: uppercase
+
+.live-search__list
+	@extend .clear-list
+	font-size: 12px
+	li
+		margin-bottom: 16px
+		a
+			color: #616161
+			white-space: nowrap
+			strong
+				font-weight: 600
 
 .submenu
 	width: 100vw
@@ -3310,6 +3361,7 @@ strong
 
 .insta-gallery
 	padding-top: 73px
+	background-color: #fff
 
 .inst-list
 	@extend .clear-list

@@ -1,7 +1,13 @@
 $(function() {
 
 	$('.header-right__click').click(function(){
-		$(this).siblings('.header-popup').toggleClass('active');
+		var popup = $(this).siblings('.header-popup');
+		if ( $(popup).hasClass('active') ){
+			$(popup).removeClass('active');
+		} else {
+			$('.header-popup.active').removeClass('active');
+			$(popup).addClass('active');
+		}
 	});
 
 	$('.cart-popup__continue').click(function(){
@@ -29,18 +35,18 @@ $(function() {
 		locale: 'en'
 	});
 
-    var amount = $("#amount");
-    var min = Math.floor(amount.data('min'));
-    var max = Math.ceil(amount.data('max'));
-    amount.slider({from:min,to:max,step:0.01,smooth:!0,round:0,dimension:"&nbsp;$",  onstatechange:function( value ){
-        var values = value.split(';');
-        $('input[name="first_price"]').val(values[0]);
-        $('input[name="last_price"]').val(values[1]);
-    }, callback:function( value ){
-        var values = value.split(';');
-        var baseUrl = amount.data('url')+'?rate='+amount.data('rate')+'&first='+values[0]+'&last='+values[1]+amount.data('params');
-        ajaxFilter(baseUrl);
-    }});
+	var amount = $("#amount");
+	var min = Math.floor(amount.data('min'));
+	var max = Math.ceil(amount.data('max'));
+	amount.slider({from:min,to:max,step:0.01,smooth:!0,round:0,dimension:"&nbsp;$",  onstatechange:function( value ){
+		var values = value.split(';');
+		$('input[name="first_price"]').val(values[0]);
+		$('input[name="last_price"]').val(values[1]);
+	}, callback:function( value ){
+		var values = value.split(';');
+		var baseUrl = amount.data('url')+'?rate='+amount.data('rate')+'&first='+values[0]+'&last='+values[1]+amount.data('params');
+		ajaxFilter(baseUrl);
+	}});
 
 	$('.product-slider').slick({
 		dots: true,
@@ -96,11 +102,11 @@ $(function() {
 	});
 
 	$('.search-btn').click(function(){
-		$(this).siblings('.search-form').addClass('active').children('.search-input').focus();
+		$(this).siblings('.search-form').fadeIn().children('.search-input').focus();
 	});
 
 	$('.search-input').focusout(function(){
-		$(this).parent('.search-form').removeClass('active');
+		$(this).parent('.search-form').fadeOut();
 	});
 
 	$('.cart-main__arrows li').click( function(){
