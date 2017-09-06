@@ -1,7 +1,7 @@
 	<?php include 'header.html'; ?>
 	
 	<div class="main-banner">
-		<div class="main-banner__slide" style="background-image: url(/skin/frontend/rwd/default/img/main-banner_1.jpg);">
+		<div class="main-banner__slide" style="background-image: url(img/main-banner_1.jpg);">
 			<div class="main-banner-composition">
 				<div class="container">
 					<div class="row">
@@ -14,7 +14,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="main-banner__slide" style="background-image: url(/skin/frontend/rwd/default/img/main-banner_1.jpg);">
+		<div class="main-banner__slide" style="background-image: url(img/main-banner_1.jpg);">
 			<div class="main-banner-composition">
 				<div class="container">
 					<div class="row">
@@ -57,7 +57,7 @@
 			<li>
 				<a href="javascript:void(0)" class="brand-item__wrap">
 					<div class="brand-item__img">
-						<img src="/skin/frontend/rwd/default/img/_main-category_1.png" alt="">
+						<img src="img/_main-category_1.png" alt="">
 					</div>
 					Mens Watches
 				</a>
@@ -65,7 +65,7 @@
 			<li>
 				<a href="javascript:void(0)" class="brand-item__wrap">
 					<div class="brand-item__img">
-						<img src="/skin/frontend/rwd/default/img/_main-category_2.png" alt="">
+						<img src="img/_main-category_2.png" alt="">
 					</div>
 					Ladies Watches
 				</a>
@@ -73,7 +73,7 @@
 			<li>
 				<a href="javascript:void(0)" class="brand-item__wrap">
 					<div class="brand-item__img">
-						<img src="/skin/frontend/rwd/default/img/_main-category_3.png" alt="">
+						<img src="img/_main-category_3.png" alt="">
 					</div>
 					Service & Repair
 				</a>
@@ -81,7 +81,7 @@
 			<li>
 				<a href="javascript:void(0)" class="brand-item__wrap">
 					<div class="brand-item__img">
-						<img src="/skin/frontend/rwd/default/img/_main-category_4.png" alt="">
+						<img src="img/_main-category_4.png" alt="">
 					</div>
 					Sell Your Watch
 				</a>
@@ -89,7 +89,7 @@
 			<li>
 				<a href="javascript:void(0)" class="brand-item__wrap">
 					<div class="brand-item__img">
-						<img src="/skin/frontend/rwd/default/img/_main-category_5.png" alt="">
+						<img src="img/_main-category_5.png" alt="">
 					</div>
 					Jewelry
 				</a>
@@ -108,7 +108,7 @@
 				<div class="col-md-3 col-sm-6">
 					<a href="javascript:void(0)" class="fav-item fav-item_1">
 						<div class="fav-item__img">
-							<img src="/skin/frontend/rwd/default/img/_main-fav_1.png" alt="">
+							<img src="img/_main-fav_1.png" alt="">
 						</div>
 						Rolex
 					</a>
@@ -116,28 +116,28 @@
 				<div class="col-md-3 col-md-push-6 col-sm-6">
 					<a href="javascript:void(0)" class="fav-item fav-item_1">
 						<div class="fav-item__img">
-							<img src="/skin/frontend/rwd/default/img/_main-fav_3.png" alt="">
+							<img src="img/_main-fav_3.png" alt="">
 						</div>
 						Breitling
 					</a>
 				</div>
 				<div class="col-md-6 col-md-pull-3 col-sm-12">
 					<a href="javascript:void(0)" class="fav-item fav-item_bordered fav-item_2">
-						<img src="/skin/frontend/rwd/default/img/_main-fav_2.png" alt="">
+						<img src="img/_main-fav_2.png" alt="">
 						<div class="fav-item__title">Omega</div>
 						<div class="fav-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eros ipsum, interdum at sagittis non, euismod nec felis.</div>
 					</a>
 				</div>
 				<div class="col-md-8 col-sm-12">
 					<a href="javascript:void(0)" class="fav-item fav-item_bordered fav-item_4">
-						<img src="/skin/frontend/rwd/default/img/_main-fav_4.png" alt="">
+						<img src="img/_main-fav_4.png" alt="">
 						<div class="fav-item__title">Tag Houer</div>
 						<div class="fav-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eros ipsum, interdum at sagittis non, euismod nec felis.</div>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-12">
 					<a href="javascript:void(0)" class="fav-item fav-item_bordered fav-item_5">
-						<img src="/skin/frontend/rwd/default/img/_main-fav_5.png" alt="">
+						<img src="img/_main-fav_5.png" alt="">
 						<div class="fav-item__title"><strong>Sell</strong> your watch?</div>
 						<div class="fav-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eros ipsum, interdum at sagittis non, euismod nec felis.</div>
 					</a>
@@ -158,7 +158,7 @@
 				<div class="col-sm-4">
 					<div class="blog-item">
 						<a href="javascript:void(0)" class="blog-item__thumb">
-							<img src="/skin/frontend/rwd/default/img/_blog_1.jpg" alt="">
+							<img src="img/_blog_1.jpg" alt="">
 						</a>
 						<div class="blog-item__date"><i>&#xE822</i> 5 august, 2017</div>
 						<a href="javascript:void(0)" class="blog-item__title">Nullam pretium venenatis mauris quis dignissim.</a>
@@ -167,7 +167,7 @@
 				<div class="col-sm-4">
 					<div class="blog-item">
 						<a href="javascript:void(0)" class="blog-item__thumb">
-							<img src="/skin/frontend/rwd/default/img/_blog_2.jpg" alt="">
+							<img src="img/_blog_2.jpg" alt="">
 						</a>
 						<div class="blog-item__date"><i>&#xE822</i> 5 august, 2017</div>
 						<a href="javascript:void(0)" class="blog-item__title">Nullam pretium venenatis mauris quis dignissim.</a>
@@ -176,7 +176,7 @@
 				<div class="col-sm-4">
 					<div class="blog-item">
 						<a href="javascript:void(0)" class="blog-item__thumb">
-							<img src="/skin/frontend/rwd/default/img/_blog_3.jpg" alt="">
+							<img src="img/_blog_3.jpg" alt="">
 						</a>
 						<div class="blog-item__date"><i>&#xE822</i> 5 august, 2017</div>
 						<a href="javascript:void(0)" class="blog-item__title">Nullam pretium venenatis mauris quis dignissim.</a>
@@ -210,27 +210,27 @@
 		<ul class="inst-list clearfix">
 			<li>
 				<a href="javascript:void(0)" class="inst-list__link">
-					<img src="/skin/frontend/rwd/default/img/_inst_1.jpg" alt="">
+					<img src="img/_inst_1.jpg" alt="">
 				</a>
 			</li>
 			<li>
 				<a href="javascript:void(0)" class="inst-list__link">
-					<img src="/skin/frontend/rwd/default/img/_inst_2.jpg" alt="">
+					<img src="img/_inst_2.jpg" alt="">
 				</a>
 			</li>
 			<li>
 				<a href="javascript:void(0)" class="inst-list__link">
-					<img src="/skin/frontend/rwd/default/img/_inst_3.jpg" alt="">
+					<img src="img/_inst_3.jpg" alt="">
 				</a>
 			</li>
 			<li>
 				<a href="javascript:void(0)" class="inst-list__link">
-					<img src="/skin/frontend/rwd/default/img/_inst_4.jpg" alt="">
+					<img src="img/_inst_4.jpg" alt="">
 				</a>
 			</li>
 			<li>
 				<a href="javascript:void(0)" class="inst-list__link">
-					<img src="/skin/frontend/rwd/default/img/_inst_5.jpg" alt="">
+					<img src="img/_inst_5.jpg" alt="">
 				</a>
 			</li>
 		</ul>
