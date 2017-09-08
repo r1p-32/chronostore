@@ -14,6 +14,22 @@
 <div class="products clearfix">
 	<div class="container">
 		<a href="#header" class="scroll-top"><i>&#xE806</i></a>
+		<div class="sidebar-mobile hidden-sm hiddes-xs hidden-md hidden-lg">
+			<div class="sidebar-dropdown">Filter search <span></span></div>
+			<div class="currently">
+				<p class="block-subtitle">Currently Shopping by:</p>
+				<ol>
+					<li>
+						<a class="btn-remove" href="http://dev1.chronostore.nyc/watches/gender/mens/color/yellow/" title="Remove This Item" link="http://dev1.chronostore.nyc/watches/gender/mens/color/yellow/">Remove This Item</a>
+						<span class="label">Case Size:</span> <span class="value">Medium (30-41 mm)</span>
+					</li>
+					<li>
+						<a class="btn-remove" href="http://dev1.chronostore.nyc/watches/gender/mens/color/yellow/" title="Remove This Item" link="http://dev1.chronostore.nyc/watches/gender/mens/color/yellow/">Remove This Item</a>
+						<span class="label">Case Size:</span> <span class="value">Medium (30-41 mm)</span>
+					</li>
+				</ol>
+			</div>
+		</div>
 		<aside class="products-sidebar">
 			<form action="" class="products-sidebar__form">
 				<div class="products-sidebar__title">Sort by:</div>
@@ -53,7 +69,7 @@
 					<option value="">Price: High to Low</option>
 				</select>
 				<div class="products-sidebar__title">Price:</div>
-        <input id="amount" value="30965;79999" data-min="9.99" data-max="79999" data-url="/inner-products.php" data-rate="1" data-params="&amp;size=341&amp;dir=acs&amp;order=price" style="display: none;" type="slider">
+				<input id="amount" value="30965;79999" data-min="9.99" data-max="79999" data-url="/inner-products.php" data-rate="1" data-params="&amp;size=341&amp;dir=acs&amp;order=price" style="display: none;" type="slider">
 				<div class="products-sidebar__title">Gender:</div>
 				<ul class="products-sidebar__check-list">
 					<li>
@@ -138,7 +154,7 @@
 		</aside>
 		<div class="product-greed">
 			<div class="row">
-				<div class="col-lg-3 col-md-4 col-sm-6 products-item">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 products-item">
 					<a href="javasript:void(0)" class="products-item__wrap">
 						<img src="img/_brand_1.jpg" class="img-responsive" alt="">
 						<div class="products-item__name">Rolex Daytona</div>
@@ -150,7 +166,7 @@
 					</a>
 					<a href=".quick-view" class="btn btn_accent popup-inline">Quick view</a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 products-item">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 products-item">
 					<a href="javasript:void(0)" class="products-item__wrap">
 						<img src="img/_brand_1.jpg" class="img-responsive" alt="">
 						<div class="products-item__name">Rolex Daytona</div>
@@ -162,7 +178,7 @@
 					</a>
 					<a href=".quick-view" class="btn btn_accent popup-inline">Quick view</a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 products-item">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 products-item">
 					<a href="javasript:void(0)" class="products-item__wrap">
 						<img src="img/_brand_1.jpg" class="img-responsive" alt="">
 						<div class="products-item__name">Rolex Daytona</div>
@@ -174,7 +190,7 @@
 					</a>
 					<a href=".quick-view" class="btn btn_accent popup-inline">Quick view</a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 products-item">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 products-item">
 					<a href="javasript:void(0)" class="products-item__wrap">
 						<img src="img/_brand_1.jpg" class="img-responsive" alt="">
 						<div class="products-item__name">Rolex Daytona</div>
@@ -186,7 +202,7 @@
 					</a>
 					<a href=".quick-view" class="btn btn_accent popup-inline">Quick view</a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 products-item">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 products-item">
 					<a href="javasript:void(0)" class="products-item__wrap">
 						<img src="img/_brand_1.jpg" class="img-responsive" alt="">
 						<div class="products-item__name">Rolex Daytona</div>
@@ -198,7 +214,7 @@
 					</a>
 					<a href=".quick-view" class="btn btn_accent popup-inline">Quick view</a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 products-item">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 products-item">
 					<a href="javasript:void(0)" class="products-item__wrap">
 						<img src="img/_brand_1.jpg" class="img-responsive" alt="">
 						<div class="products-item__name">Rolex Daytona</div>
@@ -209,19 +225,7 @@
 					</a>
 					<a href=".quick-view" class="btn btn_accent popup-inline">Quick view</a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 products-item">
-					<a href="javasript:void(0)" class="products-item__wrap">
-						<img src="img/_brand_1.jpg" class="img-responsive" alt="">
-						<div class="products-item__name">Rolex Daytona</div>
-						<div class="products-item__model">116515LNI</div>
-						<div class="products-item__descr">18K Everose Gold AutomaticMen's Wristwatch</div>
-						<div class="products-item__condition">New watch</div>
-						<div class="products-item__price">$21,999.00</div>
-						<div class="products-item__oldprice">$28,800.00</div>
-					</a>
-					<a href=".quick-view" class="btn btn_accent popup-inline">Quick view</a>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 products-item">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 products-item">
 					<a href="javasript:void(0)" class="products-item__wrap">
 						<img src="img/_brand_1.jpg" class="img-responsive" alt="">
 						<div class="products-item__name">Rolex Daytona</div>
@@ -233,7 +237,7 @@
 					</a>
 					<a href=".quick-view" class="btn btn_accent popup-inline">Quick view</a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 products-item">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 products-item">
 					<a href="javasript:void(0)" class="products-item__wrap">
 						<img src="img/_brand_1.jpg" class="img-responsive" alt="">
 						<div class="products-item__name">Rolex Daytona</div>
@@ -245,7 +249,19 @@
 					</a>
 					<a href=".quick-view" class="btn btn_accent popup-inline">Quick view</a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 products-item">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 products-item">
+					<a href="javasript:void(0)" class="products-item__wrap">
+						<img src="img/_brand_1.jpg" class="img-responsive" alt="">
+						<div class="products-item__name">Rolex Daytona</div>
+						<div class="products-item__model">116515LNI</div>
+						<div class="products-item__descr">18K Everose Gold AutomaticMen's Wristwatch</div>
+						<div class="products-item__condition">New watch</div>
+						<div class="products-item__price">$21,999.00</div>
+						<div class="products-item__oldprice">$28,800.00</div>
+					</a>
+					<a href=".quick-view" class="btn btn_accent popup-inline">Quick view</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 products-item">
 					<a href="javasript:void(0)" class="products-item__wrap">
 						<img src="img/_brand_1.jpg" class="img-responsive" alt="">
 						<div class="products-item__name">Rolex Daytona</div>

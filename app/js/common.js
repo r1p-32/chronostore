@@ -178,6 +178,12 @@ $(function() {
 		cursorborderradius: "0px",
 	});
 
+
+	$(".sidebar-dropdown").click(function(){
+		$(this).toggleClass('active');
+		$('.products-sidebar').slideToggle();
+	});
+
 	$('.main-readmore__btn').click(function(){
 		$(this).parent('.main-readmore').toggleClass('active');
 		if ($(this).parent('.main-readmore').hasClass('active')) {
