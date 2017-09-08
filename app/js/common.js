@@ -18,6 +18,10 @@ $(function() {
 	$('.login-block').equalHeights();
 	$('.products-item__wrap').equalHeights();
 
+	$(window).resize(function(){
+		$('.products-item__wrap').css('height', 'auto').equalHeights();
+	})
+
 	$('.scroll-top').mPageScroll2id({
 		offset: 70
 	});
@@ -93,9 +97,9 @@ $(function() {
 		$('.slick-slider').slick('refresh');
 	});
 
-    $('.ajax-popup-link').magnificPopup({
-        type: 'ajax'
-    });
+	$('.ajax-popup-link').magnificPopup({
+		type: 'ajax'
+	});
 
 	$('.make-an-offer__btn').click(function(){
 		$('.make-an-offer__how').fadeToggle();
@@ -178,10 +182,14 @@ $(function() {
 		cursorborderradius: "0px",
 	});
 
-
 	$(".sidebar-dropdown").click(function(){
 		$(this).toggleClass('active');
 		$('.products-sidebar').slideToggle();
+	});
+
+	$(".more-details").click(function(){
+		$(this).toggleClass('active');
+		$('.product-details .more').slideToggle();
 	});
 
 	$('.main-readmore__btn').click(function(){
@@ -193,42 +201,42 @@ $(function() {
 		}
 	});
 
-    $('.submenu__abc a').click(function(e){
-        e.preventDefault();
-        var $this = jQuery(this);
-        var text = $this.text();
+	$('.submenu__abc a').click(function(e){
+		e.preventDefault();
+		var $this = jQuery(this);
+		var text = $this.text();
 
-        if(text == 'View All Brands'){
-            if(jQuery(this).hasClass('active')){
-                jQuery('.submenu_brands_list li').css('display', '');
-                $this.parents('table').find('a').removeClass('active');
-            }else{
-                $this.parents('table').find('a').removeClass('active');
-                $this.addClass('active');
-                jQuery('.submenu_brands_list li').css('display', 'block');
-            }
-        }else if(text == '0-9'){
-            $this.parents('table').find('a').removeClass('active');
-            $this.addClass('active');
-            jQuery('.submenu_brands_list li').each(function(){
-                var t = jQuery(this).text();
-                if(t[0] == '0' || t[0] == '1' || t[0] == '2' || t[0] == '3' || t[0] == '4' || t[0] == '5' || t[0] == '6' || t[0] == '7' || t[0] == '8' || t[0] == '9'){
-                    jQuery(this).css('display', 'block');
-                }else{
-                    jQuery(this).css('display', 'none');
-                }
-            });
-        }else{
-            $this.parents('table').find('a').removeClass('active');
-            $this.addClass('active');
-            jQuery('.submenu_brands_list li').each(function(){
-                var t = jQuery(this).text();
-                if(t[0].toLowerCase() == text && t != 'All Brands'){
-                    jQuery(this).css('display', 'block');
-                }else{
-                    jQuery(this).css('display', 'none');
-                }
-            });
-        }
-    });
+		if(text == 'View All Brands'){
+			if(jQuery(this).hasClass('active')){
+				jQuery('.submenu_brands_list li').css('display', '');
+				$this.parents('table').find('a').removeClass('active');
+			}else{
+				$this.parents('table').find('a').removeClass('active');
+				$this.addClass('active');
+				jQuery('.submenu_brands_list li').css('display', 'block');
+			}
+		}else if(text == '0-9'){
+			$this.parents('table').find('a').removeClass('active');
+			$this.addClass('active');
+			jQuery('.submenu_brands_list li').each(function(){
+				var t = jQuery(this).text();
+				if(t[0] == '0' || t[0] == '1' || t[0] == '2' || t[0] == '3' || t[0] == '4' || t[0] == '5' || t[0] == '6' || t[0] == '7' || t[0] == '8' || t[0] == '9'){
+					jQuery(this).css('display', 'block');
+				}else{
+					jQuery(this).css('display', 'none');
+				}
+			});
+		}else{
+			$this.parents('table').find('a').removeClass('active');
+			$this.addClass('active');
+			jQuery('.submenu_brands_list li').each(function(){
+				var t = jQuery(this).text();
+				if(t[0].toLowerCase() == text && t != 'All Brands'){
+					jQuery(this).css('display', 'block');
+				}else{
+					jQuery(this).css('display', 'none');
+				}
+			});
+		}
+	});
 });

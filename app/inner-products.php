@@ -323,7 +323,7 @@
 									</li>
 								</ul>
 							</div>
-							<div class="col-sm-5">
+							<div class="col-sm-5 hidden-xs">
 								<div class="product-subtitle"><strong>Need Assistance?</strong></div>
 								<ul class="product-contacts">
 									<li><i>&#xE816</i> 555-555-5555</li>
@@ -341,6 +341,15 @@
 							<li><a href="javascript:void(0)" class="btn btn_accent">Add to cart</a></li>
 							<li><a href="javascript:void(0)" class="btn btn_light">See full description</a></li>
 						</ul>
+						<div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+							<div class="product-subtitle"><strong>Need Assistance?</strong></div>
+							<ul class="product-contacts">
+								<li><i>&#xE816</i> 555-555-5555</li>
+								<li><i>&#xE817</i> 555-555-5555</li>
+								<li><i>&#xE800</i> ChronostoreUSA</li>
+							</ul>
+							<a href="javascript:void(0)" class="btn btn_light chat-btn">Chat live</a>
+						</div>
 					</div>
 				</div>
 			</div>

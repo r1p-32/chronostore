@@ -73,6 +73,14 @@
 									<span class="product-characteristics__right">Three Year</span>
 								</li>
 							</ul>
+							<div class="product-prices product-prices_mobile">
+								<div class="product-old-price">$7,200.00</div>
+								<div class="product-new-price">$3,899.00</div>
+							</div>
+							<ul class="products-icons products-icons_mobile">
+								<li><a href="javascript:void(0)" class="products-icons__btn"><i>&#xE80F</i></a></li>
+								<li><a href="javascript:void(0)" class="products-icons__btn"><i>&#xE812</i></a></li>
+							</ul>
 						</div>
 						<div class="col-sm-5">
 							<ul class="product-contacts">
@@ -96,6 +104,11 @@
 							<a href="javascript:void(0)" class="btn">Pay with <i>&#xE815</i></a>
 						</li>
 					</ul>
+					<ul class="product-contacts product-contacts_mobile">
+								<li><i>&#xE816</i> 555-555-5555</li>
+								<li><i>&#xE817</i> 555-555-5555</li>
+								<li><i>&#xE800</i> ChronostoreUSA</li>
+							</ul>
 					<div class="product-prices">
 						<div class="product-old-price">$7,200.00</div>
 						<div class="product-new-price">$3,899.00</div>
@@ -128,7 +141,7 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<ul class="product-details">
-						<li class="clearfix">
+						<li class="clearf">
 							<span class="product-details__left">Warranty</span>
 							<span class="product-details__right">Three Year Warranty Provided By Chronostore</span>
 						</li>
@@ -176,27 +189,27 @@
 							<span class="product-details__left">Clasp Type</span>
 							<span class="product-details__right">Steel</span>
 						</li>
-						<li>
+						<li class="more">
 							<span class="product-details__left">Wrist Fit</span>
 							<span class="product-details__right">Adjustable up to 8 Inch</span>
 						</li>
-						<li>
+						<li class="more">
 							<span class="product-details__left">Display</span>
 							<span class="product-details__right">Analog</span>
 						</li>
-						<li>
+						<li class="more">
 							<span class="product-details__left">Hour Markers</span>
 							<span class="product-details__right">Arabic Numerals</span>
 						</li>
-						<li>
+						<li class="more">
 							<span class="product-details__left">Features</span>
 							<span class="product-details__right">Chronograph, Date, Small Seconds SubDial</span>
 						</li>
-						<li>
+						<li class="more">
 							<span class="product-details__left">Style</span>
 							<span class="product-details__right">Luxury: Sport Styles</span>
 						</li>
-						<li>
+						<li class="more">
 							<span class="product-details__left">MSRP</span>
 							<span class="product-details__right">$7,200.00</span>
 						</li>
@@ -204,43 +217,43 @@
 				</div>
 				<div class="col-sm-6">
 					<ul class="product-details">
-						<li>
+						<li class="more">
 							<span class="product-details__left">Warranty</span>
 							<span class="product-details__right">Three Year Warranty Provided By Chronostore</span>
 						</li>
-						<li>
+						<li class="more">
 							<span class="product-details__left">Papers</span>
 							<span class="product-details__right">Yes</span>
 						</li>
-						<li>
+						<li class="more">
 							<span class="product-details__left">Series</span>
 							<span class="product-details__right">Speedmaster</span>
 						</li>
-						<li>
+						<li class="more">
 							<span class="product-details__left">Model Number</span>
 							<span class="product-details__right">321.13.44.50.02.001</span>
 						</li>
-						<li>
+						<li class="more">
 							<span class="product-details__left">Gender</span>
 							<span class="product-details__right">Mens</span>
 						</li>
-						<li>
+						<li class="more">
 							<span class="product-details__left">Case Shape</span>
 							<span class="product-details__right">Round</span>
 						</li>
-						<li>
+						<li class="more">
 							<span class="product-details__left">Case Diameter</span>
 							<span class="product-details__right">44mm</span>
 						</li>
-						<li>
+						<li class="more">
 							<span class="product-details__left">Case Thickness</span>
 							<span class="product-details__right">14mm</span>
 						</li>
-						<li>
+						<li class="more">
 							<span class="product-details__left">Case Thickness</span>
 							<span class="product-details__right">Stainless Steel</span>
 						</li>
-						<li>
+						<li class="more">
 							<span class="product-details__left">Crown</span>
 							<span class="product-details__right">Pushdown</span>
 						</li>
@@ -248,27 +261,28 @@
 							<span class="product-details__left">Band Materia</span>
 							<span class="product-details__right">Leather</span>
 						</li>
-						<li>
+						<li class="more">
 							<span class="product-details__left">Clasp Type</span>
 							<span class="product-details__right">Steel</span>
 						</li>
-						<li>
+						<li class="more">
 							<span class="product-details__left">Wrist Fit</span>
 							<span class="product-details__right">Adjustable up to 8 Inch</span>
 						</li>
-						<li>
+						<li class="more">
 							<span class="product-details__left">Display</span>
 							<span class="product-details__right">Analog</span>
 						</li>
-						<li>
+						<li class="more">
 							<span class="product-details__left">Hour Markers</span>
 							<span class="product-details__right">Arabic Numerals</span>
 						</li>
-						<li>
+						<li class="more">
 							<span class="product-details__left">Features</span>
 							<span class="product-details__right">Chronograph, Date, Small Seconds SubDial</span>
 						</li>
 					</ul>
+					<div class="more-details">More information <span></span></div>
 				</div>
 			</div>
 		</article>
@@ -465,11 +479,11 @@
 			</div>
 			<div class="text-title">HOW DOES THIS WORK?</div>
 			<div class="text-block">
-			<ul class="make-an-offer__list">
-				<li>Make an Offer on a product.</li>
-				<li>You will be notified by email when ChronoStore has accepted, countered, or rejected your offer.</li>
-				<li>You simply check out and await your goodies.</li>
-			</ul>
+				<ul class="make-an-offer__list">
+					<li>Make an Offer on a product.</li>
+					<li>You will be notified by email when ChronoStore has accepted, countered, or rejected your offer.</li>
+					<li>You simply check out and await your goodies.</li>
+				</ul>
 			</div>
 			<div class="text-title">WHY DO YOU NEED MY EMAIL?</div>
 			<div class="text-block">

@@ -3451,7 +3451,8 @@ strong
 	.current
 		border: none
 		color: $accent
-		width: auto
+		width: 30px
+		font-family: $default-font
 		&:hover
 			border: none
 			color: $accent
@@ -3473,5 +3474,26 @@ strong
 			font-family: $default-font
 			margin-top: 10px
 			font-weight: 600
+
+.more-details
+	display: none
+	background-color: #fff
+	border: 1px solid $border
+	line-height: 34px
+	margin-top: 10px
+	padding: 0 12px
+	font-size: 12px
+	span
+		display: block
+		margin-top: 14px
+		float: right
+		width: 0
+		height: 0
+		border-top: 5px solid #999
+		border-right: 5px solid transparent
+		border-left: 5px solid transparent
+	&.active
+		span
+			transform: rotate(180deg)
 
 @import "media" // Всегда в конце
