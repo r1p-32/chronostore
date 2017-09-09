@@ -192,6 +192,11 @@ $(function() {
 		$('.product-details .more').slideToggle();
 	});
 
+	$(".brands-btn").click(function(){
+		$(this).toggleClass('active');
+		$('.brands-dropdown').slideToggle();
+	});
+
 	$('.main-readmore__btn').click(function(){
 		$(this).parent('.main-readmore').toggleClass('active');
 		if ($(this).parent('.main-readmore').hasClass('active')) {

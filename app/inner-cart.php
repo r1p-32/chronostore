@@ -80,7 +80,7 @@
 								</a>
 							</td>
 							<td class="cart-main__descr">
-								<div class="cart-main__name">Rolex Yacht-Master II</div>
+								<div class="cart-main__name">MILUS PERSIA PER-S01 STAINLESS STEEL & PINK LEATHER QUARTZ LADIES WATCH</div>
 								<div class="cart-main__model">116515LNI</div>
 								<div class="cart-main__text">18K Everose Gold Automatic Men's Wristwatch</div>
 							</td>

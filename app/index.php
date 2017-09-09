@@ -29,7 +29,7 @@
 		</div>
 	</div>
 
-	<div class="main-page-list">
+	<div class="main-page-list hidden-xs">
 		<div class="container">
 			<ul>
 				<li><a href="javascript:void(0)">Rolex</a></li>
@@ -45,7 +45,7 @@
 	</div>
 
 	<div class="container">
-		<ul class="page-top-links page-top-links_main">
+		<ul class="page-top-links page-top-links_main hidden-xs">
 			<li><a href="javascript:void(0)" class="btn">Shop new / Unworn watches</a></li>
 			<li><a href="javascript:void(0)" class="btn">Shop pre-owned watches</a></li>
 		</ul>
@@ -53,7 +53,7 @@
 			Chronostore is not an authorized dealer for or affiliated with BAUME & MERCIER, CARTIER, IWC, JAEGER-LECOULTRE, LANGE & SÖHNE, MONTBLANC, OFFICINE PANERAI, PIAGET, ROGER DUBUIS, VACHE   RON CONSTANTIN and VAN CLEEF & ARPELS, and the watches it sells are not new watches purchased directly from these manufacturers. The watches are, however, to the best of our knowledge, unworn. The manufacturer’s warranty will not be honored by these companies on the watches sold by Chronostore.
 			<a href="javascript:void(0)" class="main-readmore__btn"><strong>More</strong> <i>&#xE819</i></a>
 		</div>
-		<ul class="main-category clearfix">
+		<ul class="main-category clearfix hidden-xs">
 			<li>
 				<a href="javascript:void(0)" class="brand-item__wrap">
 					<div class="brand-item__img">
@@ -96,13 +96,13 @@
 			</li>
 		</ul>
 		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
+			<div class="col-md-10 col-md-offset-1 hidden-xs">
 				<div class="learn-more"><span>Learn more about our free watch match service <a href="javascript:void(0)">click here</a></span></div>
 			</div>
 		</div>
 	</div>
 
-	<div class="main-fav">
+	<div class="main-fav hidden-xs">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-sm-6">
@@ -146,7 +146,7 @@
 		</div>
 	</div>
 
-	<div class="main-blog">
+	<div class="main-blog hidden-xs">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
@@ -189,16 +189,31 @@
 	<div class="main-page-list main-page-list_bottom">
 		<div class="container">
 			<ul>
+				<li class="hidden-lg hidden-md hidden-sm">
+					<a href="javascript:void(0)" class="brands-btn">Brands<i>&#xE819</i></a>
+					<ul class="brands-dropdown">
+						<li><a href="javascript:void(0)">Rolex</a></li>
+						<li><a href="javascript:void(0)">Omega</a></li>
+						<li><a href="javascript:void(0)">Tag hauer</a></li>
+						<li><a href="javascript:void(0)">Cartier</a></li>
+						<li><a href="javascript:void(0)">Iwc</a></li>
+						<li><a href="javascript:void(0)">Panerai</a></li>
+						<li><a href="javascript:void(0)">Breitling</a></li>
+						<li><a href="javascript:void(0)">Hublot</a></li>
+						<li><a href="javascript:void(0)">Other</a></li>
+					</ul>
+				</li>
 				<li><a href="javascript:void(0)">Mens watches</a></li>
 				<li><a href="javascript:void(0)">Ladies watches</a></li>
 				<li><a href="javascript:void(0)">Jewelry</a></li>
 				<li><a href="javascript:void(0)">Accesories</a></li>
 				<li><a href="javascript:void(0)">Service</a></li>
+				<li><a href="javascript:void(0)">Sell your watch</a></li>
 			</ul>
 		</div>
 	</div>
 
-	<div class="insta-gallery">
+	<div class="insta-gallery hidden-xs">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
