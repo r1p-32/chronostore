@@ -20,7 +20,7 @@ $(function() {
 
 	$(window).resize(function(){
 		$('.products-item__wrap').css('height', 'auto').equalHeights();
-	})
+	});
 
 	$('.scroll-top').mPageScroll2id({
 		offset: 70
