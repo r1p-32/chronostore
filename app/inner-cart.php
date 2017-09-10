@@ -80,7 +80,7 @@
 								</a>
 							</td>
 							<td class="cart-main__descr">
-								<div class="cart-main__name">Rolex Yacht-Master II</div>
+								<div class="cart-main__name">MILUS PERSIA PER-S01 STAINLESS STEEL & PINK LEATHER QUARTZ LADIES WATCH</div>
 								<div class="cart-main__model">116515LNI</div>
 								<div class="cart-main__text">18K Everose Gold Automatic Men's Wristwatch</div>
 							</td>
@@ -105,7 +105,15 @@
 				</table>
 				<div class="cart-result">
 					<div class="row">
-						<div class="col-sm-8 col-sm-12 cart-result__item col-xs-12">
+						<div class="col-sm-4 col-sm-push-8 cart-result__item col-xs-12">
+							<div class="cart-subtotal">$22,999.00</div>
+							<div class="cart-total clearfix">
+								<span class="cart-total__left">Total</span>
+								<span class="cart-total__right">$22,999.00</span>
+							</div>
+							<button type="submit" class="btn btn_accent  cart-checkout__btn">Checkout</button>
+						</div>
+						<div class="col-sm-8 col-sm-pull-4 cart-result__item col-xs-12">
 							<div class="financing-program">
 								<div class="financing-program__title">Financing Program</div>
 								<div class="financing-program__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex dui, cursus at lobortis mollis, rhoncus non ex. Sed vitae est vitae arcu sagittis posuere. Suspendisse enim arcu, consectetur eget interdum id, gravida sed elit.</div>
@@ -116,14 +124,6 @@
 								<input type="text" name="promo" class="input" placeholder="for example: 75684JKF">
 								<a href="javascript:void(0)" class="btn btn_light">Apply</a>
 							</div>
-						</div>
-						<div class="col-sm-4 cart-result__item col-xs-12">
-							<div class="cart-subtotal">$22,999.00</div>
-							<div class="cart-total clearfix">
-								<span class="cart-total__left">Total</span>
-								<span class="cart-total__right">$22,999.00</span>
-							</div>
-							<button type="submit" class="btn btn_accent  cart-checkout__btn">Checkout</button>
 						</div>
 					</div>
 				</div>
