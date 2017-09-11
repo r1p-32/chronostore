@@ -96,7 +96,7 @@
 			</div>
 			<div class="col-lg-10 col-lg-offset-1">
 				<div class="contacts-block">
-					<div class="contacts-title">Our location:</div>
+					<div class="text-title text-title_18">Our location:</div>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1885296159953!2d-73.98309538503652!3d40.75787797932698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258ffa9ff8501%3A0x2d50ad69077896ab!2sChronostore!5e0!3m2!1sru!2sru!4v1502705230066" width="100%" height="410" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 			</div>
