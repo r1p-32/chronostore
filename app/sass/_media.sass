@@ -201,6 +201,10 @@
 	.cart-main__name
 		max-width: 220px
 
+	.products-item
+		.btn
+			display: none
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
 	.logo
@@ -214,7 +218,7 @@
 		width: 80vw
 		top: 0
 		.input
-			height: 28px
+			height: 28px !important
 		.search-btn-reset
 			top: 5px
 			right: 2px
@@ -222,6 +226,7 @@
 	.footer-main
 		display: block
 		border: none
+		padding-top: 40px
 
 	.footer-main__item
 		margin: 0
@@ -261,10 +266,12 @@
 
 	.footer-social
 		text-align: center
+		margin: 25px 0
+		li
+			margin: 0 7px 
 
 	.footer-subscribe
 		float: none
-		margin: 20px 0
 		max-width: 100%
 
 	.page-top-links
