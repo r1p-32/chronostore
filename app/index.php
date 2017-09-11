@@ -190,7 +190,7 @@
 		<div class="container">
 			<ul>
 				<li class="hidden-lg hidden-md hidden-sm">
-					<a href="javascript:void(0)" class="brands-btn">Brands<i>&#xE819</i></a>
+					<a href="javascript:void(0)" class="brands-btn">Featured Brands<i>&#xE819</i></a>
 					<ul class="brands-dropdown">
 						<li><a href="javascript:void(0)">Rolex</a></li>
 						<li><a href="javascript:void(0)">Omega</a></li>
