@@ -116,6 +116,15 @@ strong
 			background-color: #fff
 			border-color: #fff
 			color: #000
+	&_green
+		background-color: #41542f
+		color: #fff
+		border-color: #41542f
+		&:hover,
+		&:focus
+			background-color: #27331c
+			color: #fff
+			border-color: #27331c
 	i
 		font-size: 21px
 		vertical-align: bottom
@@ -3087,22 +3096,25 @@ strong
 					background-color: #fff
 	.product-slider-arr
 		&_prev
-			left: 80px
+			left: 70px
 		&_next
-			right: 80px
+			right: 70px
 
 .main-banner__slide
-	background-size: cover
-	background-position: center
+	background-color: #020202
+	.btn
+		max-width: 240px
+		margin-top: 35px
+		&_dark
+			border: 1px solid rgba($border, .4)
 
 .main-banner-composition
 	display: flex
 	align-items: center
 	height: 450px
-	.btn
-		max-width: 240px
-		margin-top: 35px
-		border: 1px solid rgba($border, .4)
+	background-size: cover
+	background-position: center
+	position: relative
 
 .main-banner__title
 	font-size: 36px
@@ -3485,6 +3497,7 @@ strong
 #search
 	box-sizing: border-box
 	font-family: $default-font
+	-webkit-appearance: none !important
 
 .footer-mobile-btn
 	background-color: transparent

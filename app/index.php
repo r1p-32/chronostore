@@ -1,9 +1,9 @@
 	<?php include 'header.html'; ?>
 	
 	<div class="main-banner">
-		<div class="main-banner__slide" style="background-image: url(img/main-banner_1.jpg);">
-			<div class="main-banner-composition">
-				<div class="container">
+		<div class="main-banner__slide">
+			<div class="container">
+				<div class="main-banner-composition" style="background-image: url(img/main-banner_1.jpg);">
 					<div class="row">
 						<div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-1">
 							<h1 class="main-banner__title">Quisque congue</h1>
@@ -14,14 +14,27 @@
 				</div>
 			</div>
 		</div>
-		<div class="main-banner__slide" style="background-image: url(img/main-banner_1.jpg);">
-			<div class="main-banner-composition">
-				<div class="container">
+		<div class="main-banner__slide">
+			<div class="container">
+				<div class="main-banner-composition" style="background-image: url(img/main-banner_2.jpg);">
 					<div class="row">
 						<div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-1">
 							<h1 class="main-banner__title">Quisque congue</h1>
 							<div class="main-banner__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nibh ex, scelerisque eget commodo vitae, bibendum sit amet erat. Duis ligula ante, finibus non ex sit amet, eros. </div>
-							<a href="javascript:void(0)" class="btn btn_dark">Discover this model</a>
+							<a href="javascript:void(0)" class="btn btn_green">Click to learn more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-banner__slide">
+			<div class="container">
+				<div class="main-banner-composition" style="background-image: url(img/main-banner_3.jpg);">
+					<div class="row">
+						<div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-1">
+							<h1 class="main-banner__title">Quisque congue</h1>
+							<div class="main-banner__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nibh ex, scelerisque eget commodo vitae, bibendum sit amet erat. Duis ligula ante, finibus non ex sit amet, eros. </div>
+							<a href="javascript:void(0)" class="btn btn_accent">Click to begin</a>
 						</div>
 					</div>
 				</div>
