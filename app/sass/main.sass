@@ -1045,6 +1045,7 @@ strong
 	color: #000
 	text-align: center
 	margin-bottom: 10px
+	min-height: 382px
 	padding: 
 		top: 10px
 		bottom: 24px
@@ -2715,16 +2716,26 @@ strong
 
 .radio-label
 	display: block
+	position: relative
 	font-size: 12px
-	height: 11px
-	line-height: 1
 	padding-left: 29px
-	background-image: url(../img/radio.png)
-	background-repeat: no-repeat
 	cursor: pointer
+	&:before
+		@extend .before
+		width: 11px
+		height: 10.5px
+		left: 0
+		top: 50%
+		transform: translateY(-50%)
+		background-image: url(../img/radio.png)
+		background-repeat: no-repeat
 
-.radio:checked + .radio-label
+.radio:checked + .radio-label:before
 	background-position: 0 -11px
+
+.form-alt
+	font-size: 12px
+	padding-left: 29px
 
 .checkout-sidebar
 	border: 1px solid $border
@@ -3542,5 +3553,22 @@ strong
 
 p.empty
 	font-size: 12px
+
+#algolia-autocomplete-container 
+	.aa-dropdown-menu 
+		.category
+			color: #000
+		.algoliasearch-autocomplete-hit
+			font-size: 12px
+			.thumb 
+				img
+					border: 1px solid $border
+		.footer_algolia
+			display: none
+
+.after_special 
+	font-size: 14px
+	color: #000
+	margin-top: 5px
 
 @import "media" // Всегда в конце
