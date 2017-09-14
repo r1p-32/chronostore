@@ -38,7 +38,7 @@
 					<div class="product-subtitle">Steel Automatic Men's Watch</div>
 					<div class="product-model">321.13.44.50.02.001</div>
 					<div class="row">
-						<div class="col-sm-7">
+						<div class="col-sm-8">
 							<ul class="product-characteristics">
 								<li>
 									<span class="product-characteristics__left">Condition:</span>
@@ -73,22 +73,22 @@
 									<span class="product-characteristics__right">Three Year</span>
 								</li>
 							</ul>
-							<div class="product-prices product-prices_mobile">
-								<div class="product-old-price">$7,200.00</div>
-								<div class="product-new-price">$3,899.00</div>
-							</div>
-							<ul class="products-icons products-icons_mobile">
-								<li><a href="javascript:void(0)" class="products-icons__btn"><i>&#xE80F</i></a></li>
-								<li><a href="javascript:void(0)" class="products-icons__btn"><i>&#xE812</i></a></li>
-							</ul>
 						</div>
-						<div class="col-sm-5">
+						<div class="col-sm-4">
 							<ul class="product-contacts">
 								<li><i>&#xE816</i> 555-555-5555</li>
 								<li><i>&#xE817</i> 555-555-5555</li>
 								<li><i>&#xE800</i> ChronostoreUSA</li>
 							</ul>
+							<ul class="products-icons">
+								<li><a href="javascript:void(0)" class="products-icons__btn"><i>&#xE80F</i></a></li>
+								<li><a href="javascript:void(0)" class="products-icons__btn"><i>&#xE812</i></a></li>
+							</ul>
 						</div>
+					</div>
+					<div class="product-prices">
+						<div class="product-old-price">$7,200.00</div>
+						<div class="product-new-price">$3,899.00</div>
 					</div>
 					<ul class="product-btns clearfix">
 						<li>
@@ -105,17 +105,13 @@
 						</li>
 					</ul>
 					<ul class="product-contacts product-contacts_mobile">
-								<li><i>&#xE816</i> 555-555-5555</li>
-								<li><i>&#xE817</i> 555-555-5555</li>
-								<li><i>&#xE800</i> ChronostoreUSA</li>
-							</ul>
-					<div class="product-prices">
-						<div class="product-old-price">$7,200.00</div>
-						<div class="product-new-price">$3,899.00</div>
-					</div>
-					<ul class="products-icons">
-						<li><a href="javascript:void(0)" class="products-icons__btn"><i>&#xE80F</i></a></li>
-						<li><a href="javascript:void(0)" class="products-icons__btn"><i>&#xE812</i></a></li>
+						<li><i>&#xE816</i> 555-555-5555</li>
+						<li><i>&#xE817</i> 555-555-5555</li>
+						<li><i>&#xE800</i> ChronostoreUSA</li>
+						<ul class="products-icons products-icons_mobile">
+							<li><a href="javascript:void(0)" class="products-icons__btn"><i>&#xE80F</i></a></li>
+							<li><a href="javascript:void(0)" class="products-icons__btn"><i>&#xE812</i></a></li>
+						</ul>
 					</ul>
 				</div>
 			</div>
